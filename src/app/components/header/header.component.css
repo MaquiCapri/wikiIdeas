@@ -1,0 +1,20 @@
+.header{
+    background-color: rgb(206, 166, 243);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom:2px solid grey ;
+    
+}
+
+#box1 {
+border: 2px solid grey;
+margin: 15px;
+margin-left: 150px;
+}
+
+#box2{
+border: 2px solid grey;
+margin: 15px;
+
+
+}

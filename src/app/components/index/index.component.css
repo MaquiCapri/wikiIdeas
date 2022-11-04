@@ -1,0 +1,23 @@
+.index{
+    
+height: 100%;
+display: grid;
+grid-template-rows: 1fr 2fr;
+
+}
+
+#ilustration{
+    border: 2px solid grey;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: rgb(211, 97, 97);
+    margin-left: -55px;
+}
+
+#index{
+    border: 2px solid grey; 
+    background-color: rgb(211, 97, 97);
+    margin-bottom: 10px;
+    margin-left: -55px;
+margin-top: -20px;
+}

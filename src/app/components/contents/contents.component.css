@@ -1,0 +1,21 @@
+.contents{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+height: 100%;
+}
+
+.preamble{
+    border: 2px solid grey;
+    background-color: rgb(167, 167, 243);
+    margin-top: 5px;
+    margin-bottom: 35px;
+    margin-right: -20px;
+    margin-left: -20px;
+
+ 
+}
+
+
+
+
+

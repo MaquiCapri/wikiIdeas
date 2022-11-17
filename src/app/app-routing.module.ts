@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SelectionComponent } from './components/selection/selection.component';
+import { HomeComponent } from './home/home.component';
+import { SectionComponent } from './home/section/section.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '',component: HomeComponent},
+  { path: 'selection',component: SelectionComponent},
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

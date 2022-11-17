@@ -1,0 +1,17 @@
+.container-fluid{
+    background-color: #3AAEAB;    
+    color: #FFFFFF;
+    font-style: normal;
+    font-family: 'Inter';
+    display: grid;
+    grid-template-rows: 80px 30px 30px 30px ;
+}
+
+div{
+    display: flex;
+    
+}
+
+p{
+    margin-left: 15px;
+}

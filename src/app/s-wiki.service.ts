@@ -7,12 +7,12 @@ import { Wiki } from './wiki';
   providedIn: 'root'
 })
 export class SWikiService {
-  URL = 'https://wikideas.onrender.com/temas';
+  URL ='https://wikideas.onrender.com/temas';
   
    constructor(private http: HttpClient) { }
 
   public getTemas(): Observable<Wiki>{
-    return this.http.get<Wiki>(this.URL);
+    return this.http.get<Wiki>(this.URL + "/titulo");
   }
 }
 

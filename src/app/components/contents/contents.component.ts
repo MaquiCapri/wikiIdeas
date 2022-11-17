@@ -8,7 +8,7 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./contents.component.css']
 })
 export class ContentsComponent implements OnInit {
-  Wiki : Wiki = new Wiki("", "", "", "", "","","");  
+  Wiki : Wiki = new Wiki("","","","","","","");  
 
   constructor( private datosWiki: SWikiService) { }
 

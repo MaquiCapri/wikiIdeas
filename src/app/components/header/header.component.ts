@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  edit(){
-    this.router.navigate(['edit']);
+  crear(){
+    this.router.navigate(['crear']);
   }
 }

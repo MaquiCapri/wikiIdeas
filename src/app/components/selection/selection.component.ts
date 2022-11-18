@@ -9,11 +9,10 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./selection.component.css']
 })
 export class SelectionComponent implements OnInit {
-Wiki : Wiki = new Wiki("", "", "", "", "","","");  
-  constructor(private router: Router, private datosWiki: SWikiService) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-    this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
   }
 
 }

@@ -15,6 +15,11 @@ import { SectionComponent } from './home/section/section.component';
 import { FooterHComponent } from './home/footer-h/footer-h.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from'@angular/common/http';
+import { EditComponent } from './edit/edit.component';
+import { NavComponent } from './edit/nav/nav.component';
+import { FooterEComponent } from './edit/footerE/footerE.component';
+
+import { TextComponent } from './edit/text/text.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,11 @@ import { HttpClientModule} from'@angular/common/http';
     HomeComponent,
     NavbarComponent,
     SectionComponent,
-    FooterHComponent
+    FooterHComponent,
+    EditComponent,
+    NavComponent,
+    FooterEComponent,
+    TextComponent
   ],
   imports: [
     BrowserModule,

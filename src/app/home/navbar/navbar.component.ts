@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-edit(){
-  this.router.navigate(['edit']);
+create(){
+  this.router.navigate(['create']);
 }
 }

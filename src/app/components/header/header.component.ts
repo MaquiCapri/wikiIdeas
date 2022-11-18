@@ -13,6 +13,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   crear(){
-    this.router.navigate(['crear']);
+    this.router.navigate(['create']);
   }
 }

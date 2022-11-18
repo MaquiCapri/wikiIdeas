@@ -19,32 +19,40 @@ import { CreateComponent } from './create/create.component';
 import { NavComponent } from './create/nav/nav.component';
 import { FooterEComponent } from './create/footerE/footerE.component';
 import { TextComponent } from './create/text/text.component';
+import { EditComponent } from './edit/edit.component';
+import { NavEComponent } from './edit/nav-e/nav-e.component';
+import { EditionComponent } from './edit/edition/edition.component';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    AsideComponent,
-    ContentsComponent,
-    IndexComponent,
-    ToolsComponent,
-    HeaderComponent,
-    FooterComponent,
-    SelectionComponent,
-    HomeComponent,
-    NavbarComponent,
-    SectionComponent,
-    FooterHComponent,
-    CreateComponent,
-    NavComponent,
-    FooterEComponent,
-    TextComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AsideComponent,
+        ContentsComponent,
+        IndexComponent,
+        ToolsComponent,
+        HeaderComponent,
+        FooterComponent,
+        SelectionComponent,
+        HomeComponent,
+        NavbarComponent,
+        SectionComponent,
+        FooterHComponent,
+        CreateComponent,
+        NavComponent,
+        FooterEComponent,
+        TextComponent,
+        EditComponent,
+        NavEComponent,
+        EditionComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        
+    ]
 })
 export class AppModule { }

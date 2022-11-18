@@ -7,12 +7,12 @@ import { Wiki } from './wiki';
   providedIn: 'root'
 })
 export class SWikiService {
-  URL ='https://wikideas.onrender.com/';
+  URL ='https://wikideas.onrender.com/temas/pantalones de mezclilla';
   
    constructor(private http: HttpClient) { }
 
    public getTemas(): Observable<Wiki>{
-    return this.http.get<Wiki>(this.URL + 'temas/');
+    return this.http.get<Wiki>(this.URL);
    }
 
   // public lista(): Observable<Wiki[]>{

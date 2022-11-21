@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { SectionComponent } from './home/section/section.component';
 import { FooterHComponent } from './home/footer-h/footer-h.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from'@angular/common/http';
 import { CreateComponent } from './create/create.component';
 import { NavComponent } from './create/nav/nav.component';
@@ -52,6 +52,7 @@ import { EditionComponent } from './edit/edition/edition.component';
         AppRoutingModule,
         HttpClientModule,
         FormsModule,
+        ReactiveFormsModule
         
     ]
 })

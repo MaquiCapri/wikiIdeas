@@ -8,14 +8,17 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./contents.component.css']
 })
 export class ContentsComponent implements OnInit {
-   Wiki : Wiki = new Wiki("","","","","","","");
-  // Wiki: Wiki[] = [];
+    Wiki : Wiki = new Wiki("","","","","","","");
+  //  Wiki: Wiki[] = [];
   constructor( private datosWiki: SWikiService) { }
 
   ngOnInit(): void {
-     this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
-    // this.datosWiki.lista().subscribe(data => { this.Wiki = data; })
+      this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
+    //  this.temas();
   }
 
+  // temas(): void{
+    // this.datosWiki.lista().subscribe(data => { this.Wiki = data; })
+  // }
 
 }

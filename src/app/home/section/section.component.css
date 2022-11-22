@@ -17,19 +17,22 @@
     height: 180px;
     width: 220px;
     margin: 20px 280px;
-    
 cursor: pointer;
-opacity: 0.8;
-
 
 }
+
+ul{
+    position: absolute;
+text-decoration-line: underline;
+text-align: start;
+}
+
 #ciencia{
      background-image: url(/assets/cerebro1.jpg);  
     height: 180px;
     width: 220px; 
     margin: 20px 520px;
 cursor: pointer;
-opacity: 0.6;
 
 }
 
@@ -40,18 +43,24 @@ opacity: 0.6;
     margin: 10px 280px;
     margin-bottom: 40px;
 cursor: pointer;
-opacity: 0.8;
 }
 
 #regiones{
       position: absolute; 
-     background-image: url(/assets/maps1.png);   
+      background-image: url(/assets/maps1.png);    
     height: 180px;
     width: 220px; 
     margin: 10px 520px;
 cursor: pointer;
-opacity: 0.5;
+
 }
+img{
+    border: 2px solid black;
+    border-radius: 20px; 
+    background-color: #DDF1F0;
+
+}
+
 
 h5{
     

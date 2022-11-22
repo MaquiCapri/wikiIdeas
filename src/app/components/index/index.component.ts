@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SWikiService } from 'src/app/s-wiki.service';
+import { Wiki } from 'src/app/wiki';
 
 @Component({
   selector: 'app-index',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
-  constructor() { }
+  Wiki : Wiki = new Wiki("","","","","","","");
+  constructor( private datosWiki: SWikiService) { }
 
   ngOnInit(): void {
+    this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
+
   }
 
 }

@@ -8,9 +8,39 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 <link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
+
 <body>
+ 
   <app-root></app-root>
-<script src="runtime.2f3b04bc11b2a6cb.js" type="module"></script><script src="polyfills.f860b0476537abbf.js" type="module"></script><script src="main.cc0dfdb8d74db0ad.js" type="module"></script>
+
+<script src="runtime.2f3b04bc11b2a6cb.js" type="module"></script><script src="polyfills.f860b0476537abbf.js" type="module"></script><script src="main.202bace3cdc7a7fe.js" type="module"></script>
+<script>
+  $(document).ready(function(){
+          $(".list").hide();
+          $(".list1").hide();
+          $(".list2").hide();
+          $(".list3").hide();
+
+          $("#cultura").hover(function(){$(".list").show();
+$("#culture").hide();}, function(){$(".list").hide();
+$("#culture").show();});
+
+$("#ciencia").hover(function(){$(".list1").show();
+$("#science").hide();}, function(){$(".list1").hide();
+$("#science").show();});
+ 
+  $("#historia").hover(function(){$(".list2").show();
+$("#history").hide();}, function(){$(".list2").hide();
+$("#history").show();});
+ 
+  $("#regiones").hover(function(){$(".list3").show();
+$("#region").hide();}, function(){$(".list3").hide();
+$("#region").show();});
+  });
+ 
+</script>
+
 
 </body></html>

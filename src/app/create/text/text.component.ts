@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SCreateService } from 'src/app/s-create.service';
-import { Theme } from 'src/app/theme';
+import { SWikiService } from 'src/app/s-wiki.service';
+
+import { Wiki } from 'src/app/wiki';
 
 @Component({
   selector: 'app-text',
@@ -10,9 +12,19 @@ import { Theme } from 'src/app/theme';
   styleUrls: ['./text.component.css']
 })
 export class TextComponent implements OnInit {
- theme: string = '';
-  constructor(private router:Router,private sCreate: SCreateService, private formBuilder: FormBuilder) { }
 
+  constructor( private datosWiki: SWikiService, private router:Router,private sCreate: SCreateService, private formBuilder: FormBuilder) { }
+  
+  saveForm = new FormGroup({
+    titulo:new FormControl(''),
+    imagen: new FormControl(''),
+    categoria: new FormControl(''),
+    indice: new FormControl(''),
+    preambulo: new FormControl(''),
+    contenido: new FormControl(''),
+    info_general: new FormControl(''),
+  });
+ 
   ngOnInit(): void {
     
   }
@@ -20,16 +32,28 @@ home(){
   this.router.navigate(['']);  
 }
 
-onCreate(): void {
-   const theme = new Theme(this.theme);
-   this.sCreate.save(theme).subscribe(data => {
-     alert("Texto añadido");
-     this.router.navigate(['']);
-   }, err => {
-     alert("Falló");
-     this.router.navigate(['create']);
+postForm(form: Wiki){
+this.datosWiki.save(form).subscribe(data =>{
+  // console.log(data);
+  alert("Texto añadido");
+      this.router.navigate(['']);
+    }, err => {
+      alert("Falló");
+      this.router.navigate(['create']);
+})
+ 
+}
 
-   })
+// onCreate(): void {
+  //  const theme = new Theme(this.theme);
+  //  this.sCreate.save(theme).subscribe(data => {
+    //  alert("Texto añadido");
+    //  this.router.navigate(['']);
+  //  }, err => {
+    //  alert("Falló");
+    //  this.router.navigate(['create']);
 
- }
+  //  })
+
+//  }
 }

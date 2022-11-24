@@ -9,7 +9,6 @@ margin-left: -55px;
  #ilustration{ 
     margin-bottom: 30px;
     background-color: rgb(202, 202,202);
-     /* margin-left: -55px;  */
     color: white;
     width: 200px;
 border-radius: 40px;
@@ -20,10 +19,12 @@ border-radius: 40px;
    color: #FFFFFF;
     background-color:#17252A;
     margin-bottom: 10px;
-   /* margin-left: -55px;  */
    border-radius: 40px;
 
 }
  img{
    border-radius: 20px;
+ }
+ #list{
+   text-decoration-line: underline;
  }

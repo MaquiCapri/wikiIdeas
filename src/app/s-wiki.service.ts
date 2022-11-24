@@ -15,6 +15,9 @@ export class SWikiService {
      return this.http.get<Wiki>(this.URL + 'Tigre de bengala');
     }
 
+     save(form: Wiki): Observable<any>{
+      return this.http.post<any>(this.URL, form);
+    }
   //  public lista(): Observable<Wiki[]>{
     //  return this.http.get<Wiki[]>(this.URL + 'pantalones de mezclilla');
   //  }

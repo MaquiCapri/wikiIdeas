@@ -10,7 +10,5 @@ export class SCreateService {
  
   constructor(private http: HttpClient) { }
 
-    public save(theme: Theme): Observable<any>{
-      return this.http.post<any>(this.URL, theme);
-    }
+    
 }

@@ -4,8 +4,6 @@
     grid-template-columns:100px 850px ;
     padding: 0px;
     background-color: #DDF1F0;
-
-
 }
 
 .tool{
@@ -13,13 +11,11 @@
     color: rgb(10, 10, 10);
       height:105%;  
     padding-top: 10px;
-
 }
 
 .text{
     display: grid;
     grid-template-rows:30px 60px 360px  ;
-
 }
 .navTools{
     display: grid;
@@ -29,10 +25,18 @@
 h5{
     margin: 20px 20px;
 }
-
 button{
     border: none;
     background-color: #DDF1F0;
+
+}
+#button{
+    border: none;
+    background-color: #141414;
+    margin-top: -1050px;
+     margin-left:820px; 
+     height: 29px;
+   
 }
 
 #input{

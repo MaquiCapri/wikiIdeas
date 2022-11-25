@@ -1,16 +1,15 @@
 .container-fluid {
     color: #FFFFFF;
-    text-align: center;
+    text-align: center;   
 }
 
 .col-6 {
-
     border: 2px solid #17252A;
     border-radius: 20px;
 }
 
 #cultura {
-    position: absolute;
+     position: absolute; 
     background-image: url(/assets/monaLisa4.jpg);
     height: 180px;
     width: 220px;
@@ -48,7 +47,7 @@ ul {
 }
 
 #regiones {
-    position: absolute;
+     position: absolute; 
     background-image: url(/assets/maps1.png);
     height: 180px;
     width: 220px;
@@ -73,3 +72,22 @@ h5 {
 }
 
 
+@media (max-width: 850px) {
+    #regiones{
+    position: relative;
+    margin-left: 150px;
+    } 
+    #cultura{
+        position: relative;
+        margin-left: 150px;
+        } 
+
+        #historia{
+            margin-left: 150px;
+
+        }
+        #ciencia{
+            margin-left: 150px;
+
+        }
+}

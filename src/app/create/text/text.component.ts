@@ -5,6 +5,7 @@ import { SCreateService } from 'src/app/s-create.service';
 import { SWikiService } from 'src/app/s-wiki.service';
 
 import { Wiki } from 'src/app/wiki';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-text',
@@ -12,7 +13,7 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./text.component.css']
 })
 export class TextComponent implements OnInit {
-
+ 
   constructor( private datosWiki: SWikiService, private router:Router,private sCreate: SCreateService, private formBuilder: FormBuilder) { }
   
   saveForm = new FormGroup({
@@ -34,26 +35,23 @@ home(){
 
 postForm(form: Wiki){
 this.datosWiki.save(form).subscribe(data =>{
-  // console.log(data);
-  alert("Texto añadido");
-      this.router.navigate(['']);
+  Swal.fire({
+    title: 'Enviado correctamente',
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
+ 
+  // alert("Texto añadido");
+      this.router.navigate(['create']);
     }, err => {
       alert("Falló");
       this.router.navigate(['create']);
 })
- 
+
+
 }
-
-// onCreate(): void {
-  //  const theme = new Theme(this.theme);
-  //  this.sCreate.save(theme).subscribe(data => {
-    //  alert("Texto añadido");
-    //  this.router.navigate(['']);
-  //  }, err => {
-    //  alert("Falló");
-    //  this.router.navigate(['create']);
-
-  //  })
-
-//  }
 }

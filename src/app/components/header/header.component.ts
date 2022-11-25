@@ -15,4 +15,8 @@ export class HeaderComponent implements OnInit {
   crear(){
     this.router.navigate(['create']);
   }
+
+  home(){
+    this.router.navigate(['']);
+  }
 }

@@ -8,7 +8,7 @@ import { Wiki } from './wiki';
 })
 export class SWikiService {
   URL ='https://wikideas.onrender.com/temas/';
-  url: string ='https://wikideas.onrender.com/temas/query=';
+  url: string ='https://wikideas.onrender.com/temas?query=';
    constructor(private http: HttpClient) { }
 
     public getTemas(): Observable<Wiki>{

@@ -8,7 +8,7 @@ import { Wiki } from './wiki';
 })
 export class SWikiService {
   URL ='https://wikideas.onrender.com/temas/';
-  
+  url: string ='https://wikideas.onrender.com/temas/query=';
    constructor(private http: HttpClient) { }
 
     public getTemas(): Observable<Wiki>{
@@ -17,10 +17,12 @@ export class SWikiService {
 
      save(form: Wiki): Observable<any>{
       return this.http.post<any>(this.URL, form);
+    };
+
+    getTheme(searchTerm: string): Observable<any>{
+     return this.http.get(this.url + searchTerm);
     }
-  //  public lista(): Observable<Wiki[]>{
-    //  return this.http.get<Wiki[]>(this.URL + 'pantalones de mezclilla');
-  //  }
+
   
 }
 

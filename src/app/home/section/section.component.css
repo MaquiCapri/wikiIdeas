@@ -5,12 +5,12 @@
 
 .col-6 {
     border: 2px solid #17252A;
-    border-radius: 20px;
+ 
 }
 
 #cultura {
      position: absolute; 
-    background-image: url(/assets/monaLisa4.jpg);
+   
     height: 180px;
     width: 220px;
     margin: 20px 280px;
@@ -30,7 +30,6 @@ ul {
 }
 
 #ciencia {
-    background-image: url(/assets/cerebro1.jpg);
     height: 180px;
     width: 220px;
     margin: 20px 520px;
@@ -38,7 +37,7 @@ ul {
 }
 
 #historia {
-    background-image: url(/assets/guerra1.png);
+    
     height: 180px;
     width: 220px;
     margin: 10px 280px;
@@ -48,7 +47,6 @@ ul {
 
 #regiones {
      position: absolute; 
-    background-image: url(/assets/maps1.png);
     height: 180px;
     width: 220px;
     margin: 10px 520px;
@@ -57,7 +55,7 @@ ul {
 
 img {
     border: 2px solid black;
-    border-radius: 20px;
+   
     background-color: #DDF1F0;
 }
 

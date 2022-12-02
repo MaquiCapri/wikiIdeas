@@ -22,7 +22,6 @@ import { TextComponent } from './create/text/text.component';
 import { EditComponent } from './edit/edit.component';
 import { NavEComponent } from './edit/nav-e/nav-e.component';
 import { EditionComponent } from './edit/edition/edition.component';
-
 @NgModule({
     declarations: [
         AppComponent,
@@ -52,8 +51,8 @@ import { EditionComponent } from './edit/edition/edition.component';
         AppRoutingModule,
         HttpClientModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
         
-    ]
+    ],
 })
 export class AppModule { }

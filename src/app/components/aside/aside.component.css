@@ -3,7 +3,6 @@
     height: 80%; 
     margin-bottom: 15px;  
     color: #FFFFFF;
-    border-radius: 40px;
     font-family: 'SF Pro Display';
 }
  .info{
@@ -16,7 +15,6 @@
  }
  
  img{
-   border-radius: 20px;
     margin-left: 15px;  
  }
 

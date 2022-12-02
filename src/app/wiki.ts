@@ -16,5 +16,7 @@ export class Wiki {
         this.preambulo = preambulo;
         this.contenido = contenido;
         this.info_general = info_general;
+       
+
     }
 }

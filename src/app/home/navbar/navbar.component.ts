@@ -1,5 +1,9 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { debounceTime, finalize, Observable } from 'rxjs';
+import { SWikiService } from 'src/app/s-wiki.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,11 +12,19 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 
   ngOnInit(): void {
+    
   }
 create(){
   this.router.navigate(['create']);
 }
+ 
+getTheme(searchTerm: string){
+  this.datosWiki.getTheme(searchTerm).subscribe(data => {
+    console.log(searchTerm)
+  })
+}
+
 }

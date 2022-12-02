@@ -11,7 +11,7 @@ import { SWikiService } from 'src/app/s-wiki.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+theme : any[] = [];
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -22,9 +22,11 @@ create(){
 }
  
 getTheme(searchTerm: string){
-  this.datosWiki.getTheme(searchTerm).subscribe(data => {
-    console.log(searchTerm)
-  })
+ 
+   this.datosWiki.getTheme(searchTerm).subscribe(data => {
+     this.theme =data;
+     console.log(data);
+   })
 }
 
 }

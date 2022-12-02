@@ -22,6 +22,7 @@ import { TextComponent } from './create/text/text.component';
 import { EditComponent } from './edit/edit.component';
 import { NavEComponent } from './edit/nav-e/nav-e.component';
 import { EditionComponent } from './edit/edition/edition.component';
+import { ListThemeComponent } from './home/list-theme/list-theme.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -42,7 +43,8 @@ import { EditionComponent } from './edit/edition/edition.component';
         TextComponent,
         EditComponent,
         NavEComponent,
-        EditionComponent
+        EditionComponent,
+        ListThemeComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

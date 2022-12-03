@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-theme',
@@ -8,10 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ListThemeComponent implements OnInit {
 @Input('theme') theme: any;
  
-constructor() { }
+constructor(private router:Router) { }
 
   ngOnInit(): void {
-    console.log(this.theme);
+    // console.log(this.theme);
   }
 
+  selection(){
+  this.router.navigate(['selection']);
+}
 }

@@ -11,9 +11,14 @@ export class SWikiService {
   url: string ='https://wikideas.onrender.com/temas?query=';
    constructor(private http: HttpClient) { }
 
-    public getTemas(): Observable<Wiki>{
-     return this.http.get<Wiki>(this.URL + 'Tigre de bengala');
-    }
+    getTemas(): Observable<Wiki>{
+      return this.http.get<Wiki>(this.URL + 'pantalones de mezclilla');
+       }
+
+      // getTemas(tema : string): Observable<any>{
+      //  return this.http.get(this.URL + tema);
+      // }
+    
 
      save(form: Wiki): Observable<any>{
       return this.http.post<any>(this.URL, form);

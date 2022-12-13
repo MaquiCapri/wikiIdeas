@@ -8,15 +8,15 @@ import { Wiki } from './wiki';
 })
 export class SWikiService {
   URL ='https://wikideas.onrender.com/temas/';
-  url: string ='https://wikideas.onrender.com/temas?query=';
+  url ='https://wikideas.onrender.com/temas?query=';
 
   
   constructor(private http: HttpClient) { }
 
-     getTemas(id: string): Observable<Wiki>{
-       return this.http.get<Wiki>(this.url  + `moda/${id}` );
+     getTemas(id: number): Observable<Wiki>{
+       return this.http.get<Wiki>(this.URL + id);
         }
-
+        // `${id}`
         // getTemas(tema: string): Observable<Wiki>{
         // return this.http.get<Wiki>(this.URL);
       //  }

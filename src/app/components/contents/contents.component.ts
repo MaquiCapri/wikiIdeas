@@ -16,7 +16,8 @@ wiki:any= {};
     
   constructor( private datosWiki: SWikiService, private http: HttpClient, private activatedRoute: ActivatedRoute) { 
     this.activatedRoute.params.subscribe( params =>{
-      this.wiki=  this.datosWiki.getTemas(params ['id']);
+      this.datosWiki.getTemas(params ['id']).subscribe(data => { this.wiki = data });
+      // this.wiki=  this.datosWiki.getTemas(params ['id']); 
       console.log(this.wiki);
    });
 
@@ -26,9 +27,9 @@ wiki:any= {};
     
   }
 
-  // getTemas(tema: string){
-    // this.datosWiki.getTemas(tema).subscribe(data => { this.Wiki = data });
-  // }
+  //  getTemas(id: number){
+    //  this.datosWiki.getTemas(id).subscribe(data => { this.wiki = data });
+  //  }
 
   // getTheme(searchTerm: string){
  

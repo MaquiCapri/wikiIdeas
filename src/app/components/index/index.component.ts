@@ -13,7 +13,7 @@ export class IndexComponent implements OnInit {
   constructor( private datosWiki: SWikiService) { }
 
   ngOnInit(): void {
-   this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
+  //  this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
 
   }
   // getTemas(tema: string){

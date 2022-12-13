@@ -11,11 +11,11 @@ export class AsideComponent implements OnInit {
   constructor(private datosWiki: SWikiService) { }
 
   ngOnInit(): void {
-     this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
+      // this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })
   
   }
-  // getTemas(tema: string){
-    // this.datosWiki.getTemas(tema).subscribe(data => { this.Wiki = data });
-  // }
+  //  getTemas(tema :string){
+    //  this.datosWiki.getTemas(tema).subscribe(data => { this.Wiki = data });
+  //  }
 
 }

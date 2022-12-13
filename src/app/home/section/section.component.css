@@ -1,20 +1,24 @@
-.container-fluid {
+.flex-container {
+ /* display: flex;  */
     color: #FFFFFF;
-    text-align: center;   
+    text-align: center;
+    height: 100%;
+     /* justify-content: center;     */
+    
 }
 
-.col-6 {
+/* .col-6 {
     border: 2px solid #17252A;
- 
-}
+
+/* } */
 
 #cultura {
-     position: absolute; 
-   
+      position: absolute;  
     height: 180px;
     width: 220px;
-    margin: 20px 280px;
+     margin: 20px 280px; 
     cursor: pointer;
+    
 }
 
 ul {
@@ -32,33 +36,30 @@ ul {
 #ciencia {
     height: 180px;
     width: 220px;
-    margin: 20px 520px;
+     margin: 20px 520px; 
     cursor: pointer;
 }
 
 #historia {
-    
     height: 180px;
     width: 220px;
-    margin: 10px 280px;
-    margin-bottom: 40px;
+     margin: 10px 280px; 
+     margin-bottom: 40px; 
     cursor: pointer;
 }
 
 #regiones {
-     position: absolute; 
+      position: absolute;  
     height: 180px;
     width: 220px;
-    margin: 10px 520px;
+     margin: 10px 520px; 
     cursor: pointer;
 }
 
 img {
     border: 2px solid black;
-   
     background-color: #DDF1F0;
 }
-
 
 h5 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -69,23 +70,34 @@ h5 {
     background: #17252A;
 }
 
-
-@media (max-width: 850px) {
-    #regiones{
+@media (max-width: 780px) {
+    .container-fluid{
+        width:840px;
+        height: 600px;
+    }
+     /* #regiones{
     position: relative;
-    margin-left: 150px;
-    } 
+     margin-left: 150px;
+    }
     #cultura{
         position: relative;
-        margin-left: 150px;
-        } 
+         margin-left: 150px;
+        }  */
 
-        #historia{
-            margin-left: 150px;
+/* } */
+/* @media (max-width: 772px) { */
 
-        }
-        #ciencia{
-            margin-left: 150px;
-
-        }
+    /* .container-fluid{  */
+        /* height: 1000px;  */
+    /* }  */
+/*  */
+ }
+@media (max-width: 640px) {
+    .container-fluid{
+    height: 800px;
+    }
 }
+
+
+
+

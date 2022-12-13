@@ -54,4 +54,9 @@ border-radius: 40px;
 
 }
 
-
+@media (max-width: 850px) {
+    .navbar{
+        width: 100%;
+       
+    }
+}

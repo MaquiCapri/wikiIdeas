@@ -8,6 +8,7 @@ import { SectionComponent } from './home/section/section.component';
 const routes: Routes = [
   { path: '',component: HomeComponent},
   { path: 'selection',component: SelectionComponent},
+  { path: 'selection/:id',component: SelectionComponent},
   { path: 'create',component: CreateComponent},
 
 

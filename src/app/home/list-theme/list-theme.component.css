@@ -1,0 +1,7 @@
+.container{
+    /* position: absolute; */
+    width: 250px;
+    background-color: rgb(4, 46, 33);
+    color:beige;
+    margin-left: 100px;
+}

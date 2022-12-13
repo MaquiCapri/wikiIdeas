@@ -1,7 +1,10 @@
 
 <div class="container">
-    <table>
-        <tr (click)="selection()" #tema>{{theme.titulo}}</tr>
+    <table  >
+        <tr>
+            <td routerLink="/selection/{{theme.id}}">{{theme.titulo}}<hr></td>
+            
+        </tr>
     </table>
 
 

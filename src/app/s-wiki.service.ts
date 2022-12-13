@@ -9,17 +9,20 @@ import { Wiki } from './wiki';
 export class SWikiService {
   URL ='https://wikideas.onrender.com/temas/';
   url: string ='https://wikideas.onrender.com/temas?query=';
-   constructor(private http: HttpClient) { }
 
-    getTemas(): Observable<Wiki>{
-      return this.http.get<Wiki>(this.URL + 'pantalones de mezclilla');
-       }
+  
+  constructor(private http: HttpClient) { }
 
-      // getTemas(tema : string): Observable<any>{
-      //  return this.http.get(this.URL + tema);
-      // }
+     getTemas(id: string): Observable<Wiki>{
+       return this.http.get<Wiki>(this.url  + `moda/${id}` );
+        }
+
+        // getTemas(tema: string): Observable<Wiki>{
+        // return this.http.get<Wiki>(this.URL);
+      //  }
+
+     
     
-
      save(form: Wiki): Observable<any>{
       return this.http.post<any>(this.URL, form);
     };
@@ -28,7 +31,11 @@ export class SWikiService {
      return this.http.get(this.url + searchTerm);
     }
 
-  
+    //  getTemas(id: string){
+      //  return this.Wiki[id];
+    //  }
+
+ 
 }
 
  

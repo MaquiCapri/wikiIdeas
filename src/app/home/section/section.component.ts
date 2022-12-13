@@ -10,9 +10,8 @@ import { HomeService } from 'src/app/home.service';
 export class SectionComponent implements OnInit {
 
   constructor(private router: Router, private sHome :HomeService ) { 
-    this.sHome.loadScript();}
-  
-    
+     this.sHome.loadScript();
+  }
   
   ngOnInit(): void {
   }

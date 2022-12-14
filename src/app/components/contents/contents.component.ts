@@ -11,13 +11,12 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./contents.component.css']
 })
 export class ContentsComponent implements OnInit {
-  //  Wiki : Wiki = new Wiki("","","","","","","");
 wiki:any= {};
     
   constructor( private datosWiki: SWikiService, private http: HttpClient, private activatedRoute: ActivatedRoute) { 
     this.activatedRoute.params.subscribe( params =>{
       this.datosWiki.getTemas(params ['id']).subscribe(data => { this.wiki = data });
-      // this.wiki=  this.datosWiki.getTemas(params ['id']); 
+
       console.log(this.wiki);
    });
 

@@ -23,10 +23,17 @@ create(){
  
 getTheme(searchTerm: string){
  
-   this.datosWiki.getTheme(searchTerm).subscribe(data => {
-     this.themes =data;
-     console.log(data);
+   this.datosWiki.getTheme(searchTerm).subscribe(themes => {
+     this.themes =themes;
+     console.log(themes);
    })
 }
+
+// getTheme(searchTerm: string){
+ 
+//   this.datosWiki.getTheme(searchTerm).subscribe(data => {
+//     this.themes =data;
+//     console.log(data);
+//   })
 
 }

@@ -1,14 +1,23 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { SWikiService } from 'src/app/s-wiki.service';
-import { Wiki } from 'src/app/wiki';
+
 @Component({
   selector: 'app-aside',
   templateUrl: './aside.component.html',
   styleUrls: ['./aside.component.css']
 })
 export class AsideComponent implements OnInit {
-  Wiki : Wiki = new Wiki("","","","","","","");
-  constructor(private datosWiki: SWikiService) { }
+  wiki:any= {};
+  
+  constructor(private datosWiki: SWikiService, private http: HttpClient, private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.params.subscribe( params =>{
+      this.datosWiki.getTemas(params ['id']).subscribe(data => { this.wiki = data });
+
+      console.log(this.wiki);
+   });
+   }
 
   ngOnInit(): void {
       // this.datosWiki.getTemas().subscribe(data => { this.Wiki = data })

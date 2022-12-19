@@ -55,6 +55,10 @@ button{
     display: grid;
     grid-template-columns:35% 65% ;  
 }
+#form{
+    height: 150px;
+}
+
 
 
 

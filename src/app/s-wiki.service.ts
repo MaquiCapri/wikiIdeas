@@ -9,8 +9,7 @@ import { Wiki } from './wiki';
 export class SWikiService {
   URL ='https://wikideas.onrender.com/temas/';
   url ='https://wikideas.onrender.com/temas?query=';
-
-  
+ 
   constructor(private http: HttpClient) { }
 
      getTemas(id: number): Observable<Wiki>{
@@ -24,12 +23,7 @@ export class SWikiService {
     getTheme(searchTerm: string): Observable<any>{
      return this.http.get(this.url + searchTerm);
     }
-
-    //  getTemas(id: string){
-      //  return this.Wiki[id];
-    //  }
-
- 
+   
 }
 
  

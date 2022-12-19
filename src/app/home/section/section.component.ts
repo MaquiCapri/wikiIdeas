@@ -11,7 +11,6 @@ import { SWikiService } from 'src/app/s-wiki.service';
 })
 export class SectionComponent implements OnInit {
   themes : any[] = [];
-// search: any;
 
   constructor(private router: Router, private sHome :HomeService, private datosWiki: SWikiService, private http: HttpClient ) { 
      this.sHome.loadScript();
@@ -25,8 +24,7 @@ export class SectionComponent implements OnInit {
   }
 
   getTheme(searchTerm: string){
- 
-    this.datosWiki.getTheme(searchTerm).subscribe(themes => {
+     this.datosWiki.getTheme(searchTerm).subscribe(themes => {
       this.themes =themes;
       console.log(themes);
     })

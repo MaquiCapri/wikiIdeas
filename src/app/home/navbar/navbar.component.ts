@@ -4,6 +4,7 @@ import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime, finalize, Observable } from 'rxjs';
 import { SWikiService } from 'src/app/s-wiki.service';
+import { Wiki } from 'src/app/wiki';
 
 @Component({
   selector: 'app-navbar',
@@ -11,35 +12,30 @@ import { SWikiService } from 'src/app/s-wiki.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-themes : any[] = [];
+themes: any[] = [];
 
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
   }
 create(){
   this.router.navigate(['create']);
 }
- 
-getTheme(searchTerm: string){
- 
-   this.datosWiki.getTheme(searchTerm).subscribe(themes => {
-     this.themes =themes;
-     console.log(themes);
-   })
-}
 
-home(){
-  alert("hola");
-  this.router.navigate(['']);
-}
+//  getTheme(searchTerm: string){
+//    this.datosWiki.getTheme(searchTerm).subscribe(data => {
+//      this.themes =data;
+//      console.log(data);
+//   });
 
-// getTheme(searchTerm: string){
+// }
+
  
-//   this.datosWiki.getTheme(searchTerm).subscribe(data => {
-//     this.themes =data;
-//     console.log(data);
-//   })
-
-}
+ getTheme(searchTerm: string){
+ 
+    this.datosWiki.getTheme(searchTerm).subscribe(themes => {
+      this.themes =themes;
+      console.log(themes);
+    })
+ }
+};

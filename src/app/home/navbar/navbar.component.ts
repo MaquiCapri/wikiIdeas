@@ -12,6 +12,7 @@ import { SWikiService } from 'src/app/s-wiki.service';
 })
 export class NavbarComponent implements OnInit {
 themes : any[] = [];
+
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -27,6 +28,11 @@ getTheme(searchTerm: string){
      this.themes =themes;
      console.log(themes);
    })
+}
+
+home(){
+  alert("hola");
+  this.router.navigate(['']);
 }
 
 // getTheme(searchTerm: string){

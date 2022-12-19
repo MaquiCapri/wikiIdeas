@@ -1,25 +1,32 @@
 <section class="container">
         <div class="estructure">
-                <div class="container-prod" id="cultura" style="background-image:url('./assets/monaLisa4.jpg')">
+                <div class="container-prod" id="cultura"  style="background-image:url('./assets/monaLisa4.jpg')">
                       
                         <h5 id="culture">CULTURA</h5>
+                        <div class="listTheme2">
+                                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
+                        </div>
                         <ul class="list" style="color: #FFFFFF; font-size: 13px;">
                                 <li (click)="selection()">Arquitectura</li>
-                                <li>Arte</li>
-                                <li>Cine y televisión</li>
-                                <li>Comic y anime</li>
-                                <li>Deporte</li>
-                                <li>Entretenimiento</li>
-                                <li>Literatura</li>
-                                <li>Moda</li>
-                                <li>Música</li>
+                                 <div><button value="arte" #search (click)="getTheme(search.value)">Arte</button></div>   
+                         <button #search1  value="cine y television" (click)="getTheme(search1.value)">Cine y televisión</button>  
+                                <div><button  value="comic y anime" #search2 (click)="getTheme(search2.value)">Comic y Anime</button></div>
+                                <div><button  value="deporte" #search3 (click)="getTheme(search3.value)">Deporte</button></div>
+                                <div><button  value="entretenimiento" #search4 (click)="getTheme(search4.value)">Entretenimiento</button></div>
+                                <!-- <div><buttonEntretenimiento</div> -->
+                              <div><button value="moda" #search6 (click)="getTheme(search6.value)" >Moda</button></div>          
+                                <!-- <div><buttonLiteratura</div> -->
+                                <!-- <div><button Música</div> -->
+                                <!-- <div><button Videos Juegos</div> -->
                         </ul>
+                        
+                       
                 </div>
                 <div class="container-prod" id="ciencia" style="background-image:url('./assets/cerebro1.jpg')">
 
                         <h5 id="science" style="margin-top: 60px;">CIENCIAS Y TECNOLOGÍA</h5>
 
-                        <ul class="list1" style="color: #FFFFFF; font-size: 13px; ">
+                         <ul class="list1" style="color: #FFFFFF; font-size: 13px; ">
                                 <li>Biología</li>
                                 <li>Ciencia</li>
                                 <li>Física</li>
@@ -29,7 +36,7 @@
                                 <li>Literatura</li>
                                 <li>Moda</li>
                                 <li>Música</li>
-                        </ul>
+                        </ul> 
               </div>
        </div>
         <div class="estructure">
@@ -65,4 +72,6 @@
                         </ul>
              </div>
         </div>
+       
+       
 </section>

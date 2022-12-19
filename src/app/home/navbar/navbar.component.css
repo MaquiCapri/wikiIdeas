@@ -1,7 +1,7 @@
 .navbar {
     background-color: #7FB5B5;
     display: grid;
-    grid-template-columns:auto 50% auto auto;
+    grid-template-columns:auto  50% auto auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 80px;    
 }
@@ -27,18 +27,6 @@
     border: none;
 }
 
-/* #editar {
-    margin-top: -15px;
-    height: 30px;
-    width: 14vw;
-    font-size: 14px;
-    padding: 3px;
-    background-color: #2B7A77;
-    color: #DDF1F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 40px;
-} */
 #button{
     margin-top: -15px;
     height: 30px;
@@ -51,15 +39,4 @@
     border: none;
     border-radius: 40px; 
 }
-/* #crear {
-    margin-top: -15px;
-    width: 14vw;
-    height: 30px;
-    font-size: 14px;
-    padding: 3px;
-    background-color: #2B7A77;
-    color: #DDF1F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 40px;
-} */
+

@@ -23,6 +23,7 @@ import { EditComponent } from './edit/edit.component';
 import { NavEComponent } from './edit/nav-e/nav-e.component';
 import { EditionComponent } from './edit/edition/edition.component';
 import { ListThemeComponent } from './home/list-theme/list-theme.component';
+import { List2ThemeComponent } from './home/list2-theme/list2-theme.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -44,7 +45,8 @@ import { ListThemeComponent } from './home/list-theme/list-theme.component';
         EditComponent,
         NavEComponent,
         EditionComponent,
-        ListThemeComponent
+        ListThemeComponent,
+        List2ThemeComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -16,13 +16,7 @@ export class SWikiService {
      getTemas(id: number): Observable<Wiki>{
        return this.http.get<Wiki>(this.URL + id);
         }
-        // `${id}`
-        // getTemas(tema: string): Observable<Wiki>{
-        // return this.http.get<Wiki>(this.URL);
-      //  }
-
-     
-    
+       
      save(form: Wiki): Observable<any>{
       return this.http.post<any>(this.URL, form);
     };

@@ -15,7 +15,4 @@ constructor(private router:Router) { }
     // console.log(this.theme);
   }
 
-  selection(){
-  this.router.navigate(['selection']);
-}
 }

@@ -19,5 +19,7 @@ export class IndexComponent implements OnInit {
   // getTemas(tema: string){
     // this.datosWiki.getTemas(tema).subscribe(data => { this.Wiki = data });
   // }
- 
+  getImagen(){
+    return this.Wiki.imagen;
+  }
 }

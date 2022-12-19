@@ -1,33 +1,49 @@
 <div class="container-fluid">
-   <div class="tool">  
-      <div id="tools" style="text-align: center;">
+    <div class="tool">
+        <div id="tools" style="text-align: center;">
             Herramientas:
-         <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore dolorum numquam recusandae dignissimos, illo, fugit quas cupiditate placeat impedit modi? Fuga id sit culpa praesentium repudiandae 
-               voluptatibus autem ea.
-         </p>
-       </div>
-   </div>
+            <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore dolorum
+                numquam recusandae dignissimos, illo, fugit quas cupiditate placeat impedit modi? Fuga id sit culpa
+                praesentium repudiandae
+                voluptatibus autem ea.
+            </p>
+        </div>
+    </div>
     <div class="text">
-       <div class="navTools">
-        <button id="" style="border-right: 1px solid #17252A;"><i class="bi bi-arrow-left-right" ></i></button>
-        <button id="" style="border-right: 1px solid #17252A;">Párrafo <i class="bi bi-chevron-down"></i></button>
-        <div>
-         <button id="" ><i class="bi bi-type"></i></button>
-         <button id="" ><i class="bi bi-list-ul"><i class="bi bi-chevron-down"></i></i></button>
-         <button id="" >Insertar <i class="bi bi-chevron-down"></i></button>
-         <button id="" ></button>
+        <div class="navTools">
+            <button id="" style="border-right: 1px solid #17252A;"><i class="bi bi-arrow-left-right"></i></button>
+            <button id="" style="border-right: 1px solid #17252A;">Párrafo <i class="bi bi-chevron-down"></i></button>
+            <div>
+                <button id=""><i class="bi bi-type"></i></button>
+                <button id=""><i class="bi bi-list-ul"><i class="bi bi-chevron-down"></i></i></button>
+                <button id="">Insertar <i class="bi bi-chevron-down"></i></button>
+                <button id=""></button>
 
-         <button id="" ><i class="bi bi-question-circle"></i></button>
-         <button id="" ><i class="bi bi-exclamation-triangle"></i></button>
-         <button id="" ><i class="bi bi-justify"></i></button>
-         <button id="" ><i class="bi bi-pencil"></i></button>
-      </div>
-        <!-- <button id="" style="background-color: #17252A; color:#FFFFFF">Publicar</button> -->
+                <button id=""><i class="bi bi-question-circle"></i></button>
+                <button id=""><i class="bi bi-exclamation-triangle"></i></button>
+                <button id=""><i class="bi bi-justify"></i></button>
+                <button id=""><i class="bi bi-pencil"></i></button>
+            </div>
+            <!-- <button id="" style="background-color: #17252A; color:#FFFFFF">Publicar</button> -->
 
-       </div>
-         <h5>Título<hr></h5>
-         <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
-           
+        </div>
+        <h5>Título
+            <hr>
+        </h5>
+        <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
+            <details>
+                <summary>Categorias</summary>
+                <ol>
+                    <li>Regiones</li>
+                    <li>Ciencias</li>
+                    <li>Historia</li>
+                    <li>Tecnología</li>
+                </ol>
+            </details>
+            <div class="form-group">
+                <label for="exampleFormControlInput">categoria</label>
+                <input type="text" class="form-control" formControlName="categoria">
+            </div>
             <div class="form-group">
                 <label for="exampleFormControlInput">titulo</label>
                 <input type="text" class="form-control" formControlName="titulo">
@@ -36,7 +52,7 @@
                 <label for="exampleFormControlInput">imagen</label>
                 <input type="text" class="form-control" formControlName="imagen">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="exampleFormControlInput">indice</label>
                 <input type="text" class="form-control"  formControlName="indice">
             </div>
@@ -47,26 +63,21 @@
             <div class="form-group">
                 <label for="exampleFormControlInput">preambulo</label>
                 <input type="text" class="form-control"  formControlName="preambulo">
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="exampleFormControlInput">contenido</label>
                 <input type="text" class="form-control" formControlName="contenido">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="exampleFormControlInput">info_general</label>
                 <input type="text" class="form-control"  formControlName="info_general">
-            </div>
-            <div class="button" >
+            </div> -->
+            <div class="button">
                 <button class="btn btn-dark" id="button">
                     Publicar
                 </button>
             </div>
-        </form>    
-    </div>  
-    <!-- <div class="alert alert-success d-flex align-items-center" role="alert"> 
-        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
-        <div>
-          An example success alert with an icon
-        </div>
-       </div> -->
+        </form>
+    </div>
+
 </div>

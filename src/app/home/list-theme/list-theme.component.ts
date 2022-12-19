@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Theme } from 'src/app/theme';
+import { Wiki } from 'src/app/wiki';
 
 @Component({
   selector: 'app-list-theme',

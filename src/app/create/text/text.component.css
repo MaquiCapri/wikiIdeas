@@ -34,6 +34,7 @@ button{
     border: none;
     background-color: #141414;
      height: 29px;
+     margin-top: 6px;
    
 } 
 
@@ -50,5 +51,11 @@ button{
    width: 300px;
   
 }
+.container{
+    display: grid;
+    grid-template-columns:35% 65% ;  
+}
+
+
 
 

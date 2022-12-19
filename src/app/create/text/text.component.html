@@ -11,7 +11,7 @@
     </div>
     <div class="text">
         <div class="navTools">
-            <button id="" style="border-right: 1px solid #17252A;"><i class="bi bi-arrow-left-right"></i></button>
+            <!-- <button id="" style="border-right: 1px solid #17252A;"><i class="bi bi-arrow-left-right"></i></button>
             <button id="" style="border-right: 1px solid #17252A;">Párrafo <i class="bi bi-chevron-down"></i></button>
             <div>
                 <button id=""><i class="bi bi-type"></i></button>
@@ -24,60 +24,126 @@
                 <button id=""><i class="bi bi-justify"></i></button>
                 <button id=""><i class="bi bi-pencil"></i></button>
             </div>
-            <!-- <button id="" style="background-color: #17252A; color:#FFFFFF">Publicar</button> -->
+            <button id="" style="background-color: #17252A; color:#FFFFFF">Publicar</button> -->
 
         </div>
-        <h5>Título
-            <hr>
-        </h5>
-        <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
-            <details>
-                <summary>Categorias</summary>
-                <ol>
-                    <li>Regiones</li>
-                    <li>Ciencias</li>
-                    <li>Historia</li>
-                    <li>Tecnología</li>
-                </ol>
-            </details>
-            <div class="form-group">
-                <label for="exampleFormControlInput">categoria</label>
-                <input type="text" class="form-control" formControlName="categoria">
+
+        <div class="container">
+            <div>
+                <details>
+                    <summary>Categorías</summary>
+                    <ol>
+                       <li id="cul">Cultura</li> 
+                        <li id="cienc">Ciencias y Tecnología</li>
+                        <li id="hist">Historia y sociedad</li>
+                        <li id="reg">Regiones</li>
+                    </ol>
+                </details> 
+        
+                <div id="cultura1">
+                   <strong>Lista Cultura</strong>
+                    <ul>
+                        <li>Arquitectura</li>
+                        <li>Arte</li>
+                        <li>Cine y televisión</li>
+                        <li>Comic y Anime</li>
+                        <li>Deporte</li>
+                        <li>Entretenimiento</li>
+                        <li>Literatura</li>
+                        <li>Moda</li>
+                        <li>Música</li>
+                        <li>Videos Juegos</li>
+
+                  </ul>
+                </div>
+                <div id="ciencias1">
+                    <strong>Ciencias y Tecnología</strong>
+                    <ul>
+                        <li>Biología</li>
+                        <li>Ciencias general</li>
+                        <li>Computadoras e internet</li>
+                        <li>Física</li>
+                        <li>Ingeniería</li>
+                        <li>Matemáticas</li>
+                        <li>Medicina y salud</li>
+                        <li>Química</li>
+                        <li>Tecnología</li>
+                        <li>Tierra y Medio ambiente</li>
+                  </ul>
+                </div>
+                <div id="historia1">
+                    <strong>Lista Historia y Sociedad</strong>  
+                    <ul>
+                        <li>Biografía</li>
+                        <li>Comidas y Bebidas</li>
+                        <li>Educación</li>
+                        <li>Filosofía t religión</li>
+                        <li>Guerras</li>
+                        <li>Historia</li>
+                        <li>Negocios y Economías</li>
+                        <li>Políticas y Gobiernos</li>
+                        <li>Sociedad</li>
+                        <li>Transporte</li>
+                  </ul>
+                </div>
+
+                <div id="regiones1">
+                    <strong>Lista Regiones</strong> 
+                    <ul>
+                        <li>África</li>
+                        <li>América Central</li>
+                        <li>América del Norte</li>
+                        <li>América del Sur</li>
+                        <li>Asia</li>
+                        <li>Europa</li>
+                        <li>Oceania</li>
+                  </ul>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput">titulo</label>
-                <input type="text" class="form-control" formControlName="titulo">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput">imagen</label>
-                <input type="text" class="form-control" formControlName="imagen">
-            </div>
-            <!-- <div class="form-group">
-                <label for="exampleFormControlInput">indice</label>
-                <input type="text" class="form-control"  formControlName="indice">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput">categoria</label>
-                <input type="text" class="form-control"  formControlName="categoria">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput">preambulo</label>
-                <input type="text" class="form-control"  formControlName="preambulo">
-            </div> -->
-            <div class="form-group">
-                <label for="exampleFormControlInput">contenido</label>
-                <input type="text" class="form-control" formControlName="contenido">
-            </div>
-            <!-- <div class="form-group">
-                <label for="exampleFormControlInput">info_general</label>
-                <input type="text" class="form-control"  formControlName="info_general">
-            </div> -->
-            <div class="button">
-                <button class="btn btn-dark" id="button">
-                    Publicar
-                </button>
-            </div>
-        </form>
+            
+            <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
+                
+                <div class="form-group" id="categoria" >
+                    <label for="exampleFormControlInput">Categoría</label>
+                    <input type="text" class="form-control" formControlName="categoria" placeholder="Escribir tema elegido de la lista" required >
+               </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput">Título</label>
+                    <input type="text" class="form-control" formControlName="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput">Imagen</label>
+                    <input type="text" class="form-control" formControlName="imagen">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleFormControlInput">indice</label>
+                    <input type="text" class="form-control"  formControlName="indice">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput">categoria</label>
+                    <input type="text" class="form-control"  formControlName="categoria">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput">preambulo</label>
+                    <input type="text" class="form-control"  formControlName="preambulo">
+                </div> -->
+                <div class="form-group">
+                    <label for="exampleFormControlInput">Contenido</label>
+                    <input type="text" class="form-control" formControlName="contenido">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleFormControlInput">info_general</label>
+                    <input type="text" class="form-control"  formControlName="info_general">
+                </div> -->
+                <div class="button">
+                    <button class="btn btn-dark" id="button">
+                        Publicar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+       
     </div>
 
 </div>

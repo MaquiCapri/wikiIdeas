@@ -1,6 +1,6 @@
 .contents{
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+    /* display: grid; */
+    /* grid-template-rows: 1fr 2fr; */
    font-family: 'SF Pro Display';
    text-align: justify;  
    color: #17252A;

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { HomeService } from 'src/app/home.service';
 import { SCreateService } from 'src/app/s-create.service';
 import { SWikiService } from 'src/app/s-wiki.service';
 
@@ -14,7 +15,9 @@ import Swal from 'sweetalert2';
 })
 export class TextComponent implements OnInit {
  
-  constructor( private datosWiki: SWikiService, private router:Router,private sCreate: SCreateService, private formBuilder: FormBuilder) { }
+  constructor( private datosWiki: SWikiService, private router:Router,private sHome :HomeService, private sCreate: SCreateService, private formBuilder: FormBuilder) { 
+    this.sHome.loadScript();
+  }
   
   saveForm = new FormGroup({
     titulo:new FormControl(''),

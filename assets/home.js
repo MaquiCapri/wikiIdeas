@@ -43,11 +43,11 @@ $(document).ready(function () {
     $("#region").show();
   });
 
-  $("#miBoton2").hover(function () {
-    $(".listTheme").show();
-  }, function () {
-    $(".listTheme").hide();
-  });
+  // $("#miBoton2").hover(function () {
+  //   $(".listTheme").show();
+  // }, function () {
+  //   $(".listTheme").hide();
+  // });
 
   $(function () {
     var estaOculto = false;
@@ -55,9 +55,20 @@ $(document).ready(function () {
       if (estaOculto) {
         $('#cultura1').show();
         estaOculto = false;
-      } else {
-        $('#cultura1').hide();
-        estaOculto = true;
+       } else {
+         $('#cultura1').hide();
+         estaOculto = true;
+      }
+    });
+  });
+
+  $(function () {
+    var estaOculto = false;
+    $('body').click(function () {
+      if (estaOculto) {
+        $('.listTheme2').hide();
+        estaOculto = false;
+      
       }
     });
   });
@@ -105,19 +116,5 @@ $(document).ready(function () {
     });
   });
 
-  
-
-  // $(function () {
-  //   var estaOculto = false;
-  //   $('#cul').click(function () {
-  //     if (estaOculto) {
-  //       $('#cultura1').show();
-  //       estaOculto = false;
-  //     } else {
-  //       $('#cultura1').hide();
-  //       estaOculto = true;
-  //     }
-  //   });
-  // });
-
 });
+

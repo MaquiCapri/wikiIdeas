@@ -43,12 +43,6 @@ $(document).ready(function () {
     $("#region").show();
   });
 
-  // $("#cultura").hover(function () {
-  //   $(".listTheme2").show();
-  // }, function () {
-  //   $(".listTheme2").hide();
-  // });
-
   $("#miBoton2").hover(function () {
     $(".listTheme").show();
   }, function () {
@@ -111,6 +105,8 @@ $(document).ready(function () {
     });
   });
 
+  
+
   // $(function () {
   //   var estaOculto = false;
   //   $('#cul').click(function () {
@@ -123,6 +119,5 @@ $(document).ready(function () {
   //     }
   //   });
   // });
-
 
 });

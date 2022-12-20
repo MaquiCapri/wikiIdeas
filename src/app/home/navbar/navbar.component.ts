@@ -12,7 +12,7 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-themes: any[] = [];
+themes: any = [];
 
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 

@@ -12,30 +12,22 @@ import { Wiki } from 'src/app/wiki';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-themes: any = [];
+themes: any[] = [];
 
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 
   ngOnInit(): void { 
-  }
+    }
+  
 create(){
   this.router.navigate(['create']);
 }
 
-//  getTheme(searchTerm: string){
-//    this.datosWiki.getTheme(searchTerm).subscribe(data => {
-//      this.themes =data;
-//      console.log(data);
-//   });
-
-// }
-
- 
- getTheme(searchTerm: string){
- 
-    this.datosWiki.getTheme(searchTerm).subscribe(themes => {
-      this.themes =themes;
-      console.log(themes);
-    })
+  getTheme(searchTerm: string){
+     this.datosWiki.getTheme(searchTerm).subscribe(data => {
+      this.themes =data;
+      console.log(data);
+   });
  }
-};
+
+}

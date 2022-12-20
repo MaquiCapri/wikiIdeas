@@ -38,25 +38,26 @@ home(){
 // postForm(): any{
 //   console.log(this.saveForm.value);
 // }
-postForm(form: Wiki){  
-    this.datosWiki.save(form).subscribe(data => { this.saveForm = data });
-    console.log(this.saveForm.value);
-}
-//  postForm(form: Wiki){
-
-//  this.datosWiki.save(form).subscribe(data =>{
-  //  Swal.fire({
-  //    position: 'top-end',/    
-  //     icon: 'success',
-  //    title: 'Enviado correctamente',
-  //    showConfirmButton: false,
-  //    timer: 1500
-  //  })
-  //  // alert("Texto añadido");
-  //      this.router.navigate(['create']);
-  //    }, err => {
-  //      alert("Falló");
-  //      this.router.navigate(['create']);
-//  })
-
+// postForm(form: Wiki){  
+//     this.datosWiki.save(form).subscribe(data => { this.saveForm = data });
+//     console.log(this.saveForm.value);
+// }
+  postForm(form: Wiki){
+ this.datosWiki.save(form).subscribe(data =>{
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Enviado correctamente',
+    showConfirmButton: false,
+    timer: 1500
+  });
+ 
+  //  alert("Texto añadido");
+        this.router.navigate(['create']);
+      }, err => {
+        alert("Falló");
+       this.router.navigate(['create']);
+  })
+  console.log(this.saveForm.value);
+  }
 }

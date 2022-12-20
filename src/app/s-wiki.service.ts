@@ -20,12 +20,10 @@ export class SWikiService {
       return this.http.post<any>(this.URL, form);
     };
 
-    getTheme(searchTerm: string): Observable<Wiki>{
-     return this.http.get<Wiki>(this.url + searchTerm);
+    getTheme(searchTerm: string): Observable<any>{
+     return this.http.get(this.url + searchTerm);
     };
 
- 
-   
 }
 
  

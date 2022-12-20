@@ -23,9 +23,10 @@
       <input  type="button" class="btn btn-light" id="button" value="Editar temas" >
       <input type="button" class="btn btn-light" id="button" value="Crear tema" (click)="create()">
       
-
-      <div class="listTheme" >
-        <app-list-theme *ngFor="let theme of themes" [theme]="theme"></app-list-theme>
-
-      </div>
   </div>
+
+  <div class="listTheme" >
+    <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>
+
+  </div>
+  

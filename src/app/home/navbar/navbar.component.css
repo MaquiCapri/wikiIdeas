@@ -39,4 +39,8 @@
     border: none;
     border-radius: 40px; 
 }
-
+ .listTheme{
+    position: absolute; 
+    margin-left: 10px;
+    
+} 

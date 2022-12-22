@@ -33,79 +33,83 @@
                 <details>
                     <summary>Categorías</summary>
                     <ol>
-                       <li id="cul">Cultura</li> 
-                        <li id="cienc">Ciencias y Tecnología</li>
-                        <li id="hist">Historia y sociedad</li>
-                        <li id="reg">Regiones</li>
+                        <li id="cul" onclick="listaCrear()">Cultura</li>
+                        <li id="cienc" onclick="listaCrear1()">Ciencias y Tecnología</li>
+                        <li id="hist" onclick="listaCrear2()">Historia y sociedad</li>
+                        <li id="reg" onclick="listaCrear3()">Regiones</li>
                     </ol>
-                </details> 
-        
-                <div id="cultura1">
-                   <strong>Lista Cultura</strong>
-                    <ul>
-                        <li>Arquitectura</li>
-                        <li>Arte</li>
-                        <li>Cine y televisión</li>
-                        <li>Comic y Anime</li>
-                        <li>Deportes</li>
-                        <li>Entretenimiento</li>
-                        <li>Literatura</li>
-                        <li>Moda</li>
-                        <li>Música</li>
-                        <li>Videos Juegos</li>
+                </details>
 
-                  </ul>
-                </div>
-                <div id="ciencias1">
-                    <strong>Ciencias y Tecnología</strong>
-                    <ul>
-                        <li>Biología</li>
-                        <li>Ciencias general</li>
-                        <li>Computadoras e internet</li>
-                        <li>Física</li>
-                        <li>Ingeniería</li>
-                        <li>Matemáticas</li>
-                        <li>Medicina y salud</li>
-                        <li>Química</li>
-                        <li>Tecnología</li>
-                        <li>Tierra y Medio ambiente</li>
-                  </ul>
-                </div>
-                <div id="historia1">
-                    <strong>Lista Historia y Sociedad</strong>  
-                    <ul>
-                        <li>Biografía</li>
-                        <li>Comidas y Bebidas</li>
-                        <li>Educación</li>
-                        <li>Filosofía t religión</li>
-                        <li>Guerras</li>
-                        <li>Historia</li>
-                        <li>Negocios y Economías</li>
-                        <li>Políticas y Gobiernos</li>
-                        <li>Transporte</li>
-                  </ul>
-                </div>
-
-                <div id="regiones1">
-                    <strong>Lista Regiones</strong> 
-                    <ul>
-                        <li>África</li>
-                        <li>América Central</li>
-                        <li>América del Norte</li>
-                        <li>América del Sur</li>
-                        <li>Asia</li>
-                        <li>Europa</li>
-                        <li>Oceania</li>
-                  </ul>
-                </div>
             </div>
-            
             <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
-                
-                <div class="form-group" id="categoria" >
+                <div class="form-group" id="categoria">
                     <label for="exampleFormControlInput">Categoría</label>
-                    <input type="text" class="form-control" formControlName="categoria" placeholder="Escribir tema elegido de la lista" required >
-               </div>
+                    <input type="text" class="form-control" formControlName="categoria" list="categoria1"
+                        placeholder="Elegir tema">
+                    <datalist id="categoria1">
+                        <option value="Arquitectura"></option>
+                        <option value="Arte"></option>
+                        <option value="Cine y televisión"></option>
+                        <option value="Comic y Anime"></option>
+                        <option value="Deportes"></option>
+                        <option value="Entretenimiento"></option>
+                        <option value="Literatura"></option>
+                        <option value="Moda"></option>
+                        <option value="Música"></option>
+                        <option value="Videos Juegos"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-group" id="categoriaCiencias">
+                    <label for="exampleFormControlInput">Categoría</label>
+                    <input type="text" class="form-control" formControlName="categoriaCiencias" list="categoria2"
+                        placeholder="Elegir tema">
+                    <datalist id="categoria2">
+                        <option value="Biología"></option>
+                        <option value="Computadoras e internet"></option>
+                        <option value="Física"></option>
+                        <option value="Ingeniería"></option>
+                        <option value="Matemáticas"></option>
+                        <option value="Medicina y salud"></option>
+                        <option value="Química"></option>
+                        <option value="Tecnología"></option>
+                        <option value="Tierra y Medio ambiente"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-group" id="categoriaHistoria">
+                    <label for="exampleFormControlInput">Categoría</label>
+                    <input type="text" class="form-control" formControlName="categoriaHistoria" list="categoria2"
+                        placeholder="Elegir tema">
+                    <datalist id="categoria2">
+                        <option value="Biografía"></option>
+                        <option value="Comidas y Bebidas"></option>
+                        <option value="Educación"></option>
+                        <option value="Filosofía y religión"></option>
+                        <option value="Guerras"></option>
+                        <option value="Historia"></option>
+                        <option value="Negocios y Economías"></option>
+                        <option value="Políticas y Gobiernos"></option>
+                        <option value="Transporte"></option>
+
+                    </datalist>
+                </div>
+
+                <div class="form-group" id="categoriaRegion">
+                    <label for="exampleFormControlInput">Categoría</label>
+                    <input type="text" class="form-control" formControlName="categoriaRegion" list="categoria3"
+                        placeholder="Elegir tema">
+                    <datalist id="categoria3">
+                        <option value="África"></option>
+                        <option value="América Central"></option>
+                        <option value="América del Norte"></option>
+                        <option value="Asia"></option>
+                        <option value="Europa"></option>
+                        <option value="Oceania"></option>
+
+                    </datalist>
+                </div>
+
                 <div class="form-group">
                     <label for="exampleFormControlInput">Título</label>
                     <input type="text" class="form-control" formControlName="titulo">
@@ -113,7 +117,7 @@
                 <!-- <div>
                     valido: {{ saveForm.valid | json}} 
                 </div> -->
-               
+
 
                 <div class="form-group">
                     <label for="exampleFormControlInput">Imagen</label>
@@ -133,21 +137,21 @@
                 </div> -->
                 <div class="form-group">
                     <label for="exampleFormControlInput">Contenido</label>
-                    <textarea  id="form" type="text" class="form-control" formControlName="contenido"></textarea>
+                    <textarea id="form" type="text" class="form-control" formControlName="contenido"></textarea>
                 </div>
                 <!-- <div class="form-group">
                     <label for="exampleFormControlInput">info_general</label>
                     <input type="text" class="form-control"  formControlName="info_general">
                 </div> -->
                 <div class="button">
-                    <input class="btn btn-dark" id="button" type="submit" value="Publicar" [disabled]="saveForm.invalid">
-                                  
+                    <input class="btn btn-dark" id="button" type="submit" value="Publicar"
+                        [disabled]="saveForm.invalid">
+
                 </div>
             </form>
 
         </div>
-       
+
     </div>
 
 </div>
-

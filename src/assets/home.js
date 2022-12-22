@@ -9,7 +9,10 @@ $(document).ready(function () {
   $("#ciencias1").hide();
   $("#regiones1").hide();
   $("#historia1").hide();
-
+  $('#categoria').hide();
+  $('#categoriaCiencias').hide();
+  $('#categoriaHistoria').hide();
+  $('#categoriaRegion').hide();
 
   $("#cultura").hover(function () {
     $(".list").show();
@@ -112,6 +115,59 @@ $(document).ready(function () {
       } else {
         $('#ciencias1').hide();
         estaOculto = true;
+      }
+    });
+  });
+
+
+  $(function listaCrear() {
+    var estaOculto = false;
+    $('#cul').click(function () {
+      if (estaOculto) {
+        $('#categoria').show();
+        estaOculto = false;
+       } else {
+         $('#categoria').hide();
+         estaOculto = true;
+      }
+    });
+  });
+
+  $(function listaCrear1() {
+    var estaOculto = false;
+    $('#cienc').click(function () {
+      if (estaOculto) {
+        $('#categoriaCiencias').show();
+        estaOculto = false;
+       } else {
+         $('#categoriaCiencias').hide();
+         estaOculto = true;
+      }
+    });
+  });
+
+  $(function listaCrear2() {
+    var estaOculto = false;
+    $('#hist').click(function () {
+      if (estaOculto) {
+        $('#categoriaHistoria').show();
+        estaOculto = false;
+       } else {
+         $('#categoriaHistoria').hide();
+         estaOculto = true;
+      }
+    });
+  });
+
+  $(function listaCrear3() {
+    var estaOculto = false;
+    $('#reg').click(function () {
+      if (estaOculto) {
+        $('#categoriaRegion').show();
+        estaOculto = false;
+       } else {
+         $('#categoriaRegion').hide();
+         estaOculto = true;
       }
     });
   });

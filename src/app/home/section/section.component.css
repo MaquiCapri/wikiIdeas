@@ -35,7 +35,7 @@ ul {
     opacity: 0.8;
 }
 
-form{
+/* form{
     position: absolute;
     text-decoration-line: underline;
     text-align: start;
@@ -45,7 +45,7 @@ form{
     height: 180px;
     width: 220px;
     opacity: 0.8;
-}
+} */
 
 img {
     border: 2px solid black;

@@ -1,5 +1,7 @@
-<div class="navbar" id="miBoton2">
 
+
+<div class="navbar" id="miBoton2">
+  
     <div id="logo"><img src="./assets/logoWiki.png" alt="logo" style="width:90px; margin-top: -15px;"></div>
    
     
@@ -22,11 +24,12 @@
   
       <input  type="button" class="btn btn-light" id="button" value="Editar temas" >
       <input type="button" class="btn btn-light" id="button" value="Crear tema" (click)="create()">
-      
-  </div>
+     
+ 
 
-  <div class="listTheme" >
+   <div class="listTheme" >
     <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>
-
-  </div>
   
+  </div>  
+  
+</div>

@@ -6,13 +6,13 @@ margin-left: -55px;
  
 }
 
- #ilustration{ 
+ /* #ilustration{ 
     margin-bottom: 30px;
     background-color: rgb(202, 202,202);
     color: white;
     width: 200px;
   
- } 
+ }  */
 
 #index{
    color: #FFFFFF;
@@ -22,4 +22,8 @@ margin-left: -55px;
 
  #list{
    text-decoration-line: underline;
+ }
+
+ img{
+   width: 100%;
  }

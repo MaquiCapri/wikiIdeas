@@ -19,9 +19,9 @@ export class SectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selection(){
-    this.router.navigate(['selection']);
-  }
+  // selection(){
+  //   this.router.navigate(['selection']);
+  // }
 
   getTheme(searchTerm: string){
      this.datosWiki.getTheme(searchTerm).subscribe(themes => {

@@ -41,11 +41,66 @@
                 </details>
 
             </div>
-            <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
+             <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
+                 <div class="form-group" id="categoria">
+                    <label for="exampleFormControlInput">Temas</label>
+                    <input type="text" class="form-control" formControlName="categoria" list="categoria1"
+                        placeholder="Elegir tema"  >
+                        
+                        <datalist id="categoria1">
+                            <option value="Arquitectura"></option>
+                            <option value="Arte"></option>
+                            <option value="Cine y televisión"></option>
+                            <option value="Comic y Anime"></option>
+                            <option value="Deportes"></option>
+                            <option value="Entretenimiento"></option>
+                            <option value="Literatura"></option>
+                            <option value="Moda"></option>
+                            <option value="Música"></option>
+                            <option value="Videos Juegos"></option>
+                        </datalist>
+
+                        <datalist id="categoria2">
+                            <option value="Biología"></option>
+                            <option value="Computadoras e internet"></option>
+                            <option value="Física"></option>
+                            <option value="Ingeniería"></option>
+                            <option value="Matemáticas"></option>
+                            <option value="Medicina y salud"></option>
+                            <option value="Química"></option>
+                            <option value="Tecnología"></option>
+                            <option value="Tierra y Medio ambiente"></option>
+                        </datalist>
+
+                        <datalist id="categoria3">
+                            <option value="Biografía"></option>
+                            <option value="Comidas y Bebidas"></option>
+                            <option value="Educación"></option>
+                            <option value="Filosofía y religión"></option>
+                            <option value="Guerras"></option>
+                            <option value="Historia"></option>
+                            <option value="Negocios y Economías"></option>
+                            <option value="Políticas y Gobiernos"></option>
+                            <option value="Transporte"></option>
+    
+                        </datalist>
+
+                        <datalist id="categoria4">
+                            <option value="África"></option>
+                            <option value="América Central"></option>
+                            <option value="América del Norte"></option>
+                            <option value="Asia"></option>
+                            <option value="Europa"></option>
+                            <option value="Oceania"></option>
+    
+                        </datalist>
+               </div>
+           
+            <!-- <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
                 <div class="form-group" id="categoria">
                     <label for="exampleFormControlInput">Categoría</label>
                     <input type="text" class="form-control" formControlName="categoria" list="categoria1"
-                        placeholder="Elegir tema">
+                        placeholder="Elegir tema"  >
                     <datalist id="categoria1">
                         <option value="Arquitectura"></option>
                         <option value="Arte"></option>
@@ -58,12 +113,12 @@
                         <option value="Música"></option>
                         <option value="Videos Juegos"></option>
                     </datalist>
-                </div>
+                </div> -->
 
-                <div class="form-group" id="categoriaCiencias">
+                <!-- <div class="form-group" id="categoriaCiencias">
                     <label for="exampleFormControlInput">Categoría</label>
                     <input type="text" class="form-control" formControlName="categoriaCiencias" list="categoria2"
-                        placeholder="Elegir tema">
+                        placeholder="Elegir tema" >
                     <datalist id="categoria2">
                         <option value="Biología"></option>
                         <option value="Computadoras e internet"></option>
@@ -108,7 +163,7 @@
                         <option value="Oceania"></option>
 
                     </datalist>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <label for="exampleFormControlInput">Título</label>
@@ -144,7 +199,7 @@
                     <input type="text" class="form-control"  formControlName="info_general">
                 </div> -->
                 <div class="button">
-                    <input class="btn btn-dark" id="button" type="submit" value="Publicar"
+                    <input class="btn btn-dark" id="button" type="submit" value="Publicar" onclick="validar()"
                         [disabled]="saveForm.invalid">
 
                 </div>

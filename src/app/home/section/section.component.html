@@ -1,4 +1,8 @@
 <section class="container">
+        <!-- <div class="listTheme" >
+                <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>
+              
+              </div>  -->
           <div class="listTheme2">
                                 <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
                         </div>
@@ -39,7 +43,7 @@
                         <button value="ingenieria" #search14 (click)="getTheme(search14.value)">Ingeniería</button>
                         <button value="matematicas" #search15 (click)="getTheme(search15.value)">Matemáticas</button>
                         <button value="medicina y salud" #search16 (click)="getTheme(search16.value)">Medicina y salud</button>
-                        <button value="tecnologia" #search17 (click)="getTheme(search17.value)">Tecnología</button>
+                        <button value="Tecnología" #search17 (click)="getTheme(search17.value)">Tecnología</button>
                         <button value="tierra y medio ambiente" #search18 (click)="getTheme(search18.value)">Tierra y medio ambiente</button>
                             
                         </ul>

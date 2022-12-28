@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SWikiService } from 'src/app/s-wiki.service';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  themes: any[] = [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private datosWiki:SWikiService) { }
 
   ngOnInit(): void {
   }
@@ -19,4 +21,12 @@ export class HeaderComponent implements OnInit {
   home(){
     this.router.navigate(['']);
   }
+
+  
+  getTheme(searchTerm: string){
+    this.datosWiki.getTheme(searchTerm).subscribe(data => {
+     this.themes =data;
+     console.log(data);
+  });
+}
 }

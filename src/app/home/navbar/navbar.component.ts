@@ -11,7 +11,7 @@ import { Wiki } from 'src/app/wiki';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit{
 themes: any[] = [];
 
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
@@ -31,3 +31,28 @@ create(){
  }
 
 }
+// export class MoviesComponent implements OnInit, OnDestroy {
+//   movies:Movie[] = [];
+//   @ViewChild('movieSearchInput', { static: true }) movieSearchInput!: ElementRef
+//   movieSuscription!: Subscription
+
+//   constructor(private movieService: MovieService) { }
+
+//   ngOnInit(): void {
+//    this.movieSuscription = fromEvent<Event>(this.movieSearchInput.nativeElement, 'keyup').pipe(
+//       map((event: Event) => {
+//         const searchTerm = (event.target as HTMLInputElement).value;
+//         return searchTerm
+//       }),
+//       filter((searchTerm: string) => searchTerm.length > 3),
+//       debounceTime(500),
+//       distinct(),
+//       switchMap((searchTerm: string) => this.movieService.getMovies(searchTerm) )
+//       ).subscribe((movies: Movie[]) => {
+//         this.movies = movies !== undefined ? movies : [];
+//       })
+//   }
+
+//   ngOnDestroy(): void {
+//     this.movieSuscription.unsubscribe()
+//   }

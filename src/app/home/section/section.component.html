@@ -1,18 +1,13 @@
 <section class="container">
-        <!-- <div class="listTheme" >
-                <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>
-              
-              </div>  -->
-          <div class="listTheme2">
-                                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
-                        </div>
+       
+          <div class="listTheme2">                                
+                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>                     
+        </div>
         <div class="estructure">
                 <div class="container-prod" id="cultura" style="background-image:url('./assets/monaLisa4.jpg')">
 
                         <h5 id="culture">CULTURA</h5>
-                        <!-- <div class="listTheme2">
-                                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
-                        </div> -->
+                       
                         <ul class="list" style="color: #FFFFFF; font-size: 13px;">
 
                                 <button value="arquitectura" #search0 (click)="getTheme(search0.value)">Arquitectura</button>
@@ -32,9 +27,7 @@
                 <div class="container-prod" id="ciencia" style="background-image:url('./assets/cerebro1.jpg')">
 
                         <h5 id="science" style="margin-top: 60px;">CIENCIAS Y TECNOLOGÍA</h5>
-                        <!-- <div class="listTheme2">
-                                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
-                        </div> -->
+                       
                         <ul class="list1" style="color: #FFFFFF; font-size: 13px; ">
                          <button value="biologia" #search10 (click)="getTheme(search10.value)">Biología</button>
                         <button value="ciencia general" #search11 (click)="getTheme(search11.value)">Ciencia general</button>
@@ -54,9 +47,7 @@
                 <div class="container-prod" id="historia" style="background-image:url('./assets/guerra1.png')">
 
                         <h5 id="history" style="margin-top: 60px;">HISTORIA Y SOCIEDAD</h5>
-                        <!-- <div class="listTheme2">
-                                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
-                        </div> -->
+                      
                         <ul class="list2" style="color: #FFFFFF; font-size: 13px;">
                                 <button value="biografia" #search20 (click)="getTheme(search20.value)">Biografía</button>
                                 <button value="comidas y bebidas" #search21 (click)="getTheme(search21.value)">Comidas y Bebidas</button>
@@ -73,9 +64,7 @@
                 <div class="container-prod" id="regiones" style="background-image:url('./assets/maps1.png')">
 
                         <h5 id="region" style="margin-top: 60px;">REGIONES</h5>
-                        <!-- <div class="listTheme2">
-                                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>
-                        </div> -->
+                       
                         <ul class="list3">
                                 <button value="africa" #search30 (click)="getTheme(search30.value)">África</button>
                                 <button value="america central" #search31 (click)="getTheme(search31.value)">Ámerica Central</button>

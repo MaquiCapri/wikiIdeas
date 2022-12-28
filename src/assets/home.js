@@ -134,19 +134,6 @@ $(document).ready(function () {
     });
   });
 
-  // $(function listaCrear1() {
-  //   var estaOculto = false;
-  //   $('#cienc').click(function () {
-  //     if (estaOculto) {
-  //       $('#categoriaCiencias').show();
-  //       estaOculto = false;
-  //      } else {
-  //        $('#categoriaCiencias').hide();
-  //        estaOculto = true;
-  //     }
-  //   });
-  // });
-
   $(function listaCrear1() {
     var estaOculto = false;
     $('#cienc').click(function () {
@@ -186,34 +173,6 @@ $(document).ready(function () {
       }
     });
   });
-
-
-  // $(function listaCrear2() {
-  //   var estaOculto = false;
-  //   $('#hist').click(function () {
-  //     if (estaOculto) {
-  //       $('#categoriaHistoria').show();
-  //       estaOculto = false;
-  //      } else {
-  //        $('#categoriaHistoria').hide();
-  //        estaOculto = true;
-  //     }
-  //   });
-  // });
-
-  // $(function listaCrear3() {
-  //   var estaOculto = false;
-  //   $('#reg').click(function () {
-  //     if (estaOculto) {
-  //       $('#categoriaRegion').show();
-  //       estaOculto = false;
-  //      } else {
-  //        $('#categoriaRegion').hide();
-  //        estaOculto = true;
-  //     }
-  //   });
-  // });
-
 
 });
 

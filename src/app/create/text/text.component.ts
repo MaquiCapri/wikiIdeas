@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { HomeService } from 'src/app/home.service';
 import { SCreateService } from 'src/app/s-create.service';
 import { SWikiService } from 'src/app/s-wiki.service';
-
 import { Wiki } from 'src/app/wiki';
 import Swal from 'sweetalert2';
 

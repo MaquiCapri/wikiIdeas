@@ -24,6 +24,7 @@ import { NavEComponent } from './edit/nav-e/nav-e.component';
 import { EditionComponent } from './edit/edition/edition.component';
 import { ListThemeComponent } from './home/list-theme/list-theme.component';
 import { List2ThemeComponent } from './home/list2-theme/list2-theme.component';
+import { ListComponent } from './components/list/list.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -46,7 +47,8 @@ import { List2ThemeComponent } from './home/list2-theme/list2-theme.component';
         NavEComponent,
         EditionComponent,
         ListThemeComponent,
-        List2ThemeComponent
+        List2ThemeComponent,
+        ListComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

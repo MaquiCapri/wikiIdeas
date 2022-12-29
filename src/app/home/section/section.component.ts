@@ -24,7 +24,7 @@ export class SectionComponent implements OnInit {
      this.datosWiki.getTheme(searchTerm).subscribe(themes => {
       this.themes =themes;
       if(this.themes.length==0){
-              // alert("No se encuentra el tema")
+              
               Swal.fire({
                  title: 'No se encuentra el tema',
                   showClass: {
@@ -39,13 +39,4 @@ export class SectionComponent implements OnInit {
     })
 }
 
-// Swal.fire({
-//   title: 'Custom animation with Animate.css',
-//   showClass: {
-//     popup: 'animate__animated animate__fadeInDown'
-//   },
-//   hideClass: {
-//     popup: 'animate__animated animate__fadeOutUp'
-//   }
-// })
 }

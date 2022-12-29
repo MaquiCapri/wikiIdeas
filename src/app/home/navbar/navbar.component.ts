@@ -1,10 +1,12 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { debounceTime, finalize, Observable } from 'rxjs';
+import { debounceTime, distinct, filter, finalize, fromEvent, map, Observable, Subscription, switchMap } from 'rxjs';
 import { SWikiService } from 'src/app/s-wiki.service';
+import { Theme } from 'src/app/theme';
 import { Wiki } from 'src/app/wiki';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-navbar',
@@ -13,25 +15,78 @@ import { Wiki } from 'src/app/wiki';
 })
 export class NavbarComponent implements OnInit{
 themes: any[] = [];
+// @ViewChild('searchInput', { static: true }) searchInput!: ElementRef
+//    themeSuscription!: Subscription;
 
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient) { }
 
-  ngOnInit(): void { 
-    }
+  ngOnInit(): void {}
+    // this.themeSuscription = fromEvent<Event>(this.searchInput.nativeElement, 'keyup').pipe(
+    //          map((event: Event) => {
+    //            const searchTerm = (event.target as HTMLInputElement).value;
+    //            return searchTerm
+    //          }),
+    //                filter((searchTheme: string) => searchTheme.length > 3),
+    //                debounceTime(500),
+    //                distinct(),
+    //                switchMap((searchTerm: string) => this.datosWiki.getTheme(searchTerm) )
+    //                ).subscribe((themes: any[]) => {
+    //                  this.themes = themes !== undefined ? themes : [];
+    //                })
+    // };
+
+    // ngOnDestroy(): void {
+    //        this.themeSuscription.unsubscribe()
+    //      };
+
+          // cartelAlert(){
+          //  if(this.themes.length == 0){             
+          //    Swal.fire({
+          //       title: 'No se encuentra el tema',
+          //        showClass: {
+          //          popup: 'animate__animated animate__fadeInDown'
+          //       },
+          //       hideClass: {
+          //         popup: 'animate__animated animate__fadeOutUp'
+          //       }
+          //     })
+          //  }
+          // }
   
 create(){
   this.router.navigate(['create']);
 }
 
+// busqueda(event: Event){
+//   const searchTheme = (event.target as HTMLInputElement).value
+ 
+//   this.datosWiki.getTheme(searchTheme).subscribe(data => {     
+  
+//     this.themes =data;
+//     console.log(searchTheme);
+// })
+// };
+
   getTheme(searchTerm: string){
-     this.datosWiki.getTheme(searchTerm).subscribe(data => {
+     this.datosWiki.getTheme(searchTerm).subscribe(data => {     
       this.themes =data;
+      if(this.themes.length == 0){             
+        Swal.fire({
+           title: 'No se encuentra el tema',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+           },
+           hideClass: {
+             popup: 'animate__animated animate__fadeOutUp'
+           }
+         })
+      }
       console.log(data);
    });
  }
 
 }
-// export class MoviesComponent implements OnInit, OnDestroy {
+// export class MoviesComponent implements OnInit {
 //   movies:Movie[] = [];
 //   @ViewChild('movieSearchInput', { static: true }) movieSearchInput!: ElementRef
 //   movieSuscription!: Subscription

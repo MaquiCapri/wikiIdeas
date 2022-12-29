@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   $(".list").hide();
   $(".list1").hide();
@@ -14,6 +12,7 @@ $(document).ready(function () {
   $('#categoriaHistoria').hide();
   $('#categoriaRegion').hide();
 
+  // Home : aparece y desaparece lista de temas:
   $("#cultura").hover(function () {
     $(".list").show();
     $("#culture").hide();
@@ -46,80 +45,85 @@ $(document).ready(function () {
     $("#region").show();
   });
 
-  // $("#miBoton2").hover(function () {
-  //   $(".listTheme").show();
-  // }, function () {
-  //   $(".listTheme").hide();
+  // $(function () {
+  //   var estaOculto = false;
+  //   $('#cul').click(function () {
+  //     if (estaOculto) {
+  //       $('#cultura1').show();
+  //       estaOculto = false;
+  //      } else {
+  //        $('#cultura1').hide();
+  //        estaOculto = true;
+  //     }
+  //   });
   // });
 
-  $(function () {
-    var estaOculto = false;
-    $('#cul').click(function () {
-      if (estaOculto) {
-        $('#cultura1').show();
-        estaOculto = false;
-       } else {
-         $('#cultura1').hide();
-         estaOculto = true;
-      }
-    });
-  });
+  // $(function () {
+  //   var estaOculto = false;
+  //   $('body').click(function () {
+  //     if (estaOculto) {
+  //       $('.listTheme2').hide();
+  //       estaOculto = false;     
+  //     }
+  //   });
+  // });
 
-  $(function () {
-    var estaOculto = false;
-    $('body').click(function () {
-      if (estaOculto) {
-        $('.listTheme2').hide();
-        estaOculto = false;
-      
-      }
-    });
-  });
+  // $(function () {
+  //   $('#container').dblclick(function () {
+  //     $('.listTheme2').hide();
+  //   });
+  // });
  
-  $(function () {
-    var estaOculto = false;
-    $('#reg').click(function () {
-      if (estaOculto) {
-        $('#regiones1').show();
-        estaOculto = false;
-      } else {
-        $('#regiones1').hide();
-        estaOculto = true;
+  // $(function () {
+  //   $('#container').dblclick(function () {
+  //     $('.listTheme').hide();
+  //   });
+  // });
+  //  $('#container').dblclick(function () {
+  //    $('.listTheme').hide();
+    
+  //  });
+ 
+  // $(function () {
+  //   var estaOculto = false;
+  //   $('#reg').click(function () {
+  //     if (estaOculto) {
+  //       $('#regiones1').show();
+  //       estaOculto = false;
+  //     } else {
+  //       $('#regiones1').hide();
+  //       estaOculto = true;
+  //     }
+  //   });
+  // });
 
-      }
+  // $(function () {
+  //   var estaOculto = false;
+  //   $('#hist').click(function () {
+  //     if (estaOculto) {
+  //       $('#historia1').show();
+  //       estaOculto = false;
+  //     } else {
+  //       $('#historia1').hide();
+  //       estaOculto = true;
+  //     }
+  //   });
+  // });
 
-    });
-  });
+  // $(function () {
+  //   var estaOculto = false;
+  //   $('#cienc').click(function () {
+  //     if (estaOculto) {
+  //       $('#ciencias1').show();
+  //       estaOculto = false;
+  //     } else {
+  //       $('#ciencias1').hide();
+  //       estaOculto = true;
+  //     }
+  //   });
+  // });
 
-  $(function () {
-    var estaOculto = false;
-    $('#hist').click(function () {
-      if (estaOculto) {
-        $('#historia1').show();
-        estaOculto = false;
-      } else {
-        $('#historia1').hide();
-        estaOculto = true;
-
-      }
-
-    });
-  });
-
-  $(function () {
-    var estaOculto = false;
-    $('#cienc').click(function () {
-      if (estaOculto) {
-        $('#ciencias1').show();
-        estaOculto = false;
-      } else {
-        $('#ciencias1').hide();
-        estaOculto = true;
-      }
-    });
-  });
-
-
+// input: elegis categoria en Crear 
   $(function listaCrear() {
     var estaOculto = false;
     $('#cul').click(function () {
@@ -160,7 +164,10 @@ $(document).ready(function () {
          estaOculto = true;
       }
     });
-  });  $(function listaCrear3() {
+
+  }); 
+  
+  $(function listaCrear3() {
     var estaOculto = false;
     $('#reg').click(function () {
       if (estaOculto) {
@@ -174,5 +181,35 @@ $(document).ready(function () {
     });
   });
 
+// aperce/ocultan listas de home
+$(function(){
+  var x=false;
+  $("#basic-addon1").click(function(){
+      if(x==false){
+          $(".listTheme").fadeIn(500);
+          
+          x=true;
+      }else {
+          $(".listTheme").slideUp(300);
+          
+          x=false;
+      };
+  });
 });
 
+$(function(){
+  var x=false;
+  $("button.listaTemas").click(function(){
+      if(x==false){
+          $(".listTheme2").fadeIn(600);
+          
+          x=true;
+      }else {
+          $(".listTheme2").slideUp(300);
+          
+          x=false;
+      };
+  });
+});
+
+});

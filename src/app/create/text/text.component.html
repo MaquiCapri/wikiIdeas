@@ -30,7 +30,6 @@
 
         <div class="container">
             <div>
-                <!-- <details> -->
                     <h5>Elegir una Categoría</h5><hr>
                     <ol>
                         <li id="cul" onclick="listaCrear()">Cultura</li>
@@ -38,8 +37,6 @@
                         <li id="hist" onclick="listaCrear2()">Historia y sociedad</li>
                         <li id="reg" onclick="listaCrear3()">Regiones</li>
                     </ol>
-                <!-- </details> -->
-
             </div>
              <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
               <div id="categoria">
@@ -133,13 +130,9 @@
                 <div class="button">
                     <input class="btn btn-dark" id="button" type="submit" value="Publicar" onclick="validar()"
                         [disabled]="saveForm.invalid">
-
                 </div>
             </div>
             </form>
-
         </div>
-
     </div>
-
 </div>

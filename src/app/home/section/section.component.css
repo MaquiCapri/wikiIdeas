@@ -8,7 +8,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-
 }
 
 .estructure {
@@ -19,8 +18,7 @@
     height: 180px;
     width: 220px;
      margin: 20px; 
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 ul {
@@ -34,18 +32,6 @@ ul {
     width: 220px;
     opacity: 0.8;
 }
-
-/* form{
-    position: absolute;
-    text-decoration-line: underline;
-    text-align: start;
-    color: #FFFFFF;
-    font-size: 13px;
-    background-color: #17252A;
-    height: 180px;
-    width: 220px;
-    opacity: 0.8;
-} */
 
 img {
     border: 2px solid black;
@@ -77,3 +63,9 @@ button{
    flex-direction:column;
     }
     }
+
+    @media (min-width: 1200px) {
+        .container-prod {          
+             margin: 50px;         
+        }
+        }

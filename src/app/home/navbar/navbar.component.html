@@ -1,17 +1,12 @@
-
-
 <div class="navbar" id="miBoton2">
-  
     <div id="logo"><img src="./assets/logoWiki.png" alt="logo" style="width:90px; margin-top: -15px;"></div>
-   
-    
-    <div id="buscar">
+   <div id="buscar">
       <nav >
         <form class="container-fluid">
           <div class="input-group">
-            <input type="text" #search  class="form-control" placeholder="Escribir tema" aria-label="Username"
-              aria-describedby="basic-addon1" >
-            <span class="input-group-text" id="basic-addon1">Buscar<svg (click)="getTheme(search.value)" 
+            <input type="text" #search  #searchInput class="form-control" placeholder="Escribir tema" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1" (click)="getTheme(search.value)" >Buscar<svg 
               xmlns="http://www.w3.org/2000/svg" width="16" style="margin-left:5px;"
                 height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="icon">
                 <path
@@ -25,11 +20,8 @@
       <input  type="button" class="btn btn-light" id="button" value="Editar temas" >
       <input type="button" class="btn btn-light" id="button" value="Crear tema" (click)="create()">
      
- 
-
    <div class="listTheme" >
     <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>
   
-  </div>  
-  
+    </div>  
 </div>

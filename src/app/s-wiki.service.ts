@@ -7,6 +7,10 @@ import { Wiki } from './wiki';
   providedIn: 'root'
 })
 export class SWikiService {
+
+  // post(arg0: string, formularioDeDatos: FormData) {
+  //   throw new Error('Method not implemented.');
+  // }
   URL ='https://wikideas.onrender.com/temas/';
   url ='https://wikideas.onrender.com/temas?query=';
  
@@ -23,6 +27,10 @@ export class SWikiService {
     getTheme(searchTerm: string): Observable<any>{
      return this.http.get(this.url + searchTerm);
     };
+
+    //  public post(url:string, body:any){
+    //    return this.http.post(url,body); // POST  
+    //  }
 
 }
 

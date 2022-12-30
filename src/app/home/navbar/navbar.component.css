@@ -16,6 +16,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     border: none;
+    cursor: pointer;
+
 }
 
 #basic-addon1 {
@@ -25,6 +27,7 @@
     background-color: #2B7A77;
     color: #DDF1F0;
     border: none;
+    cursor: pointer;
 }
 
 #button{
@@ -40,10 +43,8 @@
     border-radius: 40px; 
 }
 
-/* .listTheme{
-    position: absolute;
-    
-} */
+
+
 
 
  

@@ -1,65 +1,70 @@
-
-.container-fluid{
+.container-fluid {
     display: grid;
-    grid-template-columns:15% 85% ;
+    grid-template-columns: 15% 85%;
     padding: 0px;
     background-color: #DDF1F0;
 }
 
-.tool{
-    background-color: #7FB5B5;      
+.tool {
+    background-color: #7FB5B5;
     color: rgb(10, 10, 10);
-      height:105%;  
+    height: 105%;
     padding-top: 10px;
 }
 
-.text{
+.text {
     display: grid;
-    grid-template-rows:9% 60px 360px  ;
+    grid-template-rows: 9% 60px 360px;
 }
-.navTools{
+
+.navTools {
     display: grid;
-    grid-template-columns:auto auto 40% ;  
+    grid-template-columns: auto auto 40%;
     border-bottom: 1px solid #17252A;
 }
-h5{
+
+h5 {
     margin: 20px 20px;
 }
-button{
+
+button {
     border: none;
     background-color: #DDF1F0;
 
 }
- #button{
+
+#button {
     border: none;
     background-color: #141414;
-     height: 29px;
-     margin-top: 6px;
-   
-} 
+    height: 29px;
+    margin-top: 6px;
 
-#input{
+}
+
+#input {
     width: 14vw;
     border: none;
     height: 300px;
-     background-color: #DDF1F0; 
+    background-color: #DDF1F0;
     cursor: pointer;
-    
+
 }
 
-.form-group input{
-   width: 300px;
-  
+.form-group input {
+    width: 300px;
+
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns:35% 65% ;  
+    grid-template-columns: 35% 65%;
 }
-#form{
+
+#form {
     height: 150px;
 }
 
-
-
-
-
+#inputTexto {
+    height: 4vh;
+    width: 25vw;
+}

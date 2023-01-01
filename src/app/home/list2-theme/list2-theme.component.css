@@ -1,7 +1,8 @@
-.container {
-      width: 250px;
+.container {    
+      width: 17vw;
       background-color: #17252A;
       color: beige;
-      margin-left: 750px; 
-
+      margin-left: 230%;
+      font-size: 90%;
 }
+

@@ -1,15 +1,15 @@
 .header{
     background-color: #7FB5B5;    
     display: grid;
-    grid-template-columns:auto 5% 50% auto auto;
+    grid-template-columns:auto auto auto auto 30%;
     height: 65px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
-  #buscar{  
+  /* #buscar{  
     margin-top: 15px;
    
-    }
+    } */
    
     .form-control{
         background-color: #17252A;

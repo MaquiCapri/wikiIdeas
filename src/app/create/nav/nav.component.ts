@@ -16,4 +16,9 @@ export class NavComponent implements OnInit {
   home(){
     this.router.navigate(['']);
   }
+
+  irEdit(){
+    this.router.navigate(['edit']);
+
+  }
 }

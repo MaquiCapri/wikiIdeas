@@ -1,1 +1,26 @@
-<p>edition works!</p>
+<div class="container">
+    <form [formGroup]="saveForm" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div id="categoria">
+           <br>
+            <div class="form-group">
+                <label for="exampleFormControlInput">Título</label>
+                <textarea type="text" class="form-control" id="inputTexto" formControlName="titulo"
+                    [(ngModel)]="wiki.titulo"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput">Contenido</label>
+                <textarea id="form" type="text" class="form-control" formControlName="contenido"
+                    [(ngModel)]="wiki.contenido"></textarea>
+            </div>
+            <br>
+            <div class="button">
+                <input class="btn btn-dark" id="button" type="submit" value="Actualizar" onclick="validar()"
+                    [disabled]="saveForm.invalid">
+            </div>
+            <br>
+            <button class="btn btn-outline-danger" (click)="delete(wiki.id)">
+                <i class="bi bi-trash3-fill"></i>Borrar</button>
+        </div>
+    </form>
+
+</div>

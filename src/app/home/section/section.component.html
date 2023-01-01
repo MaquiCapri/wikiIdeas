@@ -1,8 +1,5 @@
 <section class="container" id="container">
-       
-          <div class="listTheme2">                                
-                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>                     
-        </div>
+                
         <div class="estructure">
                 <div class="container-prod" id="cultura" style="background-image:url('./assets/monaLisa4.jpg')">
 
@@ -19,9 +16,7 @@
                                 <button class="listaTemas" value="literatura" #search5 (click)="getTheme(search5.value)">Literatura</button>
                                 <button class="listaTemas" value="moda" #search6 (click)="getTheme(search6.value)">Moda</button>
                                 <button class="listaTemas" value="musica" #search7 (click)="getTheme(search7.value)">Música</button>
-
                         </ul>
-
 
                 </div>
                 <div class="container-prod" id="ciencia" style="background-image:url('./assets/cerebro1.jpg')">
@@ -29,7 +24,7 @@
                         <h5 id="science" style="margin-top: 60px;">CIENCIAS Y TECNOLOGÍA</h5>
                        
                         <ul class="list1" style="color: #FFFFFF; font-size: 13px; ">
-                         <button class="listaTemas" value="biologia" #search10 (click)="getTheme(search10.value)">Biología</button>
+                         <button class="listaTemas" value="biología" #search10 (click)="getTheme(search10.value)">Biología</button>
                         <button class="listaTemas" value="ciencia general" #search11 (click)="getTheme(search11.value)">Ciencia general</button>
                         <button class="listaTemas" #search12 value="computadoras e internet" (click)="getTheme(search12.value)">Computadoras e internet</button>
                         <button class="listaTemas" value="fisica" #search13 (click)="getTheme(search13.value)">Fìsica</button>
@@ -37,10 +32,8 @@
                         <button class="listaTemas" value="matematicas" #search15 (click)="getTheme(search15.value)">Matemáticas</button>
                         <button class="listaTemas" value="medicina y salud" #search16 (click)="getTheme(search16.value)">Medicina y salud</button>
                         <button class="listaTemas" value="Tecnología" #search17 (click)="getTheme(search17.value)">Tecnología</button>
-                        <button class="listaTemas" value="tierra y medio ambiente" #search18 (click)="getTheme(search18.value)">Tierra y medio ambiente</button>
-                            
+                        <button class="listaTemas" value="tierra y medio ambiente" #search18 (click)="getTheme(search18.value)">Tierra y medio ambiente</button>                         
                         </ul>
-
                 </div>
         </div>
         <div class="estructure">
@@ -76,5 +69,8 @@
                                                                    
                         </ul>
                 </div>
+        </div>
+        <div class="listTheme2">                                
+                <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>                     
         </div>
 </section>

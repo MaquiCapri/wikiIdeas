@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #7FB5B5;
+    display: grid;
+    grid-template-columns:auto  auto 60% auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 80px;    
+}
+
+#buscar {
+    margin-top: -15px;
+}
+
+.form-control {  
+    background-color: #17252A;
+    color: #DDF1F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#basic-addon1 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #2B7A77;
+    color: #DDF1F0;
+    border: none;
+    cursor: pointer;
+}
+
+#button{
+    margin-top: -15px;
+    height: 30px;
+    width: 14vw;
+    font-size: 14px;
+    padding: 3px;
+    background-color: #2B7A77;
+    color: #DDF1F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 40px; 
+}
+
+
+
+
+
+ 

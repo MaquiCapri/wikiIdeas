@@ -1,6 +1,11 @@
- .container{
-    width: 180px;
+.container{
+    width: 17vw;
     background-color: #17252A;
     color:beige;
-   
+    font-size: 90%;
 } 
+/* @media (max-width: 80px) {
+    .container{
+font-size: 6vw;
+    }
+    } */

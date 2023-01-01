@@ -57,10 +57,11 @@ button{
     position: absolute;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 680px) {
     .estructure{
    display: flex;
    flex-direction:column;
+   margin: 10px 30px;
     }
     }
 

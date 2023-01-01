@@ -8,9 +8,6 @@ import { Wiki } from './wiki';
 })
 export class SWikiService {
 
-  // post(arg0: string, formularioDeDatos: FormData) {
-  //   throw new Error('Method not implemented.');
-  // }
   URL ='https://wikideas.onrender.com/temas/';
   url ='https://wikideas.onrender.com/temas?query=';
  
@@ -28,9 +25,17 @@ export class SWikiService {
      return this.http.get(this.url + searchTerm);
     };
 
-    //  public post(url:string, body:any){
-    //    return this.http.post(url,body); // POST  
-    //  }
+    public update(id: number, wiki: Wiki): Observable<any>{
+      return this.http.put<any>(this.URL + id, wiki);
+    }
+
+    public delete(id: number): Observable<any>{
+      return this.http.delete<any>(this.URL + id);
+    } 
+
+    public lista(): Observable<Wiki[]>{
+      return this.http.get<Wiki[]>(this.URL);
+    }
 
 }
 

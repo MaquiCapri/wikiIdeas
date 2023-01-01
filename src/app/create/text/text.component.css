@@ -1,6 +1,6 @@
 .container-fluid {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 5% 95%;
     padding: 0px;
     background-color: #DDF1F0;
 }
@@ -14,7 +14,7 @@
 
 .text {
     display: grid;
-    grid-template-rows: 9% 60px 360px;
+    grid-template-rows: 9% 60px 400px;
 }
 
 .navTools {

@@ -25,6 +25,7 @@ import { EditionComponent } from './edit/edition/edition.component';
 import { ListThemeComponent } from './home/list-theme/list-theme.component';
 import { List2ThemeComponent } from './home/list2-theme/list2-theme.component';
 import { ListComponent } from './components/list/list.component';
+import { List3Component } from './edit/list3/list3.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -48,7 +49,8 @@ import { ListComponent } from './components/list/list.component';
         EditionComponent,
         ListThemeComponent,
         List2ThemeComponent,
-        ListComponent
+        ListComponent,
+        List3Component
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -21,8 +21,10 @@ export class HeaderComponent implements OnInit {
   home(){
     this.router.navigate(['']);
   }
-
-  
+  edit(){
+    this.router.navigate(['edit']);
+  }
+ 
   getTheme(searchTerm: string){
     this.datosWiki.getTheme(searchTerm).subscribe(data => {
      this.themes =data;

@@ -13,7 +13,6 @@ import Swal from 'sweetalert2';
 })
 export class EditionComponent implements OnInit {
   wiki: any = {};
-  //  actualize: Wiki=null;
 
   constructor(private datosWiki: SWikiService, public activatedRouter: ActivatedRoute, public router: Router) {
     this.activatedRouter.params.subscribe(params => {
@@ -35,7 +34,7 @@ export class EditionComponent implements OnInit {
   
   ngOnInit(): void {
   }
-  
+  //al apretar boton:
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.datosWiki.update(id, this.wiki).subscribe(

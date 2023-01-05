@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Wiki } from './wiki';
 
 @Injectable({
@@ -37,6 +37,10 @@ export class SWikiService {
       return this.http.get<Wiki[]>(this.URL);
     }
 
+
+       search1(term: string):Observable<any>{
+        return this.http.get<any>(this.url + term);
+       }
 }
 
  

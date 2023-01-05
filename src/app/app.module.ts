@@ -26,6 +26,8 @@ import { ListThemeComponent } from './home/list-theme/list-theme.component';
 import { List2ThemeComponent } from './home/list2-theme/list2-theme.component';
 import { ListComponent } from './components/list/list.component';
 import { List3Component } from './edit/list3/list3.component';
+
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -60,7 +62,7 @@ import { List3Component } from './edit/list3/list3.component';
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
-        
+       
     ],
 })
 export class AppModule { }

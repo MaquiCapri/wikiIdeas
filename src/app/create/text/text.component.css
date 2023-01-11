@@ -14,7 +14,7 @@
 
 .text {
     display: grid;
-    grid-template-rows: 9% 60px 400px;
+    grid-template-rows: 9% 60px 450px;
 }
 
 .navTools {
@@ -67,4 +67,8 @@ button {
 #inputTexto {
     height: 4vh;
     width: 25vw;
+}
+.error{
+    color: rgb(155, 30, 30);
+    
 }

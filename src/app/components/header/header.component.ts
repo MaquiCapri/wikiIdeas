@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SWikiService } from 'src/app/s-wiki.service';
 
 @Component({
@@ -9,10 +9,17 @@ import { SWikiService } from 'src/app/s-wiki.service';
 })
 export class HeaderComponent implements OnInit {
   themes: any[] = [];
+ wiki:any= {};
 
-  constructor(private router: Router, private datosWiki:SWikiService) { }
+  constructor(private router: Router, private datosWiki:SWikiService, private activatedRoute: ActivatedRoute) { 
+    this.activatedRoute.params.subscribe( params =>{
+      this.datosWiki.getTemas(params ['id']).subscribe(data => { this.wiki = data });
 
+      console.log(this.wiki);
+  })
+  }
   ngOnInit(): void {
+    
   }
   crear(){
     this.router.navigate(['create']);
@@ -21,9 +28,9 @@ export class HeaderComponent implements OnInit {
   home(){
     this.router.navigate(['']);
   }
-  edit(){
-    this.router.navigate(['edit']);
-  }
+  // edit(){
+  //   this.router.navigate(['edit']);
+  // }
  
   getTheme(searchTerm: string){
     this.datosWiki.getTheme(searchTerm).subscribe(data => {

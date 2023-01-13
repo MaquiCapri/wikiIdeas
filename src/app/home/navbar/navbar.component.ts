@@ -24,9 +24,9 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['create']);
   }
 
-  edit() {
-    this.router.navigate(['edit']);
-  }
+  // edit() {
+  //   this.router.navigate(['edit']);
+  // }
 //busca lista de home/section
   getTheme(searchTerm: string) {
     this.datosWiki.getTheme(searchTerm).subscribe(data => {

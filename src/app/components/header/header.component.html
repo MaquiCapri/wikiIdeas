@@ -21,7 +21,8 @@
     </nav>
   </div> -->
 
-    <input  type="button" class="btn btn-light" id="button" value="Editar temas" (click)="edit()">
+    <input  type="button" class="btn btn-light" id="button" value="Editar temas" routerLink="/edit/{{wiki.id}}">         
+    
     <input type="button" class="btn btn-light" id="button" value="Crear tema" (click)="crear()">
     
     <div class="listTheme3" >

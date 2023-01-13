@@ -103,10 +103,10 @@
                       El título es un campo <strong>requerido</strong>
                     </span>
                     <span *ngIf="saveForm.get('titulo')?.hasError('minlength') && saveForm.get('titulo')?.touched">
-                        Este campo debe tener como mínimo <strong>4 caracteres</strong>
+                        Este campo debe tener como mínimo <strong>3 caracteres</strong>
                       </span>
                       <span *ngIf="saveForm.get('titulo')?.hasError('maxlength') && saveForm.get('titulo')?.touched">
-                        Este campo debe tener como máximo <strong>40 caracteres</strong>
+                        Este campo debe tener como máximo <strong>60 caracteres</strong>
                       </span>
                   </div>
 

@@ -23,12 +23,12 @@ export class EditionComponent implements OnInit {
   }
 
   saveForm = new FormGroup({
-    titulo: new FormControl('',[Validators.required, Validators.minLength(4), Validators.maxLength(40)]),
+    titulo: new FormControl('',[Validators.required, Validators.minLength(3), Validators.maxLength(60)]),
     imagen: new FormControl(''),
     categoria: new FormControl(''),
     indice: new FormControl(''),
     preambulo: new FormControl(''),
-    contenido: new FormControl('',[Validators.required, Validators.minLength(50)]),
+    contenido: new FormControl('',[Validators.required, Validators.minLength(40)]),
     info_general: new FormControl(''),
   });
   
@@ -42,14 +42,11 @@ export class EditionComponent implements OnInit {
         Swal.fire({
           position: 'top-end',
           icon: 'success',
-          title: 'Enviado correctamente',
+          title: 'Actualizado correctamente',
           showConfirmButton: false,
           timer: 1500
         })
 
-        //   },err=>{
-        //     alert("Error al modificar texto");
-        //     this.router.navigate(['']);
       }
     )
   }
@@ -60,9 +57,7 @@ export class EditionComponent implements OnInit {
         data => {
           this.cargarExperiencia();
           alert("Se borró corrrectamente");
-        }// , err => {
-        //   alert("No se pudo borrar la educacion");
-        // }
+        }
       )
     }
   }

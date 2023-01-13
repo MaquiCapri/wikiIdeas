@@ -19,12 +19,12 @@ export class TextComponent implements OnInit {
   }
 
   saveForm = new FormGroup({
-    titulo: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(40)]),
+    titulo: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(60)]),
     imagen: new FormControl(''),
     categoria: new FormControl('', [Validators.required, Validators.minLength(4)]),
     indice: new FormControl(''),
     preambulo: new FormControl(''),
-    contenido: new FormControl('', [Validators.required, Validators.minLength(50)]),
+    contenido: new FormControl('', [Validators.required, Validators.minLength(40)]),
     info_general: new FormControl(''),
   });
 

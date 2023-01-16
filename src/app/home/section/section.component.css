@@ -10,9 +10,9 @@ section {
     /* position: relative;   */
 }
 
- .estructure {
+.estructure {
     display: flex;
-} 
+}
 
 .container-prod {
     height: 180px;
@@ -31,6 +31,7 @@ ul {
     height: 180px;
     width: 220px;
     opacity: 0.8;
+    transition: transfrom 0.3s ease-in-out;
 }
 
 img {
@@ -56,6 +57,12 @@ button {
 
 .listTheme2 {
     position: absolute;
+}
+
+.listaTemas:hover {
+    filter: opacity(0.9);
+    transform: scale(1.03);
+    font-size: medium;
 }
 
 @media (max-width: 680px) {

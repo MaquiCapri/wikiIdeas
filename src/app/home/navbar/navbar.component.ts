@@ -24,25 +24,29 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['create']);
   }
 
-  // edit() {
-  //   this.router.navigate(['edit']);
-  // }
-//busca lista de home/section
+  //  edit() {
+  //    this.router.navigate(['edit']);
+  //  }
+//busca lista de home/section con boton buscar
   getTheme(searchTerm: string) {
+    
     this.datosWiki.getTheme(searchTerm).subscribe(data => {
       this.themes = data;
-      if (this.themes.length == 0) {
-        Swal.fire({
-          title: 'No se encuentra el tema',
-          showClass: {
-            popup: 'animate__animated animate__fadeInDown'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
-          }
-        })
+      if ((this.themes.length == 0) || (searchTerm[0] == undefined)) {
+        // alert("alert");
+        this.themes= [];
+
+        // Swal.fire({
+        //   title: 'No se encuentra el tema',
+        //   showClass: {
+        //     popup: 'animate__animated animate__fadeInDown'
+        //   },
+        //   hideClass: {
+        //     popup: 'animate__animated animate__fadeOutUp'
+        //   }
+        // })
       }
-      console.log(data);
+      console.log(data.value);
     });
   }
    //input buscador:

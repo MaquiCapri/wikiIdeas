@@ -1,4 +1,4 @@
-.container {
+section {
     display: flex;
     color: #FFFFFF;
     text-align: center;
@@ -7,18 +7,18 @@
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    position: relative;
+    /* position: relative;   */
 }
 
-.estructure {
+ .estructure {
     display: flex;
-}
+} 
 
 .container-prod {
     height: 180px;
     width: 220px;
-     margin: 20px; 
-    cursor: pointer;   
+    margin: 20px;
+    cursor: pointer;
 }
 
 ul {
@@ -35,7 +35,7 @@ ul {
 
 img {
     border: 2px solid black;
-    background-color: #DDF1F0;   
+    background-color: #DDF1F0;
 }
 
 h5 {
@@ -43,30 +43,31 @@ h5 {
     margin-top: 70px;
 }
 
-input{
+input {
     border-style: none;
 }
 
-button{
+button {
     border: none;
     height: 20px;
     width: 200px;
- margin-left: -20px; 
+    margin-left: -20px;
 }
-.listTheme2{
+
+.listTheme2 {
     position: absolute;
 }
 
 @media (max-width: 680px) {
-    .estructure{
-   display: flex;
-   flex-direction:column;
-   margin: 10px 30px;
+    .estructure {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 30px;
     }
-    }
+}
 
-    @media (min-width: 1200px) {
-        .container-prod {          
-             margin: 50px;         
-        }
-        }
+@media (min-width: 1200px) {
+    .container-prod {
+        margin: 50px;
+    }
+}

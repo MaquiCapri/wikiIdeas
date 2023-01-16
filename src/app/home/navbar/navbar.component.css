@@ -1,7 +1,7 @@
 .navbar {
     background-color: #7FB5B5;
     display: grid;
-    grid-template-columns:auto  50% auto auto;
+    grid-template-columns:auto  50% auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 80px;    
 }
@@ -17,7 +17,6 @@
     border-radius: 40px;
     border: none;
     cursor: pointer;
-
 }
 
 #basic-addon1 {
@@ -32,6 +31,7 @@
 
 #button{
     margin-top: -15px;
+    margin-right: 25px;
     height: 30px;
     width: 14vw;
     font-size: 14px;
@@ -43,7 +43,10 @@
     border-radius: 40px; 
 }
 
-
+  /* .listTheme{
+     position:absolute; 
+    /* display: flex; */
+/* }   */ 
 
 
  

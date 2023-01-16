@@ -16,14 +16,10 @@
         </form>
       </nav>
     </div>
-  
-      <!-- <input  type="button" class="btn btn-light" id="button" value="Editar temas" (click)="edit()"> -->
+       <!-- <input  type="button" class="btn btn-light" id="button" value="Editar temas" (click)="edit()">  -->
       <input type="button" class="btn btn-light" id="button" value="Crear tema" (click)="create()">
      
-   <div class="listTheme" >
-    
-    <app-list-theme  *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>                     
-    
+   <div class="listTheme" >  
+    <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>                      
     </div>  
-
 </div>

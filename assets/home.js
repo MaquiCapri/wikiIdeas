@@ -103,32 +103,32 @@ $(document).ready(function () {
   });
 
 // aperce/ocultan listas de home
-$(function(){
-  var x=false;
-  $("#basic-addon1").click(function(){
-      if(x==false){
-          $(".listTheme").fadeIn(500);         
-          x=true;
-      }else {
-          $(".listTheme").slideUp(300);
+// $(function(){
+//   var x=false;
+//   $("#basic-addon1").click(function(){
+//       if(x==false){
+//           $(".listTheme").fadeIn(500);         
+//           x=true;
+//       }else {
+//           $(".listTheme").slideUp(300);
           
-          x=false;
-      };
-  });
-});
+//           x=false;
+//       };
+//   });
+// });
 
-$(function(){
-  var x=false;
-  $("button.listaTemas").click(function(){
-      if(x==false){
-          $(".listTheme2").fadeIn(600);          
-          x=true;
-      }else {
-          $(".listTheme2").slideUp(300);         
-          x=false;
-      };
-  });
-});
+// $(function(){
+//   var x=false;
+//   $("button.listaTemas").click(function(){
+//       if(x==false){
+//           $(".listTheme2").fadeIn(600);          
+//           x=true;
+//       }else {
+//           $(".listTheme2").slideUp(300);         
+//           x=false;
+//       };
+//   });
+// });
  
 
 });

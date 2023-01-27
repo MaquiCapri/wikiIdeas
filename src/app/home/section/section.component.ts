@@ -20,23 +20,27 @@ export class SectionComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  getTheme(searchTerm: string){
-     this.datosWiki.getTheme(searchTerm).subscribe(themes => {
-      this.themes =themes;
-      if(this.themes.length==0){
+  // getTheme(searchTerm: string){
+    //  this.datosWiki.getTheme(searchTerm).subscribe(themes => {
+    //   this.themes =themes;
+      
+        //  this.router.navigate(['busqueda']);
+    
+      // if(this.themes.length==0){
               
-              Swal.fire({
-                 title: 'No se encuentra el tema',
-                  showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                 },
-                 hideClass: {
-                   popup: 'animate__animated animate__fadeOutUp'
-                 }
-               })
-          }
-      console.log(themes);
-    })
-}
+      //         Swal.fire({
+      //            title: 'No se encuentra el tema',
+      //             showClass: {
+      //               popup: 'animate__animated animate__fadeInDown'
+      //            },
+      //            hideClass: {
+      //              popup: 'animate__animated animate__fadeOutUp'
+      //            }
+      //          })
+      //     }
+
+//       console.log(themes);
+//     })
+// }
 
 }

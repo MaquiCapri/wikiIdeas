@@ -1,71 +1,32 @@
-section {
+ section {
     display: flex;
-    color: #FFFFFF;
-    text-align: center;
-    height: 100%;
     justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
     flex-direction: row;
-    /* position: relative;   */
-}
+    gap: 30px;
+    height: 33rem;
+ }
 
-.estructure {
-    display: flex;
+ img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+     height:10rem ; 
+    width: 100%;
+   padding: 5px;
 }
-
-.container-prod {
-    height: 180px;
-    width: 220px;
-    margin: 20px;
-    cursor: pointer;
-}
-
-ul {
-    position: absolute;
-    text-decoration-line: underline;
-    text-align: start;
-    color: #FFFFFF;
+.card{
+    border-radius: 20px;
+    margin-top: -20px;
     font-size: 13px;
-    background-color: #17252A;
-    height: 180px;
-    width: 220px;
-    opacity: 0.8;
-    transition: transfrom 0.3s ease-in-out;
+    height: 27rem;
+
+}
+ul{
+    cursor: pointer;
+
 }
 
-img {
-    border: 2px solid black;
-    background-color: #DDF1F0;
-}
-
-h5 {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 70px;
-}
-
-input {
-    border-style: none;
-}
-
-button {
-    border: none;
-    height: 20px;
-    width: 200px;
-    margin-left: -20px;
-}
-
-.listTheme2 {
-    position: absolute;
-}
-
-.listaTemas:hover {
-    filter: opacity(0.9);
-    transform: scale(1.03);
-    font-size: medium;
-}
-
-@media (max-width: 680px) {
+/* @media (max-width: 680px) {
     .estructure {
         display: flex;
         flex-direction: column;
@@ -77,4 +38,4 @@ button {
     .container-prod {
         margin: 50px;
     }
-}
+} */

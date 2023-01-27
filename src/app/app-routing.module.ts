@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 import { SelectionComponent } from './components/selection/selection.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
@@ -13,6 +14,11 @@ const routes: Routes = [
   { path: 'create',component: CreateComponent},
   { path: 'edit',component: EditComponent},
   { path: 'edit/:id',component: EditComponent},
+  { path: 'busqueda',component: BusquedaComponent},
+  { path: 'busqueda/:searchTerm',component: BusquedaComponent},
+
+
+
 ];
 
 @NgModule({

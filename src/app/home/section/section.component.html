@@ -1,5 +1,5 @@
 <section>         
-        <div class="estructure">
+        <!-- <div class="estructure">
                 <div class="container-prod" id="cultura"  style="background-image:url('./assets/monaLisa4.jpg')">
 
                         <h5 id="culture">CULTURA</h5>
@@ -38,19 +38,7 @@
         <div class="estructure">
                 <div class="container-prod" id="historia" style="background-image:url('./assets/guerra1.png')">
 
-                        <h5 id="history" style="margin-top: 60px;">HISTORIA Y SOCIEDAD</h5>
-                      
-                        <ul class="list2" style="color: #FFFFFF; font-size: 13px;">
-                                <button class="listaTemas" value="biografia" #search20 (click)="getTheme(search20.value)">Biografía</button>
-                                <button class="listaTemas" value="comidas y bebidas" #search21 (click)="getTheme(search21.value)">Comidas y Bebidas</button>
-                                <button class="listaTemas" #search22 value="educacion" (click)="getTheme(search22.value)">Educación</button>
-                                <button class="listaTemas" value="filosofia y religion" #search23 (click)="getTheme(search23.value)">Filosofía y Religión</button>
-                                <button class="listaTemas" value="guerras" #search24 (click)="getTheme(search24.value)">Guerras</button>
-                                <button class="listaTemas" value="historia" #search25 (click)="getTheme(search25.value)">Historias</button>
-                                <button class="listaTemas" value="negocios y economias" #search26 (click)="getTheme(search26.value)">Negocios y Economías</button>
-                                <button class="listaTemas" value="politicas y gobiernos" #search27 (click)="getTheme(search27.value)">Políticas y Gobiernos</button>                                   
-                                <button class="listaTemas" value="transporte" #search28 (click)="getTheme(search28.value)">Transporte</button>                                   
-                        </ul>
+                   
 
                 </div>
                 <div class="container-prod" id="regiones" style="background-image:url('./assets/maps1.png')">
@@ -68,8 +56,88 @@
                                                                    
                         </ul>
                 </div>
-        </div>
-        <div class="listTheme2">                                
+        </div> -->
+          <!-- <div class="listTheme2">                                
            <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>                     
+        </div>   -->
+
+
+      <div class="card" style="width: 14rem;">
+        <img src="./assets/cult.png" class="card-img-top" alt="foto">
+        <div class="card-body">
+           <ul class="card-text">   
+                <h6>Cultura</h6>
+                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
+                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
+                                <li routerLink="/busqueda/arquitectura">Arquitectura</li> 
+                                <li routerLink="/busqueda/arte">Arte</li> 
+                                <li routerLink="/busqueda/cine y television">Cine y televisión</li> 
+                                <li routerLink="/busqueda/comic y anime">Comic y Anime</li> 
+                                <li routerLink="/busqueda/deportes">Deportes</li> 
+                                <li routerLink="/busqueda/entretenimiento">Entretenimiento</li> 
+                                <li routerLink="/busqueda/literatura">Literatura</li> 
+                                <li routerLink="/busqueda/moda">Moda</li> 
+                                <li routerLink="/busqueda/musica">Música</li> 
+                 </ul>  
         </div>
+      </div>
+
+      <div class="card" style="width: 14rem;">
+        <img src="./assets/ciencias.jpg" class="card-img-top" alt="foto">
+        <div class="card-body">
+           <ul class="card-text">   
+              <div style="width: 14rem;margin-left: -21px;"><h6>CIENCIAS Y TECNOLOGÍA</h6></div>  
+                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
+                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
+                                <li routerLink="/busqueda/biología">Biología</li> 
+                                <li routerLink="/busqueda/ciencia general">Ciencia general</li> 
+                                <li routerLink="/busqueda/computadoras e internet">Computadoras e internet</li> 
+                                <li routerLink="/busqueda/fisica">Fìsica</li> 
+                                <li routerLink="/busqueda/ingenieria">Ingeniería</li> 
+                                <li routerLink="/busqueda/matematicas">Matemáticas</li> 
+                                <li routerLink="/busqueda/medicina y salud">Medicina y salud</li> 
+                                <li routerLink="/busqueda/tecnología">Tecnología</li> 
+                                <li routerLink="/busqueda/tierra y medio ambiente">Tierra y medio ambiente</li> 
+                 </ul>            
+         </div>  
+        </div>
+      
+      <div class="card" style="width: 14rem;">
+        <img src="./assets/guerra1.png" class="card-img-top" alt="foto">
+        <div class="card-body">
+           <ul class="card-text">   
+                <div style="width: 14rem;margin-left: -21px;"><h6>HISTORIA Y SOCIEDAD</h6></div>
+                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
+                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
+                                <li routerLink="/busqueda/biografia">Biografía</li> 
+                                <li routerLink="/busqueda/comidas y bebidas">Comidas y Bebidas</li> 
+                                <li routerLink="/busqueda/educacion">Educación</li> 
+                                <li routerLink="/busqueda/filosofia y religion">Filosofía y Religión</li> 
+                                <li routerLink="/busqueda/guerras">Guerras</li> 
+                                <li routerLink="/busqueda/historias">Historias</li> 
+                                <li routerLink="/busqueda/negocios y economias">Negocios y Economías</li> 
+                                <li routerLink="/busqueda/politicas y gobiernos">Políticas y Gobiernos</li> 
+                                <li routerLink="/busqueda/transporte">Transporte</li> 
+                 </ul>  
+        </div>
+      </div>
+
+      <div class="card" style="width: 14rem;">
+        <img src="./assets/maps1.png" class="card-img-top" alt="foto">
+        <div class="card-body">
+           <ul class="card-text">   
+                <h6>REGIONES</h6>
+                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
+                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
+                                <li routerLink="/busqueda/africa">África</li> 
+                                <li routerLink="/busqueda/america central">Ámerica Central</li> 
+                                <li routerLink="/busqueda/america del norte">Ámerica del Norte</li> 
+                                <li routerLink="/busqueda/america del sur">Ämerica del Sur</li> 
+                                <li routerLink="/busqueda/asia">Asia</li> 
+                                <li routerLink="/busqueda/europa">Europa</li> 
+                                <li routerLink="/busqueda/oceania">Oceanía</li> 
+                                 
+                 </ul>  
+        </div>
+      </div>
 </section>

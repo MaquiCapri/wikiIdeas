@@ -1,12 +1,23 @@
-<div class="contents">
+<!-- <div class="contents">
      <div class="preamble">
       <br>
     <h3><strong>{{wiki.titulo}}</strong><hr></h3>
-       <!-- <p>{{wiki.preambulo}}</p>  -->
+        <p>{{wiki.preambulo}}</p>  
     </div> 
     <div id="contents">
-       <!-- <h4><strong>Contenido:</strong><hr></h4> -->
+        <h4><strong>Contenido:</strong><hr></h4>
         <p>{{wiki.contenido}}</p> 
     </div>
-</div>
+</div> -->
 
+<div class="container-fluid">
+   <div class="contenido">                         
+      <h3><strong>{{wiki.titulo}}</strong><hr></h3>
+      <p>{{wiki.contenido}}</p> 
+ 
+</div> 
+<div>
+   <img [src]="wiki.imagen" [alt]="wiki.titulo" width="200" height="200"> 
+
+</div>
+</div>

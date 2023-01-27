@@ -26,6 +26,8 @@ import { ListThemeComponent } from './home/list-theme/list-theme.component';
 import { List2ThemeComponent } from './home/list2-theme/list2-theme.component';
 import { ListComponent } from './components/list/list.component';
 import { List3Component } from './edit/list3/list3.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
+import { ContentComponent } from './busqueda/content/content.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { List3Component } from './edit/list3/list3.component';
         ListThemeComponent,
         List2ThemeComponent,
         ListComponent,
-        List3Component
+        List3Component,
+        BusquedaComponent,
+        ContentComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -20,13 +20,18 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  home(){
+    this.router.navigate(['']);
+
+  }
   create() {
     this.router.navigate(['create']);
   }
+ 
+   edit() {
+     this.router.navigate(['edit']);
+   }
 
-  //  edit() {
-  //    this.router.navigate(['edit']);
-  //  }
 //busca lista de home/section con boton buscar
   getTheme(searchTerm: string) {
     

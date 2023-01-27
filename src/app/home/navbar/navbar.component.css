@@ -1,25 +1,28 @@
 .navbar {
-    background-color: #7FB5B5;
+    /* background-color: #7FB5B5; */
+    background: linear-gradient(180deg, #7EC6C3 0%, rgba(217, 217, 217, 0) 100%);
     display: grid;
-    grid-template-columns:auto  50% auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 80px;    
+    grid-template-columns: auto 50% auto auto auto;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    height: 160px;
+    margin-top: -40px;
+
 }
 
-#buscar {
+/* #buscar {
     margin-top: -15px;
-}
+} */
 
-.form-control {  
-    background-color: #17252A;
-    color: #DDF1F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-    border: none;
+.form-control {
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 30px;
     cursor: pointer;
+    border: 1px solid #17252A;
+    background-color: #D8EDED;
+    height: 35px;
 }
 
-#basic-addon1 {
+/* #basic-addon1 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-bottom-right-radius: 40px;
     border-top-right-radius: 40px;
@@ -27,8 +30,9 @@
     color: #DDF1F0;
     border: none;
     cursor: pointer;
-}
+} */
 
+/* 
 #button{
     margin-top: -15px;
     margin-right: 25px;
@@ -41,12 +45,22 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 40px; 
+} */
+#button {
+    margin-top: -15px;
+    padding: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins';
+    cursor: pointer;
+     line-height: 48px;
+     margin: 10px; 
+}
+#logo{
+    margin-left: 30px;
 }
 
-  /* .listTheme{
+/* .listTheme{
      position:absolute; 
     /* display: flex; */
-/* }   */ 
-
-
- 
+/* }   */

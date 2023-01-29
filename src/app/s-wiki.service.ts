@@ -37,7 +37,6 @@ export class SWikiService {
       return this.http.get<Wiki[]>(this.URL);
     }
 
-
        search1(term: string):Observable<any>{
         return this.http.get<any>(this.url + term);
        }

@@ -1,74 +1,9 @@
 <section>         
-        <!-- <div class="estructure">
-                <div class="container-prod" id="cultura"  style="background-image:url('./assets/monaLisa4.jpg')">
-
-                        <h5 id="culture">CULTURA</h5>
-                        
-                        <ul class="list" style="color: #FFFFFF; font-size: 13px;">
-
-                                <button class="listaTemas" value="arquitectura" #search0 (click)="getTheme(search0.value)">Arquitectura</button>
-                                <button class="listaTemas" value="arte" #search (click)="getTheme(search.value)">Arte</button>
-                                <button class="listaTemas" #search1 value="cine y television" (click)="getTheme(search1.value)">Cine y televisión</button>
-                                <button class="listaTemas" value="comic y anime" #search2 (click)="getTheme(search2.value)">Comic y Anime</button>
-                                <button class="listaTemas" value="deportes" #search3 (click)="getTheme(search3.value)">Deportes</button>
-                                <button class="listaTemas" value="entretenimiento" #search4 (click)="getTheme(search4.value)">Entretenimiento</button>
-                                <button class="listaTemas" value="literatura" #search5 (click)="getTheme(search5.value)">Literatura</button>
-                                <button class="listaTemas" value="moda" #search6 (click)="getTheme(search6.value)">Moda</button>
-                                <button class="listaTemas" value="musica" #search7 (click)="getTheme(search7.value)">Música</button>
-                        </ul>
-
-                </div>
-                <div class="container-prod" id="ciencia" style="background-image:url('./assets/cerebro1.jpg')">
-
-                        <h5 id="science" style="margin-top: 60px;">CIENCIAS Y TECNOLOGÍA</h5>
-                       
-                        <ul class="list1" style="color: #FFFFFF; font-size: 13px; ">
-                         <button class="listaTemas" value="biología" #search10 (click)="getTheme(search10.value)">Biología</button>
-                        <button class="listaTemas" value="ciencia general" #search11 (click)="getTheme(search11.value)">Ciencia general</button>
-                        <button class="listaTemas" #search12 value="computadoras e internet" (click)="getTheme(search12.value)">Computadoras e internet</button>
-                        <button class="listaTemas" value="fisica" #search13 (click)="getTheme(search13.value)">Fìsica</button>
-                        <button class="listaTemas" value="ingenieria" #search14 (click)="getTheme(search14.value)">Ingeniería</button>
-                        <button class="listaTemas" value="matematicas" #search15 (click)="getTheme(search15.value)">Matemáticas</button>
-                        <button class="listaTemas" value="medicina y salud" #search16 (click)="getTheme(search16.value)">Medicina y salud</button>
-                        <button class="listaTemas" value="Tecnología" #search17 (click)="getTheme(search17.value)">Tecnología</button>
-                        <button class="listaTemas" value="tierra y medio ambiente" #search18 (click)="getTheme(search18.value)">Tierra y medio ambiente</button>                         
-                        </ul>
-                </div>
-        </div>
-        <div class="estructure">
-                <div class="container-prod" id="historia" style="background-image:url('./assets/guerra1.png')">
-
-                   
-
-                </div>
-                <div class="container-prod" id="regiones" style="background-image:url('./assets/maps1.png')">
-
-                        <h5 id="region" style="margin-top: 60px;">REGIONES</h5>
-                       
-                        <ul class="list3">
-                                <button class="listaTemas" value="africa" #search30 (click)="getTheme(search30.value)">África</button>
-                                <button class="listaTemas" value="america central" #search31 (click)="getTheme(search31.value)">Ámerica Central</button>
-                                <button class="listaTemas" #search32 value="america del norte" (click)="getTheme(search32.value)">Ámerica del Norte</button>
-                                <button class="listaTemas" value="america del sur" #search33 (click)="getTheme(search33.value)">Ämerica del Sur</button>
-                                <button class="listaTemas" value="asia" #search34 (click)="getTheme(search34.value)">Asia</button>
-                                <button class="listaTemas" value="europa" #search35 (click)="getTheme(search35.value)">Europa</button>
-                                <button class="listaTemas" value="oceania" #search37 (click)="getTheme(search37.value)">Oceanía</button>
-                                                                   
-                        </ul>
-                </div>
-        </div> -->
-          <!-- <div class="listTheme2">                                
-           <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>                     
-        </div>   -->
-
-
       <div class="card" style="width: 14rem;">
         <img src="./assets/cult.png" class="card-img-top" alt="foto">
         <div class="card-body">
            <ul class="card-text">   
                 <h6>Cultura</h6>
-                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
-                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
                                 <li routerLink="/busqueda/arquitectura">Arquitectura</li> 
                                 <li routerLink="/busqueda/arte">Arte</li> 
                                 <li routerLink="/busqueda/cine y television">Cine y televisión</li> 
@@ -87,8 +22,6 @@
         <div class="card-body">
            <ul class="card-text">   
               <div style="width: 14rem;margin-left: -21px;"><h6>CIENCIAS Y TECNOLOGÍA</h6></div>  
-                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
-                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
                                 <li routerLink="/busqueda/biología">Biología</li> 
                                 <li routerLink="/busqueda/ciencia general">Ciencia general</li> 
                                 <li routerLink="/busqueda/computadoras e internet">Computadoras e internet</li> 
@@ -107,8 +40,6 @@
         <div class="card-body">
            <ul class="card-text">   
                 <div style="width: 14rem;margin-left: -21px;"><h6>HISTORIA Y SOCIEDAD</h6></div>
-                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
-                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
                                 <li routerLink="/busqueda/biografia">Biografía</li> 
                                 <li routerLink="/busqueda/comidas y bebidas">Comidas y Bebidas</li> 
                                 <li routerLink="/busqueda/educacion">Educación</li> 
@@ -127,8 +58,6 @@
         <div class="card-body">
            <ul class="card-text">   
                 <h6>REGIONES</h6>
-                <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->    
-                        <!-- <ul class="list" style="color: #FFFFFF; font-size: 13px;"> -->
                                 <li routerLink="/busqueda/africa">África</li> 
                                 <li routerLink="/busqueda/america central">Ámerica Central</li> 
                                 <li routerLink="/busqueda/america del norte">Ámerica del Norte</li> 

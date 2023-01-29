@@ -1,22 +1,15 @@
-
 <div class="container-fluid">
-   <div class="lista2">                         
-    <app-list2-theme *ngFor="let theme of themes" [theme]="theme"></app-list2-theme>                     
-    <!-- <nav aria-label="...">
-        <ul class="pagination pagination-sm">
-          <li class="page-item active" aria-current="page">
-            <span class="page-link">1</span>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-        </ul>
-      </nav> -->
-</div> 
-<div>
-    <img src="./assets/monaLisa4.jpg" alt="">
-</div>
-<!-- <div class="listTheme" >  
-    <app-list-theme *ngFor="let theme of themes" [theme]="theme" ></app-list-theme>                      
-    </div>  -->
+    <div class="lista2" style="background-image: url('./assets/vector9.png')  ">
+       <div><app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme></div> 
+      
+ 
+    <mat-paginator [length]="themes.length" 
+    [pageSize]="pageSize" 
+    (page)="cambiarpagina($event)">
+   </mat-paginator>
+  
+    </div>
 
+        <img src="./assets/conocimiento.png" alt="" >
+   
 </div>

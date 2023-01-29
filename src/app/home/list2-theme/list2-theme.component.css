@@ -1,8 +1,6 @@
-/* .container {    
-      width: 17vw;
-      background-color: #17252A;
-      color: beige;
-      margin-left: 230%;
-      font-size: 90%;
-} */
-
+.container{
+/* padding: 0px 150px; */
+padding-top: 10px;
+padding-right: 550px;
+text-align: center;
+}

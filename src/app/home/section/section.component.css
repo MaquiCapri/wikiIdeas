@@ -1,39 +1,40 @@
  section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: row;
-    gap: 30px;
-    height: 33rem;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     flex-direction: row;
+     gap: 30px;
+     height: 33rem; 
  }
 
  img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-     height:10rem ; 
-    width: 100%;
-   padding: 5px;
-}
-.card{
-    border-radius: 20px;
-    margin-top: -20px;
-    font-size: 13px;
-    height: 27rem;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     height: 10rem;
+     width: 100%;
+     padding: 5px;
+ }
 
-}
-ul{
-    cursor: pointer;
+ .card {
+    position: static;
+     border-radius: 20px;
+     margin-top: -20px;
+     font-size: 13px;
+     height: 27rem;
+ }
 
-}
+ ul {
+     cursor: pointer;
 
-/* @media (max-width: 680px) {
+ }
+
+ /* @media (max-width: 680px) {
     .estructure {
         display: flex;
         flex-direction: column;
         margin: 10px 30px;
     }
 }
-
 @media (min-width: 1200px) {
     .container-prod {
         margin: 50px;

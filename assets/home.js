@@ -7,10 +7,10 @@ $(document).ready(function () {
   $("#ciencias1").hide();
   $("#regiones1").hide();
   $("#historia1").hide();
-  $('#categoria').hide();
-  $('#categoriaCiencias').hide();
-  $('#categoriaHistoria').hide();
-  $('#categoriaRegion').hide();
+   $('#categoria').hide();
+   $('#categoriaCiencias').hide();
+   $('#categoriaHistoria').hide();
+   $('#categoriaRegion').hide();
 
   // Home : aparece y desaparece lista de temas:
   $("#cultura").hover(function () {
@@ -51,11 +51,11 @@ $(document).ready(function () {
     $('#cul').click(function () {
       if (estaOculto) {
         $('#categoria input').attr("list","categoria1");
-        $('#categoria').show();
-        estaOculto = false;
-       } else {
-         $('#categoria').hide();
-         estaOculto = true;
+         $('#categoria').show();
+         estaOculto = false;
+        } else {
+          $('#categoria').hide();
+          estaOculto = true;
       }
     });
   });
@@ -65,11 +65,11 @@ $(document).ready(function () {
     $('#cienc').click(function () {
       if (estaOculto) {
         $('#categoria input').attr("list","categoria2");
-        $('#categoria').show();
-        estaOculto = false;
-       } else {
-         $('#categoria').hide();
-         estaOculto = true;
+         $('#categoria').show();
+         estaOculto = false;
+        } else {
+          $('#categoria').hide();
+          estaOculto = true;
       }
     });
   });
@@ -101,34 +101,5 @@ $(document).ready(function () {
       }
     });
   });
-
-// aperce/ocultan listas de home
-// $(function(){
-//   var x=false;
-//   $("#basic-addon1").click(function(){
-//       if(x==false){
-//           $(".listTheme").fadeIn(500);         
-//           x=true;
-//       }else {
-//           $(".listTheme").slideUp(300);
-          
-//           x=false;
-//       };
-//   });
-// });
-
-// $(function(){
-//   var x=false;
-//   $("button.listaTemas").click(function(){
-//       if(x==false){
-//           $(".listTheme2").fadeIn(600);          
-//           x=true;
-//       }else {
-//           $(".listTheme2").slideUp(300);         
-//           x=false;
-//       };
-//   });
-// });
- 
 
 });

@@ -1,178 +1,113 @@
 <div class="container-fluid">
-    <div class="tool">
-        <div id="tools" style="text-align: center;">
-            <!-- Herramientas:
-            <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore dolorum
-                numquam recusandae dignissimos, illo, fugit quas cupiditate placeat impedit modi? Fuga id sit culpa
-                praesentium repudiandae
-                voluptatibus autem ea.
-            </p> -->
-        </div>
-    </div>
-    <div class="text">
-        <div class="navTools">
-            <!-- <button id="" style="border-right: 1px solid #17252A;"><i class="bi bi-arrow-left-right"></i></button>
-            <button id="" style="border-right: 1px solid #17252A;">Párrafo <i class="bi bi-chevron-down"></i></button>
-            <div>
-                <button id=""><i class="bi bi-type"></i></button>
-                <button id=""><i class="bi bi-list-ul"><i class="bi bi-chevron-down"></i></i></button>
-                <button id="">Insertar <i class="bi bi-chevron-down"></i></button>
-                <button id=""></button>
-
-                <button id=""><i class="bi bi-question-circle"></i></button>
-                <button id=""><i class="bi bi-exclamation-triangle"></i></button>
-                <button id=""><i class="bi bi-justify"></i></button>
-                <button id=""><i class="bi bi-pencil"></i></button>
-            </div>
-            <button id="" style="background-color: #17252A; color:#FFFFFF">Publicar</button> -->
-
-        </div>
-
-        <div class="container">
-            <div>
-                    <h5>Elegir una Categoría</h5><hr>
-                    <ol>
+            <div class="categories">
+                    <p>Elegir una Categoría</p>
+                    <ul>
                         <li id="cul" onclick="listaCrear()">Cultura</li> 
                         <li id="cienc" onclick="listaCrear1()">Ciencias y Tecnología</li>
                         <li id="hist" onclick="listaCrear2()"> Historia y Sociedad</li>
                         <li id="reg" onclick="listaCrear3()">Regiones</li>
-                    </ol>
+                    </ul>
             </div>
-             <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
-              <div id="categoria">
-                <div class="form-group" >
-                    <label for="exampleFormControlInput">Temas</label>
-                    <input type="text" class="form-control" formControlName="categoria" list="categoria1"
-                        placeholder="Elegir tema" >
-                        
-                        <datalist id="categoria1">
-                            <option value="Arquitectura"></option>
-                            <option value="Arte"></option>
-                            <option value="Cine y televisión"></option>
-                            <option value="Comic y Anime"></option>
-                            <option value="Deportes"></option>
-                            <option value="Entretenimiento"></option>
-                            <option value="Literatura"></option>
-                            <option value="Moda"></option>
-                            <option value="Música"></option>
-                            <option value="Videos Juegos"></option>
-                        </datalist>
-
-                        <datalist id="categoria2">
-                            <option value="Biología"></option>
-                            <option value="Computadoras e internet"></option>
-                            <option value="Física"></option>
-                            <option value="Ingeniería"></option>
-                            <option value="Matemáticas"></option>
-                            <option value="Medicina y salud"></option>
-                            <option value="Química"></option>
-                            <option value="Tecnología"></option>
-                            <option value="Tierra y Medio ambiente"></option>
-                        </datalist>
-
-                        <datalist id="categoria3">
-                            <option value="Biografía"></option>
-                            <option value="Comidas y Bebidas"></option>
-                            <option value="Educación"></option>
-                            <option value="Filosofía y religión"></option>
-                            <option value="Guerras"></option>
-                            <option value="Historia"></option>
-                            <option value="Negocios y Economías"></option>
-                            <option value="Políticas y Gobiernos"></option>
-                            <option value="Transporte"></option>
-    
-                        </datalist>
-
-                        <datalist id="categoria4">
-                            <option value="África"></option>
-                            <option value="América Central"></option>
-                            <option value="América del Norte"></option>
-                            <option value="Asia"></option>
-                            <option value="Europa"></option>
-                            <option value="Oceania"></option>
-    
-                        </datalist>
-               </div>
-           
-                <div class="form-group">
-                    <label for="exampleFormControlInput">Título</label>
-                    <textarea type="text" class="form-control" id="inputTexto" formControlName="titulo"></textarea> 
-                </div>
-                <div class="error">
-                    <span *ngIf="saveForm.get('titulo')?.hasError('required') && saveForm.get('titulo')?.touched ">
-                      El título es un campo <strong>requerido</strong>
-                    </span>
-                    <span *ngIf="saveForm.get('titulo')?.hasError('minlength') && saveForm.get('titulo')?.touched">
-                        Este campo debe tener como mínimo <strong>3 caracteres</strong>
-                      </span>
-                      <span *ngIf="saveForm.get('titulo')?.hasError('maxlength') && saveForm.get('titulo')?.touched">
-                        Este campo debe tener como máximo <strong>60 caracteres</strong>
-                      </span>
+        <div class="formulario" style="background-image: url('./assets/conocimiento.png')">
+            <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
+                <div id="categoria">
+                  <div class="form-group" >
+                      <label for="exampleFormControlInput">Temas</label>
+                      <input type="text" class="form-control" formControlName="categoria" list="categoria1"
+                          placeholder="Elegir tema" >
+                          
+                          <datalist id="categoria1">
+                              <option value="Arquitectura"></option>
+                              <option value="Arte"></option>
+                              <option value="Cine y televisión"></option>
+                              <option value="Comic y Anime"></option>
+                              <option value="Deportes"></option>
+                              <option value="Entretenimiento"></option>
+                              <option value="Literatura"></option>
+                              <option value="Moda"></option>
+                              <option value="Música"></option>
+                              <option value="Videojuegos"></option>
+                          </datalist>
+  
+                          <datalist id="categoria2">
+                              <option value="Biología"></option>
+                              <option value="Computadoras e internet"></option>
+                              <option value="Física"></option>
+                              <option value="Ingeniería"></option>
+                              <option value="Matemáticas"></option>
+                              <option value="Medicina y salud"></option>
+                              <option value="Química"></option>
+                              <option value="Tecnología"></option>
+                              <option value="Tierra y Medio ambiente"></option>
+                          </datalist>
+  
+                          <datalist id="categoria3">
+                              <option value="Biografía"></option>
+                              <option value="Comidas y Bebidas"></option>
+                              <option value="Educación"></option>
+                              <option value="Filosofía y religión"></option>
+                              <option value="Guerras"></option>
+                              <option value="Historia"></option>
+                              <option value="Negocios y Economías"></option>
+                              <option value="Políticas y Gobiernos"></option>
+                              <option value="Transporte"></option>
+      
+                          </datalist>
+  
+                          <datalist id="categoria4">
+                              <option value="África"></option>
+                              <option value="América Central"></option>
+                              <option value="América del Norte"></option>
+                              <option value="América del Sur"></option>
+                              <option value="Asia"></option>
+                              <option value="Europa"></option>
+                              <option value="Oceania"></option>
+      
+                          </datalist>
+                 </div>
+             
+                  <div class="form-group">
+                      <label for="exampleFormControlInput">Título</label>
+                      <textarea type="text" class="form-control" id="inputTexto" formControlName="titulo"></textarea> 
                   </div>
-
-                <div class="form-group">
-                    <label for="exampleFormControlInput">Imagen</label>
-                    <textarea type="text" class="form-control" formControlName="imagen"></textarea>
-                
-                </div>
-                <!-- <div class="form-group">
-                    <label for="exampleFormControlInput">Imagenes</label>
-                    <input type="text" class="form-control"  formControlName="imagen"  placeholder="https://...Escribir el link de la imagen"> 
-                </div> -->
-               <!-- <div>
-                    valido: {{ saveForm.valid | json}} 
-                </div> -->
-
-                 <!-- <div class="form-group">
-                    <label for="exampleFormControlInput">Imagen</label>
-                    <input type="text"  class="form-control" formControlName="imagen" placeholder="https://...Escribir el link de la imagen">
-                
-                </div> -->
-                <!-- <div class="form-group">
-                    <label for="exampleFormControlInput">indice</label>
-                    <input type="text" class="form-control"  formControlName="indice">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput">categoria</label>
-                    <input type="text" class="form-control"  formControlName="categoria">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput">preambulo</label>
-                    <input type="text" class="form-control"  formControlName="preambulo">
-                </div> -->
-                <div class="form-group">
-                    <label for="exampleFormControlInput">Contenido</label>
-                    <textarea id="form" type="text" class="form-control" formControlName="contenido"></textarea>
-                </div>
-                <div class="error">
-                    <span *ngIf="saveForm.get('contenido')?.hasError('required') && saveForm.get('contenido')?.touched ">
-                      El contenido es un campo <strong>requerido</strong>
-                    </span>
-                    <span *ngIf="saveForm.get('contenido')?.hasError('minlength') && saveForm.get('contenido')?.touched">
-                        El campo debe tener como mínimo <strong>40 caracteres</strong>
+                  <div class="error">
+                      <span *ngIf="saveForm.get('titulo')?.hasError('required') && saveForm.get('titulo')?.touched ">
+                        El título es un campo <strong>requerido</strong>
                       </span>
+                      <span *ngIf="saveForm.get('titulo')?.hasError('minlength') && saveForm.get('titulo')?.touched">
+                          Este campo debe tener como mínimo <strong>3 caracteres</strong>
+                        </span>
+                        <span *ngIf="saveForm.get('titulo')?.hasError('maxlength') && saveForm.get('titulo')?.touched">
+                          Este campo debe tener como máximo <strong>60 caracteres</strong>
+                        </span>
+                    </div>
+  
+                  <div class="form-group">
+                      <label for="exampleFormControlInput">Imagen</label>
+                      <textarea type="text" class="form-control" formControlName="imagen" placeholder="Escribir la url. ej.: https://"></textarea>
+                  
                   </div>
-                <!-- <div class="form-group">
-                    <label for="exampleFormControlInput">info_general</label>
-                    <input type="text" class="form-control"  formControlName="info_general">
-                </div> -->
-                <div class="button">
-                    <input class="btn btn-dark" id="button" type="submit" value="Publicar" onclick="validar()"
-                        [disabled]="saveForm.invalid">
-                </div>
-            </div>
-            </form>
+                  
+                  <div class="form-group">
+                      <label for="exampleFormControlInput">Contenido</label>
+                      <textarea id="form" type="text" class="form-control" formControlName="contenido"></textarea>
+                  </div>
+                  <div class="error">
+                      <span *ngIf="saveForm.get('contenido')?.hasError('required') && saveForm.get('contenido')?.touched ">
+                        El contenido es un campo <strong>requerido</strong>
+                      </span>
+                      <span *ngIf="saveForm.get('contenido')?.hasError('minlength') && saveForm.get('contenido')?.touched">
+                          El campo debe tener como mínimo <strong>40 caracteres</strong>
+                        </span>
+                    </div>
+                  
+                  <div class="button">
+                      <input class="btn btn-dark" id="button" type="submit" value="Publicar" onclick="validar()"
+                          [disabled]="saveForm.invalid">
+                  </div>
+              </div>
+              </form>
+      
         </div>
-    </div>
+             
 </div>
-<!-- <div>
-    <input (change)="capturarFile($event)" type="file" >
-</div>
-
-<div>
-     <button type="button" (click)="subirArchivo()">Subir archivo</button> 
-</div>
-
-<div *ngIf="previsualizacion">
-    <img [src]="previsualizacion" alt="" height="100px">
-</div> -->

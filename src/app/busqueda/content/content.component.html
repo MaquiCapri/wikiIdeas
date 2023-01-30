@@ -1,15 +1,51 @@
 <div class="container-fluid">
-    <div class="lista2" style="background-image: url('./assets/vector9.png')  ">
-       <div><app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme></div> 
-      
+    <div class="lista2" style="background-image: url('./assets/vector9.png')" >
+     <div><app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme></div> 
+    
  
     <mat-paginator [length]="themes.length" 
     [pageSize]="pageSize" 
     (page)="cambiarpagina($event)">
    </mat-paginator>
   
-    </div>
-
-        <img src="./assets/conocimiento.png" alt="" >
+    </div> 
+<div><img src="./assets/conocimiento.png" alt="" ></div>
+        
    
 </div>
+
+<!-- @media all and (max-width: 639px) and (min-width: 320px) {
+    #fourohfour_home {
+        background-image: url('my-image-320.png'); /*in the case you have another image for this resolution*/
+        background-size: 320px 240px;
+    }
+}
+
+@media all and (max-width: 799px) and (min-width: 640px) {
+    #fourohfour_home {
+        background-image: url('my-image-640.png'); /*in the case you have another image for this resolution*/
+        background-size: 640px 480px;
+    }
+}
+
+@media all and (max-width: 1023px) and (min-width: 800px) {
+    #fourohfour_home {
+        background-image: url('my-image-800.png'); /*in the case you have another image for this resolution*/
+        background-size: 800px 600px;
+    }
+}
+
+/* this one goes for default images - bigger sizes */
+@media all and (min-width: 1024px) {
+    #fourohfour_home {
+        background-image: url('my-image-1024.png'); /*in the case you have another image for this resolution*/
+        background-size: 1024px 768px;
+    }
+    @media all and (max-width: 319px) {
+    #fourohfour_home {
+        background-image: url('my-image-very-small.png'); /*in the case you have another image for this resolution - usually you'll never have these sizes as for today*/
+        background-size: 200px 150px;
+    }
+}
+
+} --> 

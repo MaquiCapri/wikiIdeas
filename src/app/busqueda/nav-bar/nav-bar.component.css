@@ -1,0 +1,18 @@
+.navbar {
+    background: linear-gradient(180deg, #7EC6C3 0%, rgba(217, 217, 217, 0) 100%);
+    display: grid;
+    grid-template-columns: auto 50% auto auto auto;
+    height: 160px;
+    margin-top: -40px;
+}
+
+#button {
+    margin-top: -15px;
+    padding: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    line-height: 48px;
+    margin: 10px;
+}

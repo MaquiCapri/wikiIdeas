@@ -11,8 +11,6 @@ import { SectionComponent } from './home/section/section.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from'@angular/common/http';
 import { CreateComponent } from './create/create.component';
-import { NavComponent } from './create/nav/nav.component';
-import { FooterEComponent } from './create/footerE/footerE.component';
 import { TextComponent } from './create/text/text.component';
 import { EditComponent } from './edit/edit.component';
 import { NavEComponent } from './edit/nav-e/nav-e.component';
@@ -24,6 +22,7 @@ import { List3Component } from './edit/list3/list3.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ContentComponent } from './busqueda/content/content.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { NavBarComponent } from './busqueda/nav-bar/nav-bar.component';
 
 @NgModule({
     declarations: [
@@ -35,8 +34,6 @@ import {MatPaginatorModule} from '@angular/material/paginator';
         NavbarComponent,
         SectionComponent,
         CreateComponent,
-        NavComponent,
-        FooterEComponent,
         TextComponent,
         EditComponent,
         NavEComponent,
@@ -46,7 +43,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
         ListComponent,
         List3Component,
         BusquedaComponent,
-        ContentComponent
+        ContentComponent,
+        NavBarComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

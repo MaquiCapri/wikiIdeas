@@ -1,44 +1,48 @@
 .container-fluid {
     display: grid;
-    grid-template-columns: 5% 95%;
+    grid-template-columns: 30% 70%;
     padding: 0px;
-    background-color: #DDF1F0;
+    height: 84vh;
 }
 
-.tool {
-    background-color: #7FB5B5;
-    color: rgb(10, 10, 10);
-    height: 105%;
-    padding-top: 10px;
+.categories {
+    background: linear-gradient(49.74deg, #7EC6C3 0%, #D8EDED 75.39%);
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
+        0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+        0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #17252A;
+    /* cursor: pointer; */
+    padding-left: 10px;
+    padding-top: 20px;
 }
+p{
+    text-align: center;
 
-.text {
-    display: grid;
-    grid-template-rows: 9% 60px 450px;
 }
-
-.navTools {
-    display: grid;
-    grid-template-columns: auto auto 40%;
-    border-bottom: 1px solid #17252A;
+li {
+    cursor: pointer;
+    padding-top: 20px;
+    
 }
-
-h5 {
-    margin: 20px 20px;
-}
-
 button {
     border: none;
     background-color: #DDF1F0;
-
 }
+
+
 
 #button {
     border: none;
     background-color: #141414;
     height: 29px;
     margin-top: 6px;
-
+    margin-left: 40px;
+    cursor: pointer;
 }
 
 #input {
@@ -47,28 +51,42 @@ button {
     height: 300px;
     background-color: #DDF1F0;
     cursor: pointer;
+}
+
+form {
+    background: rgba(150, 209, 206, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 40px 20px;
+    height: 70vh;
 
 }
 
-.form-group input {
-    width: 300px;
+.form-control {
+    background: #D8EDED;
+    box-shadow: 0px 10px 20px rgba(124, 150, 149, 0.2);
+    width: 59vw;
+    margin-left: 40px;
+    cursor: pointer;
 
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 35% 65%;
 }
 
 #form {
     height: 150px;
 }
 
+label {
+    margin-left: 40px;
+
+}
+
 #inputTexto {
     height: 4vh;
     width: 25vw;
 }
-.error{
+
+.error {
     color: rgb(155, 30, 30);
-    
+    margin-left: 40px;
+
 }

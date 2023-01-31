@@ -1,17 +1,17 @@
 <div class="container-fluid">
-    <div class="lista2" style="background-image: url('./assets/vector9.png')" >
-     <div><app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme></div> 
-    
- 
-    <mat-paginator [length]="themes.length" 
-    [pageSize]="pageSize" 
-    (page)="cambiarpagina($event)">
-   </mat-paginator>
-  
-    </div> 
-<div><img src="./assets/conocimiento.png" alt="" ></div>
+    <div class="lista2" style="background-image: url('./assets/vector9.png')">
+        <div class="texto">
+            <app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme>
+            <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">
+            </mat-paginator>
+        </div>
+
         
-   
+        <div class="puntos" style="background-image: url('./assets/Puntos.png')"></div>
+    </div>
+    <div class="imagen">
+        <img src="./assets/Iamgen2.png" alt="">
+    </div>
 </div>
 
 <!-- @media all and (max-width: 639px) and (min-width: 320px) {
@@ -48,4 +48,4 @@
     }
 }
 
-} --> 
+} -->

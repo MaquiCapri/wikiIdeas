@@ -1,8 +1,9 @@
 
 .container-fluid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 33rem;
+    grid-template-columns: 30% 70%;
+    padding: 0px;
+    height: 84vh;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -10,6 +11,14 @@
     line-height: 20px;
     color: #17252A;
     margin-top: -15px;
+
+}
+
+.contenido{
+   width:66vh ;
+   margin-left: 20px;
+   text-align: center;
+   margin-top: 30px;
 }
 
 .lista2 {
@@ -17,19 +26,35 @@
     height: 84%;
     position: absolute;
     margin-left: -13px;
+    background-repeat: no-repeat;
+}
+
+/* .texto{
+    margin-right: 40rem;
+    position: relative;
+} */
+
+mat-paginator {
+    position: absolute;
+    font-size: 16px;
+    margin-top: 155px;
+    cursor: pointer;
+}
+
+.imagen {
+    height: 84vh;
+    width: 82vw;
+
 }
 
 img {
-    width: 58vw;
-    height: 80vh;
-    position: static;
-    margin-left: 63%;
-}
-.contenido{
-   width:66vh ;
-   margin-left: 20px;
-   text-align: center;
+    height: 100%;
+    margin-left: 22%;
+    width: 100%;
 }
 
+app-list2-theme {
+    cursor: pointer;
+}
 
 

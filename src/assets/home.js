@@ -7,10 +7,10 @@ $(document).ready(function () {
   $("#ciencias1").hide();
   $("#regiones1").hide();
   $("#historia1").hide();
-   $('#categoria').hide();
-   $('#categoriaCiencias').hide();
-   $('#categoriaHistoria').hide();
-   $('#categoriaRegion').hide();
+  //  $('#categoria').hide();
+  //  $('#categoriaCiencias').hide();
+  //  $('#categoriaHistoria').hide();
+  //  $('#categoriaRegion').hide();
 
   // Home : aparece y desaparece lista de temas:
   $("#cultura").hover(function () {
@@ -49,56 +49,56 @@ $(document).ready(function () {
   $(function listaCrear() {
     var estaOculto = false;
     $('#cul').click(function () {
-      if (estaOculto) {
+      // if (estaOculto) {
         $('#categoria input').attr("list","categoria1");
-         $('#categoria').show();
-         estaOculto = false;
-        } else {
-          $('#categoria').hide();
-          estaOculto = true;
-      }
+        //  $('#categoria').show();
+        //  estaOculto = false;
+        // } else {
+        //   $('#categoria').hide();
+        //   estaOculto = true;
+      // }
     });
   });
 
   $(function listaCrear1() {
-    var estaOculto = false;
+    // var estaOculto = false;
     $('#cienc').click(function () {
-      if (estaOculto) {
+      // if (estaOculto) {
         $('#categoria input').attr("list","categoria2");
-         $('#categoria').show();
-         estaOculto = false;
-        } else {
-          $('#categoria').hide();
-          estaOculto = true;
-      }
+        //  $('#categoria').show();
+        //  estaOculto = false;
+        // } else {
+        //   $('#categoria').hide();
+        //   estaOculto = true;
+      // }
     });
   });
 
   $(function listaCrear2() {
-    var estaOculto = false;
+    // var estaOculto = false;
     $('#hist').click(function () {
-      if (estaOculto) {
+      // if (estaOculto) {
         $('#categoria input').attr("list","categoria3");
-        $('#categoria').show();
-        estaOculto = false;
-       } else {
-         $('#categoria').hide();
-         estaOculto = true;
-      }
+      //   $('#categoria').show();
+      //   estaOculto = false;
+      //  } else {
+      //    $('#categoria').hide();
+      //    estaOculto = true;
+      // }
     });
   }); 
   
   $(function listaCrear3() {
     var estaOculto = false;
     $('#reg').click(function () {
-      if (estaOculto) {
+      // if (estaOculto) {
         $('#categoria input').attr("list","categoria4");
-        $('#categoria').show();
-        estaOculto = false;
-       } else {
-         $('#categoria').hide();
-         estaOculto = true;
-      }
+      //   $('#categoria').show();
+      //   estaOculto = false;
+      //  } else {
+      //    $('#categoria').hide();
+      //    estaOculto = true;
+      // }
     });
   });
 

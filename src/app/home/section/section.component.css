@@ -5,6 +5,9 @@
      flex-direction: row;
      gap: 30px;
      height: 33rem; 
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 700;
  }
 
  img {

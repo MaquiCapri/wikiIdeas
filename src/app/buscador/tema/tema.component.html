@@ -1,0 +1,18 @@
+<p>tema works!</p>
+<div class="container-fluid">
+    <div class="lista2" style="background-image: url('./assets/vector9.png')">
+        <div>
+            <div class="listTheme">
+                <app-list-theme *ngFor="let theme of themes" [theme]="theme"></app-list-theme>
+              </div> 
+        </div>
+
+
+        <!-- <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">
+        </mat-paginator> -->
+
+    </div>
+    <div>
+        <img src="./assets/conocimiento.png" alt="">
+    </div>
+</div>

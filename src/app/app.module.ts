@@ -23,6 +23,8 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ContentComponent } from './busqueda/content/content.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { NavBarComponent } from './busqueda/nav-bar/nav-bar.component';
+import { BuscadorComponent } from './buscador/buscador.component';
+import { TemaComponent } from './buscador/tema/tema.component';
 
 @NgModule({
     declarations: [
@@ -44,7 +46,9 @@ import { NavBarComponent } from './busqueda/nav-bar/nav-bar.component';
         List3Component,
         BusquedaComponent,
         ContentComponent,
-        NavBarComponent
+        NavBarComponent,
+        BuscadorComponent,
+        TemaComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

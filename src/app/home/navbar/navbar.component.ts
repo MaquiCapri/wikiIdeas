@@ -3,7 +3,6 @@ import { Component,  OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HomeService } from 'src/app/home.service';
 import { SWikiService } from 'src/app/s-wiki.service';
-import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +11,7 @@ import Swal from 'sweetalert2';
 })
 export class NavbarComponent implements OnInit {
   themes: any[] = [];
+  public temas=""; 
  
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient, private sHome: HomeService,) {
     this.sHome.loadScript();
@@ -32,43 +32,53 @@ export class NavbarComponent implements OnInit {
      this.router.navigate(['edit']);
    }
 
-//busca lista de home/section con boton buscar
-  getTheme(searchTerm: string) {
+   //redireccion del input
+   funcionCuandoSeEjecutaEnter(event:Event){
+    this.temas=(event.target as HTMLInputElement).value;
+     console.log(this.temas);
+     this.router.navigate(['busqueda/:'+this.temas]);
     
-    this.datosWiki.getTheme(searchTerm).subscribe(data => {
-      this.themes = data;
-      if ((this.themes.length == 0) || (searchTerm[0] == undefined)) {
-        // alert("alert");
-        this.themes= [];
+   }
 
-        // Swal.fire({
-        //   title: 'No se encuentra el tema',
-        //   showClass: {
-        //     popup: 'animate__animated animate__fadeInDown'
-        //   },
-        //   hideClass: {
-        //     popup: 'animate__animated animate__fadeOutUp'
-        //   }
-        // })
-      }
-      console.log(data.value);
-    });
-  }
-   //input buscador:
-  search1(event: Event) { 
-     const searchTerm1 = (event.target as HTMLInputElement).value;
-        console.log(searchTerm1);
-        // console.log(event);
-        this.datosWiki.search1(searchTerm1).subscribe(themes=> {
-         console.log(themes);
-         this.themes= themes;
-     
-              if ((searchTerm1.length == 0) || (searchTerm1.length == 1)|| (searchTerm1.length == 2)){
-              this.themes= [];
+// //busca lista de home/section con boton buscar
+//   getTheme(searchTerm: string) {
+    
+//     this.datosWiki.getTheme(searchTerm).subscribe(data => {
+//       this.themes = data;
+
+//       if ((this.themes.length == 0) || (searchTerm[0] == undefined)) {
+//         // alert("alert");
+//         this.themes= [];
+
+//         // Swal.fire({
+//         //   title: 'No se encuentra el tema',
+//         //   showClass: {
+//         //     popup: 'animate__animated animate__fadeInDown'
+//         //   },
+//         //   hideClass: {
+//         //     popup: 'animate__animated animate__fadeOutUp'
+//         //   }
+//         // })
+//       }
+//       console.log(data.value);
+//     });
+//   }
+//    //input buscador:
+//   search1(event: Event) { 
+//      const searchTerm1 = (event.target as HTMLInputElement).value;
+//         console.log(searchTerm1);
+//         // console.log(event);
+//         this.datosWiki.search1(searchTerm1).subscribe(themes=> {
+//          console.log(themes);
+//          this.themes= themes;
+//         //  this.datosWiki.themes.emit();
+        
+// //               if ((searchTerm1.length == 0) || (searchTerm1.length == 1)|| (searchTerm1.length == 2)){
+// //               this.themes= [];
               
-              }else{
-                this.themes= themes;
-               }
-         }) 
-}
+// //               }else{
+// //                 this.themes= themes;
+// //                }
+//          }) 
+//  }
 }

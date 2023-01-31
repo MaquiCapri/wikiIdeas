@@ -11,7 +11,6 @@
     line-height: 20px;
     color: #17252A;
     margin-top: -15px;
-
 }
 
 .contenido{
@@ -29,11 +28,6 @@
     background-repeat: no-repeat;
 }
 
-/* .texto{
-    margin-right: 40rem;
-    position: relative;
-} */
-
 mat-paginator {
     position: absolute;
     font-size: 16px;
@@ -44,7 +38,6 @@ mat-paginator {
 .imagen {
     height: 84vh;
     width: 82vw;
-
 }
 
 img {

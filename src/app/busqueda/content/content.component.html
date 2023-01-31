@@ -5,7 +5,9 @@
             <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">
             </mat-paginator>
         </div>
-
+         <!-- <div class="listTheme">
+            <app-list-theme *ngFor="let theme of themes" [theme]="theme"></app-list-theme>
+          </div>  -->
         
         <div class="puntos" style="background-image: url('./assets/Puntos.png')"></div>
     </div>

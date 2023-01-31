@@ -1,14 +1,24 @@
  section {
-     display: flex;
-     justify-content: center;
-     width: 100%;
-     flex-direction: row;
-     gap: 30px;
-     height: 33rem; 
+     height: 33rem;
      font-family: 'Poppins';
      font-style: normal;
-     font-weight: 700;
+     font-weight: 500;
+     margin-left: -150px;
+    line-height: 10px;
  }
+ h6{
+    font-weight: 700;
+    font-family: 'Poppins';
+    
+ }
+
+.cards{
+    display: flex;
+     width: 100%; 
+    flex-direction: row;
+     margin-left: -70px;  
+     gap: 20px; 
+}
 
  img {
      border-top-left-radius: 20px;
@@ -19,16 +29,18 @@
  }
 
  .card {
-    position: static;
      border-radius: 20px;
-     margin-top: -20px;
-     font-size: 13px;
-     height: 27rem;
+     margin-top: -10px;
+     font-size: 14px;
+     height: 28rem; 
  }
 
  ul {
      cursor: pointer;
 
+ }
+ li{
+    line-height: 20px;
  }
 
  /* @media (max-width: 680px) {
@@ -43,3 +55,4 @@
         margin: 50px;
     }
 } */
+ 

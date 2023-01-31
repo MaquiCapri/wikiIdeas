@@ -1,14 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
+import { EventEmitter } from '@angular/core';
 import { Wiki } from './wiki';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SWikiService {
-
-  URL ='https://wikideas.onrender.com/temas/';
+// themes: EventEmitter<string> = new EventEmitter<string>();
+  
+URL ='https://wikideas.onrender.com/temas/';
   url ='https://wikideas.onrender.com/temas?query=';
  
   constructor(private http: HttpClient) { }

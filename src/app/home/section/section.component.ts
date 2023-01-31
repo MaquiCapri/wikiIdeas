@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HomeService } from 'src/app/home.service';
 import { SWikiService } from 'src/app/s-wiki.service';
-import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-section',

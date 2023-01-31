@@ -13,22 +13,14 @@ export class ContentComponent implements OnInit {
   pageSize = 4;
   desde: number = 0;
   hasta: number = 4;
-  // pageEvent:any;
   constructor(private activatedRoute: ActivatedRoute, private datosWiki: SWikiService) {
     this.activatedRoute.params.subscribe(params => {
       this.datosWiki.getTheme(params['searchTerm']).subscribe(data => { this.themes = data });
-      // if(this.themes.length==0){
-      //         alert("No se encuentra el tema");
-        //         Swal.fire({
-        //            title: 'No se encuentra el tema',
-        //             showClass: {
-        //               popup: 'animate__animated animate__fadeInDown'
-        //            },
-        //            hideClass: {
-        //              popup: 'animate__animated animate__fadeOutUp'
-        //            }
-        //          })
-            //  }
+      //  if(this.themes==Object){
+      //          alert("No se encuentra el tema");
+        
+      //         }
+      //       console.log(params);
   
       console.log(this.themes);
     });

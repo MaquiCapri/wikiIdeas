@@ -10,12 +10,12 @@
     font-size: 18px;
     line-height: 20px;
     color: #17252A;
-    margin-top: -15px;
+    margin-top: -30px;
 }
 
 .contenido{
-   width:66vh ;
-   margin-left: 20px;
+   width:60vh ;
+   margin-left: 50px;
    text-align: center;
    margin-top: 30px;
 }
@@ -25,7 +25,11 @@
     height: 84%;
     position: absolute;
     margin-left: -13px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+}
+
+.lista2 >img{
+    margin-top: 160px;
 }
 
 mat-paginator {
@@ -40,8 +44,8 @@ mat-paginator {
     width: 82vw;
 }
 
-img {
-    height: 100%;
+.imagen >img {
+    height: 98%;
     margin-left: 22%;
     width: 100%;
 }
@@ -50,4 +54,16 @@ app-list2-theme {
     cursor: pointer;
 }
 
-
+.logos {
+    display: inline-flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 465px;
+    margin-left: 70%;
+  
+  }
+  
+  .logos >div{
+  margin: 10px;
+  }
+  

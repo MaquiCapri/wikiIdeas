@@ -4,21 +4,31 @@
      font-style: normal;
      font-weight: 500;
      margin-left: -150px;
-    line-height: 10px;
- }
- h6{
-    font-weight: 700;
-    font-family: 'Poppins';
-    
+     line-height: 10px;
  }
 
-.cards{
-    display: flex;
-     width: 100%; 
-    flex-direction: row;
-     margin-left: -70px;  
-     gap: 20px; 
-}
+ h6 {
+     font-weight: 700;
+     font-family: 'Poppins';
+ }
+
+ p {
+     font-weight: 700;
+     font-family: 'Poppins';
+     font-size: medium;
+     /* display:inline-block; */
+     width: 200px;
+ }
+
+ .cards {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     margin-left: -150px;
+     gap: 20px;
+     position: absolute;
+     padding: 0px 50px;
+ }
 
  img {
      border-top-left-radius: 20px;
@@ -30,17 +40,18 @@
 
  .card {
      border-radius: 20px;
-     margin-top: -10px;
+     margin-top: -20px;
      font-size: 14px;
-     height: 28rem; 
+     height: 25rem;
  }
 
  ul {
      cursor: pointer;
 
  }
- li{
-    line-height: 20px;
+
+ li {
+     line-height: 20px;
  }
 
  /* @media (max-width: 680px) {
@@ -55,4 +66,11 @@
         margin: 50px;
     }
 } */
- 
+ /* css de puntos :position: absolute;
+left: 35.2%;
+right: 22.76%;
+top: 82.28%;
+bottom: 1.67%;
+
+background: url(Dots.png);
+transform: matrix(-1, 0, 0, 1, 0, 0); */

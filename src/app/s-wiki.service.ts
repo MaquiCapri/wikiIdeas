@@ -26,7 +26,9 @@ URL ='https://wikideas.onrender.com/temas/';
     getTheme(searchTerm: string): Observable<any>{
      return this.http.get(this.url + searchTerm);
     };
-
+    getTheme2(temas: string): Observable<any>{
+      return this.http.get(this.url + temas);
+     };
     public update(id: number, wiki: Wiki): Observable<any>{
       return this.http.put<any>(this.URL + id, wiki);
     }

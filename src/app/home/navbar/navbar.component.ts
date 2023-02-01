@@ -11,8 +11,8 @@ import { SWikiService } from 'src/app/s-wiki.service';
 })
 export class NavbarComponent implements OnInit {
   themes: any[] = [];
-  public temas=""; 
- 
+   public searchTerm=""; 
+//  public searchTerm="";
   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient, private sHome: HomeService,) {
     this.sHome.loadScript();
   }
@@ -34,9 +34,9 @@ export class NavbarComponent implements OnInit {
 
    //redireccion del input
    funcionCuandoSeEjecutaEnter(event:Event){
-    this.temas=(event.target as HTMLInputElement).value;
-     console.log(this.temas);
-     this.router.navigate(['busqueda/:'+this.temas]);
+    this.searchTerm=(event.target as HTMLInputElement).value;
+     console.log(this.searchTerm);
+     this.router.navigate(['busqueda/:'+this.searchTerm]);
     
    }
 

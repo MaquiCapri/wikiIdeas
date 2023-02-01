@@ -13,6 +13,8 @@ export class ContentComponent implements OnInit {
   pageSize = 4;
   desde: number = 0;
   hasta: number = 4;
+  // temas: any = [];
+  
   constructor(private activatedRoute: ActivatedRoute, private datosWiki: SWikiService) {
     this.activatedRoute.params.subscribe(params => {
       this.datosWiki.getTheme(params['searchTerm']).subscribe(data => { this.themes = data });
@@ -23,7 +25,9 @@ export class ContentComponent implements OnInit {
       //       console.log(params);
   
       console.log(this.themes);
+     
     });
+   
   }
 
   ngOnInit(): void {

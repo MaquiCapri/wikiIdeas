@@ -9,7 +9,7 @@
     font-size: 20px;
     line-height: 10px;
     color: #17252A;
-    margin-top: -15px;
+    margin-top: -25px;
 }
 
 .lista2 {
@@ -38,7 +38,7 @@ mat-paginator {
 
 }
 
-img {
+.imagen > img {
     height: 100%;
     margin-left: 22%;
     width: 100%;
@@ -48,16 +48,23 @@ app-list2-theme {
     cursor: pointer;
 }
 
-.puntos {
+.lista2 >img{
     position: absolute;
-    /* left: 35.2%;
-right: 22.76%;
-top: 82.28%;
-bottom: 1.67%; */
-
-    /* background: url(Dots.png); */
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-top: 415px;
 }
+
+.logos {
+    display: inline-flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 485px;
+    margin-left: 70%;
+  }
+  
+  .logos >div{
+  margin: 10px;
+  }
+  
 
 /* @media (min-width: 1100px) {
     img {

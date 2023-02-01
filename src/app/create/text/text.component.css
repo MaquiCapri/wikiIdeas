@@ -3,6 +3,8 @@
     grid-template-columns: 30% 70%;
     padding: 0px;
     height: 84vh;
+    font-family: 'Poppins';
+
 }
 
 .categories {
@@ -20,15 +22,23 @@
     padding-left: 10px;
     padding-top: 20px;
 }
-p{
+
+img {
+    margin-top: 70px;
+    margin-left: -15px;
+}
+
+p {
     text-align: center;
 
 }
+
 li {
     cursor: pointer;
     padding-top: 20px;
-    
+
 }
+
 button {
     border: none;
     background-color: #DDF1F0;
@@ -88,5 +98,19 @@ label {
 .error {
     color: rgb(155, 30, 30);
     margin-left: 40px;
-
 }
+
+.logos {
+    display: inline-flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 43%; 
+  }
+  
+  .logos >div{
+  margin: 0px 20px;
+  }
+
+
+  

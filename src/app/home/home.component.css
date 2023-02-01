@@ -26,14 +26,14 @@ body {
 
 .imagen>img {
   position: absolute;
-  margin-top: 415px;
+  margin-top: 435px;
 }
 
 .logos {
   display: inline-flex;
   cursor: pointer;
   position: absolute;
-  margin-top: 455px;
+  margin-top: 495px;
   margin-left: 70%;
 
 }

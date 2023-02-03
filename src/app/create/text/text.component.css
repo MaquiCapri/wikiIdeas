@@ -3,8 +3,8 @@
     grid-template-columns: 30% 70%;
     padding: 0px;
     height: 84vh;
-    font-family: 'Poppins';
-
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .categories {
@@ -12,13 +12,12 @@
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
         0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
         0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
-    font-family: 'Poppins';
     font-style: normal;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 20px;
     color: #17252A;
-    /* cursor: pointer; */
     padding-left: 10px;
     padding-top: 20px;
 }
@@ -30,21 +29,21 @@ img {
 
 p {
     text-align: center;
-
 }
 
+ul{
+    height: 150px;
+    margin-left: 4rem;
+}
 li {
     cursor: pointer;
     padding-top: 20px;
-
 }
 
 button {
     border: none;
     background-color: #DDF1F0;
 }
-
-
 
 #button {
     border: none;

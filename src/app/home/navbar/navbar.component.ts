@@ -12,8 +12,8 @@ import { SWikiService } from 'src/app/s-wiki.service';
 export class NavbarComponent implements OnInit {
   themes: any[] = [];
    public searchTerm=""; 
-//  public searchTerm="";
-  constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient, private sHome: HomeService,) {
+
+   constructor(private router: Router, private datosWiki: SWikiService, private http: HttpClient, private sHome: HomeService,) {
     this.sHome.loadScript();
   }
 

@@ -1,7 +1,6 @@
 body {
-  /* width: 100%; */
+    
   height: 100%;
-  font-family: 'Poppins';
 }
 
 .bg {
@@ -16,7 +15,7 @@ body {
 }
 
 .lista2 {
- width: 100%; 
+  width: 100%;
   height: 88%;
   position: absolute;
   margin-left: -13px;
@@ -35,9 +34,8 @@ body {
   position: absolute;
   margin-top: 495px;
   margin-left: 70%;
-
 }
 
-.logos >div{
-margin: 10px;
+.logos>div {
+  margin: 10px;
 }

@@ -1,53 +1,51 @@
  section {
      height: 33rem;
-     font-family: 'Poppins';
+     width: 33rem;
+     font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-weight: 500;
      margin-left: -150px;
      line-height: 10px;
  }
 
- h6 {
+ /* h6 {
      font-weight: 700;
      font-family: 'Poppins';
- }
+ } */
 
  p {
      font-weight: 700;
-     font-family: 'Poppins';
+     /* font-family: 'Poppins'; */
      font-size: medium;
-     /* display:inline-block; */
      width: 200px;
  }
 
  .cards {
-     display: flex;
-     width: 100%;
-     flex-direction: row;
+      display: flex;  
+      width: 100%; 
+      flex-direction: row; 
      margin-left: -150px;
-     gap: 20px;
+      gap: 20px; 
      position: absolute;
      padding: 0px 50px;
  }
 
  img {
-     border-top-left-radius: 20px;
-     border-top-right-radius: 20px;
-     height: 10rem;
+     height: 120px;
      width: 100%;
      padding: 5px;
  }
 
  .card {
-     border-radius: 20px;
+     /* border-radius: 20px; */
      margin-top: -20px;
      font-size: 14px;
      height: 25rem;
+
  }
 
  ul {
      cursor: pointer;
-
  }
 
  li {

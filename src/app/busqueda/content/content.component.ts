@@ -10,24 +10,17 @@ import { SWikiService } from 'src/app/s-wiki.service';
 })
 export class ContentComponent implements OnInit {
   themes: any = [];
-  pageSize = 4;
+  pageSize = 7;
   desde: number = 0;
-  hasta: number = 4;
-  // temas: any = [];
+  hasta: number = 7;
   
   constructor(private activatedRoute: ActivatedRoute, private datosWiki: SWikiService) {
     this.activatedRoute.params.subscribe(params => {
-      this.datosWiki.getTheme(params['searchTerm']).subscribe(data => { this.themes = data });
-      //  if(this.themes==Object){
-      //          alert("No se encuentra el tema");
-        
-      //         }
-      //       console.log(params);
-  
+      this.datosWiki.getTheme(params['searchTerm'])
+      .subscribe(data => { this.themes = data });
+    
       console.log(this.themes);
-     
     });
-   
   }
 
   ngOnInit(): void {

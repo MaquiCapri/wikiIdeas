@@ -3,10 +3,10 @@
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 0px;
-    height: 84vh;
-    font-family: 'Poppins';
+    height: 86vh;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     color: #17252A;
@@ -15,22 +15,27 @@
 
 .contenido{
    width:60vh ;
+   height: 100px;
    margin-left: 50px;
    text-align: center;
    margin-top: 30px;
 }
 
+h3{
+    font-weight: 700;
+
+}
 .lista2 {
-    width: 100%;
-    height: 84%;
+     width: 100%;
+    height: 85%; 
     position: absolute;
     margin-left: -13px;
     background-repeat: no-repeat; 
 }
 
-.lista2 >img{
-    margin-top: 160px;
-}
+ .lista2 >img{
+    margin-top: 290px;
+} 
 
 mat-paginator {
     position: absolute;
@@ -39,10 +44,10 @@ mat-paginator {
     cursor: pointer;
 }
 
-.imagen {
-    height: 84vh;
+ .imagen {
+    height: 86vh;
     width: 82vw;
-}
+} 
 
 .imagen >img {
     height: 98%;

@@ -4,7 +4,8 @@
     grid-template-columns: 8% 38% 45% ;
     height: 160px;
     margin-top: -40px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+
 }
 .input-group{
     background-color: #D8EDED;

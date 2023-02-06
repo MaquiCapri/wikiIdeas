@@ -3,7 +3,7 @@
      font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-weight: 500;
-     margin-left: -235px;
+     margin-left: -245px;
      line-height: 10px;
 
  }
@@ -32,16 +32,16 @@
  img {
      height: 230px;
      width: 316px;
-     padding: 5px;
  }
 
  .card {
-     margin-top: -20px;
+     margin-top: -10px;
      font-size: 18px;
      height: 690px;
      width: 316px;
      line-height: 40px;
      font-weight: 400;
+     background-color:  #D8EDED;
  }
 
  ul {

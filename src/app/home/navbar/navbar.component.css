@@ -1,20 +1,24 @@
 .navbar {
     background: linear-gradient(180deg, #7EC6C3 0%, rgba(217, 217, 217, 0) 100%);
     display: grid;
-    grid-template-columns: 8% 38% 45% ;
-    height: 160px;
-    margin-top: -40px;
+    grid-template-columns: 3% 35% 30% 10%;
+    height: 274px;
+    width: 140vw;
+    /* margin-top: -40px; */
     font-family: 'Poppins', sans-serif;
-
+    margin-top: -63px;
 }
-.input-group{
+
+.input-group {
     background-color: #D8EDED;
-    height: 30px;
+    height: 46px;
+    width: 462px;
     border-radius: 30px;
     cursor: pointer;
     border: 1px solid #17252A;
-    margin-top:-10px ;
+    margin-top: -10px;
 }
+
 .input {
     border: none;
     outline: none;
@@ -24,9 +28,9 @@
 #button {
     margin-top: -15px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
-    line-height: 48px;
+    line-height: 30px;
 }
 
 #logo {
@@ -42,7 +46,8 @@ svg {
     margin-top: 8px;
     margin-left: 7px;
 }
+
 .button {
     display: grid;
-    grid-template-columns:20% 30% 30%;
+    grid-template-columns: 30% 35% 30%;
 }

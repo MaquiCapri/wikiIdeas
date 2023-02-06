@@ -1,0 +1,12 @@
+.logos {
+    position: absolute;
+    display: inline-flex;
+    cursor: pointer;
+    margin-left: 100%;
+    margin-top: -60px;
+  }
+  
+  .logos>div {
+    margin: 15px;
+    opacity: 0.8;
+  }

@@ -8,21 +8,16 @@
             <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">
             </mat-paginator>
         </div>
-
     </div>
 
     <div class="imagen">
         <img src="./assets/Iamgen2.png" alt="">
     </div>
-    <div class="logos">
-        <div><img src="./assets/facebook1.png" alt="facebook" style="width: 20px;"></div>
-        <div><img src="./assets/insta.png" alt="instagram" style="width: 28px;"></div>
-        <div><img src="./assets/youtube6.png" alt="youtube1" style="width: 20px;"></div>
-        <div><img src="./assets/twitter3.png" alt="twitter" style="width: 20px;"></div>
-
-    </div>
+   
 </div>
-
+<div class="logos">
+    <app-logos></app-logos>
+</div>
 <!-- @media all and (max-width: 639px) and (min-width: 320px) {
     #fourohfour_home {
         background-image: url('my-image-320.png'); /*in the case you have another image for this resolution*/

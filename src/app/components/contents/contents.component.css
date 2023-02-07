@@ -14,9 +14,11 @@
 }
 
 .contenido{
-   width:60vh ;
-   height: 100px;
-   margin-left: 50px;
+    position: absolute;
+   width:80vh ;
+   height: 500px;
+   font-size: 18px;
+   /* margin-left: 50px; */
    text-align: center;
    margin-top: 30px;
 }
@@ -37,21 +39,14 @@ h3{
     margin-top: 290px;
 } 
 
-mat-paginator {
-    position: absolute;
-    font-size: 16px;
-    margin-top: 155px;
-    cursor: pointer;
-}
-
  .imagen {
-    height: 86vh;
-    width: 82vw;
+    height: 750px;
+    width: 129vw;
 } 
 
 .imagen >img {
-    height: 98%;
-    margin-left: 22%;
+    height: 100%;
+    /* margin-left: 22%; */
     width: 100%;
 }
 
@@ -72,3 +67,31 @@ app-list2-theme {
   margin: 10px;
   }
   
+  .bg {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    width: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    /* background: linear-gradient(180deg,
+     #7EC6C3 0%,
+     rgba(217, 217, 217, 0) 100%) ;
+     transform: matrix(1, 0, 0, -1, 0, 0);  */
+
+}
+
+ .logos {
+    margin-top: 12rem;
+    margin-left: 55rem;
+} 
+
+.imagen1>img {
+    position: absolute;
+    transform: rotate(-180deg);
+    margin-top: 2rem;
+    /* margin-left: 22%;   */
+}

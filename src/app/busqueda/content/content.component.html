@@ -1,23 +1,47 @@
 <div class="container-fluid">
-    <div class="lista2" style="background-image: url('./assets/vector9.png')">
+    <div class="bg">
+            <div>
+                <img src="./assets/vector.png" alt="vector" style="position: absolute;">
 
-        <img src="./assets/Puntos2.png" alt="">
-
-        <div class="texto">
-            <app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme>
-            <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">
-            </mat-paginator>
+            </div>
+        
+        
+        <!-- <div class="imagen">
+            <img src="./assets/Puntos2.png" alt="puntos">
+        
+        </div> -->
+        <div class="imagen">
+            <img src="./assets/fondo1.png" alt="" >
         </div>
     </div>
+    <div class="texto">
+        <div>
+            <app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme>
 
-    <div class="imagen">
-        <img src="./assets/Iamgen2.png" alt="">
+        </div>
+    <div>
+        <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">
+        </mat-paginator>
     </div>
+       
+    </div> 
+
    
 </div>
-<div class="logos">
-    <app-logos></app-logos>
+<div class="footer">
+
+    <div class="imagen1">
+        <img src="./assets/puntos.png" alt="puntos">
+    
+    </div>  
+    <div class="logos">
+        <app-logos></app-logos>
+    </div>
 </div>
+
+
+       
+
 <!-- @media all and (max-width: 639px) and (min-width: 320px) {
     #fourohfour_home {
         background-image: url('my-image-320.png'); /*in the case you have another image for this resolution*/

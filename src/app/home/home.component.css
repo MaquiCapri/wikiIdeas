@@ -1,7 +1,4 @@
-/* body {
-    
-  height: 100%;
-} */
+ 
 
 .bg {
   display: grid;
@@ -25,6 +22,7 @@
 
 .imagen>img {
   position: absolute;
-  margin-top: 670px;
+  margin-top: 600px;
+  margin-left: -90px;
 }
 

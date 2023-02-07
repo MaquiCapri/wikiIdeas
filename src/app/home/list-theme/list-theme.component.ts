@@ -10,12 +10,12 @@ import { SWikiService } from 'src/app/s-wiki.service';
   styleUrls: ['./list-theme.component.css']
 })
 export class ListThemeComponent implements OnInit {
-@Input('theme')theme:any;
+ @Input('theme')theme:any;
  
 constructor(private router:Router, private datosWiki: SWikiService) { }
 
   ngOnInit(): void {
-    console.log(this.theme);
+    // console.log(this.theme);
   }
 
 }

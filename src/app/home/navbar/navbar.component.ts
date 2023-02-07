@@ -36,7 +36,7 @@ export class NavbarComponent implements OnInit {
    funcionCuandoSeEjecutaEnter(event:Event){
     this.searchTerm=(event.target as HTMLInputElement).value;
      console.log(this.searchTerm);
-     this.router.navigate(['busqueda/:'+this.searchTerm]);
+     this.router.navigate(['busqueda/'+this.searchTerm]);
     
    }
 

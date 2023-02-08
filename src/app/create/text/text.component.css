@@ -65,9 +65,9 @@ button {
     box-shadow: 0px 10px 20px rgba(124, 150, 149, 0.2);
     border-radius: 50px;
     font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-color: #383838;
+    font-size: 24px;
+    line-height: 36px;
+    color: #383838;
 }
 
 /* #input {
@@ -82,34 +82,27 @@ form {
     background: rgba(150, 209, 206, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-     margin: 40px 20px; 
+    margin: 40px 20px;
     /* height: 70vh; */
     width: 868px;
     height: 651px;
 }
 
- .form-control {
+.form-control {
     background: #D8EDED;
     box-shadow: 0px 10px 20px rgba(124, 150, 149, 0.2);
-     /* width: 59vw;  */
-     margin-left: 5px;
+    /* width: 59vw;  */
+    margin-left: 5px;
     cursor: pointer;
     width: 828px;
     height: 70px;
     border-radius: 20px;
-   
-} 
+}
 
 #form {
     width: 824px;
     height: 157px;
-   
 }
-
-/* label {
-    margin-left: 40px;
-
-} */
 
 textarea {
     cursor: pointer;
@@ -121,11 +114,13 @@ textarea {
 .error {
     color: rgb(155, 30, 30);
     margin-left: 40px;
+    font-size: 18px;
+
 }
 
 .logos {
     margin-top: 3rem;
-    margin-left: -18%;
+    margin-left: -28%;
 }
 
 #categoria {
@@ -133,9 +128,9 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-     padding: 24px 20px; 
-     gap: 10px; 
-     font-weight: 400;
-     font-size: 24px;
-
+    padding: 24px 20px;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 24px;
 }
+

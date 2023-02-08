@@ -22,33 +22,24 @@
     width="200" height="200" -->
 <!-- </div> --> 
 <div class="container-fluid">
-   <div class="bg">
-           <div>
-               <img src="./assets/vector.png" alt="vector" style="position: absolute;">
-
-           </div>
-       
-       <div class="imagen">
-         <img [src]="wiki.imagen" [alt]="wiki.titulo">
-       </div>
-   </div>
-   
    <div class="contenido">
-      <h3><strong>{{wiki.titulo}}</strong>
-         <hr>
-      </h3>
-      <p>{{wiki.contenido}}</p>
+         
+         <img [src]="wiki.imagen" [alt]="wiki.titulo">
+       
+       <div class="texto">
+         <h3>{{wiki.titulo}}
+            <hr>
+         </h3>
+         <p>{{wiki.contenido}}</p>
+      </div>
 
    </div>
-       
-</div>
-<div class="footer">
-
-   <div class="imagen1">
-       <img src="./assets/puntos.png" alt="puntos">
    
-   </div>  
+  <div class="bkg">
+
+   </div>       
+</div>
+
    <div class="logos">
        <app-logos></app-logos>
    </div>
-</div>

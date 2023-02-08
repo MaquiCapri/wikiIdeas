@@ -2,24 +2,21 @@
     background: linear-gradient(180deg, #7EC6C3 0%, rgba(217, 217, 217, 0) 100%);
     display: grid;
     grid-template-columns: 3% 35% 30% 8%;
-    height: 274px;
-    /* width: 100%; */
-      /* width: 140vw;  */
-       width: 90rem;   
-      /* width: 1440px;   */
-    /* margin-top: -40px; */
+    height: 134px;
+    width: 90rem;
     font-family: 'Poppins', sans-serif;
-    margin-top: -63px;
+    
 }
 
 .input-group {
     background-color: #D8EDED;
-    height: 46px;
-    width: 30rem;
+    height: 32px;
+    width: 462px;
     border-radius: 30px;
     cursor: pointer;
     border: 1px solid #17252A;
-    margin-top: -10px;
+    margin-top: -43px;
+   
 }
 
 .input {
@@ -28,29 +25,33 @@
     background-color: #D8EDED;
     font-weight: 300;
     font-size: 20px;
+    height: 29px;
 }
 
 #button {
-    margin-top: -10px; 
+    margin-top: -10px;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     cursor: pointer;
     line-height: 30px;
 }
 
 #logo {
     margin-left: 3%;
+    margin-top: -40px;
 }
 
 svg {
-    margin-top: 0.7rem;
+    margin-top: 0.3rem;
     margin-left: 0.8rem;
 }
 
 .button {
     display: grid;
     grid-template-columns: 30% 40% 45%;
+    margin-top: -40px;
 }
+
 /* 
  @media (max-width: 1200px) {
     .navbar {
@@ -62,5 +63,5 @@ svg {
     .navbar {
         width: 1000px;
     } */
-    
+
 /* }  */

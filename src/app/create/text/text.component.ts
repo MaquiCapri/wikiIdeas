@@ -37,18 +37,20 @@ export class TextComponent implements OnInit {
 
   postForm(form: Wiki) {
     this.datosWiki.save(form).subscribe(data => {
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Enviado correctamente',
-        showConfirmButton: false,
-        timer: 1500
-      })
+      alert("creado el tema");
       console.log(this.saveForm.value);
     })
   }
 }
 
 
+// Swal.fire({
+//   position: 'top-end',
+//   icon: 'success',
+//   title: 'Enviado correctamente',
+//   showConfirmButton: false,
+//   timer: 1500,
+//  
+// })
 
 

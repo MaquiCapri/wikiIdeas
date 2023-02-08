@@ -28,8 +28,9 @@
 }
 
 img {
-    margin-top: 260px;
-    margin-left: -15px;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: -495px;
 }
 
 p {
@@ -133,4 +134,3 @@ textarea {
     font-weight: 400;
     font-size: 24px;
 }
-

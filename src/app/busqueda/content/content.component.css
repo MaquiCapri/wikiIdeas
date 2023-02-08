@@ -12,8 +12,8 @@
 }
 
 .texto {
-    display: grid;
-    grid-template-rows: 80% 20%;
+     display: grid;
+    grid-template-rows: 80% 20%; 
     font-size: 24px;
     margin-right: 40rem;
     position: relative;
@@ -33,8 +33,8 @@ app-list2-theme {
 }
 
 .bg {
-    display: grid;
-    grid-template-columns: 29% 71%;
+    /* display: grid;
+    grid-template-columns: 29% 71%; */
     width: 90rem;
 }
 

@@ -7,10 +7,10 @@
             <li id="hist" onclick="listaCrear2()"> Historia y Sociedad</li>
             <li id="reg" onclick="listaCrear3()">Regiones</li>
         </ul>
-        <img src="./assets/puntos.png" alt="puntos">
+        
         
     </div>
-   
+    
     <div class="formulario" style="background-image: url('./assets/Iamgen1.png'); height:750px;;">
         <form [formGroup]="saveForm" (ngSubmit)="postForm(saveForm.value)">
             <div id="categoria">
@@ -117,5 +117,11 @@
         <div class="logos">
             <app-logos></app-logos>
         </div>
+       <img src="./assets/puntos.png" alt="puntos">
+
     </div>
+
 </div>
+<!-- <div class="alert">
+  el tema fue creado con exito
+</div> -->

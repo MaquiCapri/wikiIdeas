@@ -23,6 +23,7 @@ $(document).ready(function () {
     $('#cul').click(function () {
       // if (estaOculto) {
         $('#categoria input').attr("list","categoria1");
+
         //  $('#categoria').show();
         //  estaOculto = false;
         // } else {
@@ -30,6 +31,7 @@ $(document).ready(function () {
         //   estaOculto = true;
       // }
     });
+   
   });
 
   $(function listaCrear1() {

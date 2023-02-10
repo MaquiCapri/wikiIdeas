@@ -46,3 +46,20 @@ h3 {
 .logos{
     margin-left: 30rem;
 }
+
+.editar{
+position: absolute;
+width: 142px;
+height: 44px;
+left: 1194px;
+/* top: 194px;  */
+float: right;
+background: #7EC6C3;
+box-shadow: 0px 10px 20px rgba(124, 150, 149, 0.2);
+border-radius: 50px;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+border: none;
+}

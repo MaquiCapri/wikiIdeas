@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HomeService } from 'src/app/home.service';
 import { SWikiService } from 'src/app/s-wiki.service';
 import Swal from 'sweetalert2';
 
@@ -10,7 +11,11 @@ import Swal from 'sweetalert2';
 })
 export class NavEComponent implements OnInit {
   themes: any[] = [];
-  constructor(private router: Router, private datosWiki: SWikiService,) { }
+   public searchTerm=""; 
+  constructor(private router: Router, private datosWiki: SWikiService,private sHome :HomeService) { 
+
+      this.sHome.loadScript();
+  }
 
   ngOnInit(): void {
   }
@@ -20,6 +25,9 @@ export class NavEComponent implements OnInit {
   }
   create(){
     this.router.navigate(['create']);
+  }
+  edit() {
+    this.router.navigate(['edit']);
   }
 
   getTheme(searchTerm: string){
@@ -39,4 +47,10 @@ export class NavEComponent implements OnInit {
      console.log(data);
   });
 }
+funcionCuandoSeEjecutaEnter(event:Event){
+  this.searchTerm=(event.target as HTMLInputElement).value;
+   console.log(this.searchTerm);
+   this.router.navigate(['busqueda/'+this.searchTerm]);
+  
+ }
 }

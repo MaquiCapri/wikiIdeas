@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SWikiService } from 'src/app/s-wiki.service';
-import { Wiki } from 'src/app/wiki';
+ import { Wiki } from 'src/app/wiki';
 import Swal from 'sweetalert2';
 
 
@@ -13,6 +13,7 @@ import Swal from 'sweetalert2';
 })
 export class EditionComponent implements OnInit {
   wiki: any = {};
+  themes: any[] = [];
 
   constructor(private datosWiki: SWikiService, public activatedRouter: ActivatedRoute, public router: Router) {
     this.activatedRouter.params.subscribe(params => {
@@ -66,5 +67,22 @@ export class EditionComponent implements OnInit {
     this.datosWiki.lista().subscribe(
       data => { this.wiki = data; })
   }
-
+  
+  getTheme(searchTerm: string){
+    this.datosWiki.getTheme(searchTerm).subscribe(data => {     
+     this.themes =data;
+     if(this.themes.length == 0){             
+       Swal.fire({
+          title: 'No se encuentra el tema',
+           showClass: {
+             popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+     }
+     console.log(data);
+  });
+}
 }

@@ -51,18 +51,3 @@ svg {
     grid-template-columns: 30% 40% 45%;
     margin-top: -40px;
 }
-
-
-/* 
- @media (max-width: 1200px) {
-    .navbar {
-        width: 80rem;
-    }
-    
-} 
-@media (max-width: 1000px) {
-    .navbar {
-        width: 1000px;
-    } */
-
-/* }  */

@@ -25,8 +25,8 @@ export class ContentComponent implements OnInit {
         alert("no hay temas");
       }
 
-      console.log(this.themes.length);
-      // console.log(params['searchTerm'].length);
+        console.log(this.themes);
+        // console.log(params['searchTerm']);
     
       // console.log(this.themes);
     });

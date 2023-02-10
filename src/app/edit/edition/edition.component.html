@@ -1,51 +1,135 @@
-<div class="container">
+<div class="container-fluid">
+
+   <div class="categories">
+    <p>Elegir una Categoría</p>
+    <ul>
+      <li id="cul" onclick="listaCrear()">Cultura</li>
+      <li id="cienc" onclick="listaCrear1()">Ciencias y Tecnología</li>
+      <li id="hist" onclick="listaCrear2()"> Historia y Sociedad</li>
+      <li id="reg" onclick="listaCrear3()">Regiones</li>
+    </ul>
+  </div> 
+
+  <div class="formulario" style="background-image: url('./assets/imgbg2.png'); ">
+
     <form [formGroup]="saveForm" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-        <div id="categoria">
-           <br>
-            <div class="form-group">
-                <label for="exampleFormControlInput">Título</label>
-                <textarea type="text" class="form-control" id="inputTexto" formControlName="titulo"
-                    [(ngModel)]="wiki.titulo"></textarea>
+       <div id="categoria">
+        <br> 
+         <div class="form-group">
+          <label for="exampleFormControlInput"></label>
+          <input type="text" #search class="form-control"  formControlName="categoria" list="categoria1"
+            placeholder="Elige tu tema"  (keyup)="getTheme(search.value)"
+            [(ngModel)]="wiki.categoria">
+            <div class="listTheme3" id="lista4">
+              <app-list3 *ngFor="let theme of themes" [theme]="theme"></app-list3>
             </div>
-            <div class="error">
-                <span *ngIf="saveForm.get('titulo')?.hasError('required') && saveForm.get('titulo')?.touched ">
-                  El título es un campo <strong>requerido</strong>
-                </span>
-                <span *ngIf="saveForm.get('titulo')?.hasError('minlength') && saveForm.get('titulo')?.touched">
-                    Este campo debe tener como mínimo <strong>3 caracteres</strong>
-                  </span>
-                  <span *ngIf="saveForm.get('titulo')?.hasError('maxlength') && saveForm.get('titulo')?.touched">
-                    Este campo debe tener como máximo <strong>60 caracteres</strong>
-                  </span>
-              </div>
-             <div class="form-group">
-                <label for="exampleFormControlInput">Imagen</label>
-                <textarea id="form" style="height: 9vh; width: 65vw"
-                 type="text" class="form-control" formControlName="imagen"
-                    [(ngModel)]="wiki.imagen"></textarea>
-            </div> 
-            <div class="form-group">
-                <label for="exampleFormControlInput">Contenido</label>
-                <textarea id="form" type="text" class="form-control" formControlName="contenido"
-                    [(ngModel)]="wiki.contenido"></textarea>
-            </div>
-            <div class="error">
-                <span *ngIf="saveForm.get('contenido')?.hasError('required') && saveForm.get('contenido')?.touched ">
-                  El contenido es un campo <strong>requerido</strong>
-                </span>
-                <span *ngIf="saveForm.get('contenido')?.hasError('minlength') && saveForm.get('contenido')?.touched">
-                    El campo debe tener como mínimo <strong>40 caracteres</strong>
-                  </span>
-              </div>
-            <br>
-            <div class="button">
-                <input class="btn btn-dark" id="button" type="submit" value="Actualizar" onclick="validar()"
-                    [disabled]="saveForm.invalid">
-            </div>
-            <br>
-            <button class="btn btn-outline-danger" (click)="delete(wiki.id)">
-                <i class="bi bi-trash3-fill"></i>Borrar</button>
+
+          <datalist id="categoria1">
+              <option value="Arquitectura"></option>
+              <option value="Arte"></option>
+              <option value="Cine y televisión"></option>
+              <option value="Comic y Anime"></option>
+              <option value="Deportes"></option>
+              <option value="Entretenimiento"></option>
+              <option value="Literatura"></option>
+              <option value="Moda"></option>
+              <option value="Música"></option>
+              <option value="Videojuegos"></option>
+          </datalist>
+
+          <datalist id="categoria2">
+              <option value="Biología"></option>
+              <option value="Computadoras e internet"></option>
+              <option value="Física"></option>
+              <option value="Ingeniería"></option>
+              <option value="Matemáticas"></option>
+              <option value="Medicina y salud"></option>
+              <option value="Química"></option>
+              <option value="Tecnología"></option>
+              <option value="Tierra y Medio ambiente"></option>
+          </datalist>
+
+          <datalist id="categoria3">
+              <option value="Biografía"></option>
+              <option value="Comidas y Bebidas"></option>
+              <option value="Educación"></option>
+              <option value="Filosofía y religión"></option>
+              <option value="Guerras"></option>
+              <option value="Historia"></option>
+              <option value="Negocios y Economías"></option>
+              <option value="Políticas y Gobiernos"></option>
+              <option value="Transporte"></option>
+
+          </datalist>
+
+          <datalist id="categoria4">
+              <option value="África"></option>
+              <option value="América Central"></option>
+              <option value="América del Norte"></option>
+              <option value="América del Sur"></option>
+              <option value="Asia"></option>
+              <option value="Europa"></option>
+              <option value="Oceania"></option>
+
+          </datalist>
+         </div> 
+
+        <div class="form-group">
+          <label for="exampleFormControlInput"></label>
+          <textarea type="text"  class="form-control" id="inputTexto" formControlName="titulo"  placeholder="Título del tema"
+            [(ngModel)]="wiki.titulo"></textarea>
+            
         </div>
+        <div class="error">
+          <span *ngIf="saveForm.get('titulo')?.hasError('required') && saveForm.get('titulo')?.touched ">
+            El título es un campo <strong>requerido</strong>
+          </span>
+          <span *ngIf="saveForm.get('titulo')?.hasError('minlength') && saveForm.get('titulo')?.touched">
+            Este campo debe tener como mínimo <strong>3 caracteres</strong>
+          </span>
+          <span *ngIf="saveForm.get('titulo')?.hasError('maxlength') && saveForm.get('titulo')?.touched">
+            Este campo debe tener como máximo <strong>60 caracteres</strong>
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput"></label>
+          <textarea  id="inputTexto"  type="text" class="form-control" formControlName="imagen"
+          placeholder="Escribir la url. ej.: https://"
+          [(ngModel)]="wiki.imagen"></textarea>
+        </div>
+        <!-- id="form" style="height: 9vh; width: 65vw"-->
+        <div class="form-group">
+          <label for="exampleFormControlInput"></label>
+          <textarea id="form" type="text" class="form-control" formControlName="contenido"
+          placeholder="Contenido"
+          [(ngModel)]="wiki.contenido"></textarea>
+        </div>
+        <div class="error">
+          <span *ngIf="saveForm.get('contenido')?.hasError('required') && saveForm.get('contenido')?.touched ">
+            El contenido es un campo <strong>requerido</strong>
+          </span>
+          <span *ngIf="saveForm.get('contenido')?.hasError('minlength') && saveForm.get('contenido')?.touched">
+            El campo debe tener como mínimo <strong>40 caracteres</strong>
+          </span>
+        </div>
+        <br>
+        <div class="button">
+          <input class="btn btn-dark" id="button" type="submit" value="Publicar" onclick="validar()"
+            [disabled]="saveForm.invalid">
+        
+            <br>
+           <button class="btn btn-outline-danger" id="delete" (click)="delete(wiki.id)">
+          <i class="bi bi-trash3-fill"></i>  Eliminar Tema</button>
+        </div>
+       </div>
     </form>
+    <div class="logos">
+      <app-logos></app-logos>
+    </div>
+   
+    <img src="./assets/puntos.png" alt="puntos">
+
+    
+  </div>
 
 </div>

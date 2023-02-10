@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HomeService } from 'src/app/home.service';
 
 @Component({
   selector: 'app-list3',
@@ -8,7 +9,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class List3Component implements OnInit {
   @Input('theme')theme:any;
 
-  constructor() { }
+  constructor( private sHome :HomeService) { 
+    this.sHome.loadScript();
+  }
 
   ngOnInit(): void {
   }

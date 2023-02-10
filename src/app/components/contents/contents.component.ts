@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SWikiService } from 'src/app/s-wiki.service';
 import { Theme } from 'src/app/theme';
 import { Wiki } from 'src/app/wiki';
@@ -13,7 +13,7 @@ import { Wiki } from 'src/app/wiki';
 export class ContentsComponent implements OnInit {
 wiki:any= {};
     
-  constructor( private datosWiki: SWikiService, private http: HttpClient, private activatedRoute: ActivatedRoute) { 
+  constructor( private datosWiki: SWikiService, private http: HttpClient, private activatedRoute: ActivatedRoute,private router: Router ) { 
     this.activatedRoute.params.subscribe( params =>{
       this.datosWiki.getTemas(params ['id']).subscribe(data => { this.wiki = data });
 
@@ -26,6 +26,11 @@ wiki:any= {};
     
   }
 
+   
+  //  ieEditar(event:Event){
+  //   this.searchTerm=(event.target as HTMLInputElement).value;
+  //    console.log(this.searchTerm);
+  //    this.router.navigate(['busqueda/'+this.searchTerm]);
   //  getTemas(id: number){
     //  this.datosWiki.getTemas(id).subscribe(data => { this.wiki = data });
   //  }

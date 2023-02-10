@@ -37,7 +37,11 @@ export class TextComponent implements OnInit {
 
   postForm(form: Wiki) {
     this.datosWiki.save(form).subscribe(data => {
-      alert("creado el tema");
+      alert({
+   title: 'Enviado correctamente',
+   position: 'top-end',
+
+      });
       console.log(this.saveForm.value);
     })
   }

@@ -20,7 +20,7 @@
           <input type="text" #search class="form-control"  formControlName="categoria" list="categoria1"
             placeholder="Elige tu tema"  (keyup)="getTheme(search.value)"
             [(ngModel)]="wiki.categoria">
-            <div class="listTheme3" id="lista4">
+            <div class="listTheme3" id="lista5">
               <app-list3 *ngFor="let theme of themes" [theme]="theme"></app-list3>
             </div>
 

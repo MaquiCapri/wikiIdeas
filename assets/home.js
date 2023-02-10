@@ -7,43 +7,15 @@ $(document).ready(function () {
   $("#ciencias1").hide();
   $("#regiones1").hide();
   $("#historia1").hide();
-  //  $('#categoria').hide();
-  //  $('#categoriaCiencias').hide();
-  //  $('#categoriaHistoria').hide();
-  //  $('#categoriaRegion').hide();
-
+ 
   // Home : aparece y desaparece lista de temas:
-  $("#cultura").hover(function () {
-    $(".list").show();
-    $("#culture").hide();
-  }, function () {
-    $(".list").hide();
-    $("#culture").show();
-  });
-
-  $("#ciencia").hover(function () {
-    $(".list1").show();
-    $("#science").hide();
-  }, function () {
-    $(".list1").hide();
-    $("#science").show();
-  });
-
-  $("#historia").hover(function () {
-    $(".list2").show();
-    $("#history").hide();
-  }, function () {
-    $(".list2").hide();
-    $("#history").show();
-  });
-
-  $("#regiones").hover(function () {
-    $(".list3").show();
-    $("#region").hide();
-  }, function () {
-    $(".list3").hide();
-    $("#region").show();
-  });
+  // $("#cultura").hover(function () {
+  //   $(".list").show();
+  //   $("#culture").hide();
+  // }, function () {
+  //   $(".list").hide();
+  //   $("#culture").show();
+  // });
 
 // input: elegis categoria en Crear 
   $(function listaCrear() {
@@ -101,5 +73,12 @@ $(document).ready(function () {
       // }
     });
   });
+
+  //lista de editar
+   $("#lista4").hover(function () {
+    $("#lista4").show();
+   }, function () {
+     $("#lista4").hide();
+   });
 
 });

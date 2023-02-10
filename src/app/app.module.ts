@@ -27,6 +27,7 @@ import { BuscadorComponent } from './buscador/buscador.component';
 import { TemaComponent } from './buscador/tema/tema.component';
 import { LogosComponent } from './home/logos/logos.component';
 import { NavCComponent } from './components/nav-c/nav-c.component';
+import { AlertsComponent } from './alerts/alerts.component';
 
 @NgModule({
     declarations: [
@@ -53,6 +54,7 @@ import { NavCComponent } from './components/nav-c/nav-c.component';
         TemaComponent,
         LogosComponent,
         NavCComponent,
+        AlertsComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

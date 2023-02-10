@@ -1,0 +1,27 @@
+.texto {
+    width: 574px;
+    height: 236px;
+    background: #7EC6C3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 32px;
+text-align: center;
+padding-top: 40px;
+}
+
+input {
+    height: 142px;
+    background: #17252A;
+    width: 574px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color:#FFFFFF;
+    font-size: 32px;
+
+
+}
+
+#eliminar{
+    color: #E82A2A;
+    
+}

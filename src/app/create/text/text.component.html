@@ -122,6 +122,9 @@
     </div>
 
 </div>
-<!-- <div class="alert">
-  el tema fue creado con exito
-</div> -->
+
+<div class="alert" *ngIf="showAlert">
+    <div class="texto">¡El tema <br>se ha publicado <br>con éxito!</div>
+    <div><input type="button" value="ACEPTAR" (click)="aceptar()"></div>
+
+</div>

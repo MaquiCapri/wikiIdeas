@@ -5,7 +5,6 @@ import { HomeService } from 'src/app/home.service';
 import { SCreateService } from 'src/app/s-create.service';
 import { SWikiService } from 'src/app/s-wiki.service';
 import { Wiki } from 'src/app/wiki';
-import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-text',
@@ -13,7 +12,8 @@ import Swal from 'sweetalert2';
   styleUrls: ['./text.component.css']
 })
 export class TextComponent implements OnInit {
- 
+ showAlert= false;
+
   constructor(private datosWiki: SWikiService, private router: Router, private sHome: HomeService, private sCreate: SCreateService, private formBuilder: FormBuilder) {
     this.sHome.loadScript();
   }
@@ -34,27 +34,17 @@ export class TextComponent implements OnInit {
   home() {
     this.router.navigate(['']);
   }
+  aceptar(){
+    this.router.navigate(['']);
+
+  }
 
   postForm(form: Wiki) {
     this.datosWiki.save(form).subscribe(data => {
-      alert({
-   title: 'Enviado correctamente',
-   position: 'top-end',
-
-      });
+      this.showAlert=true;
       console.log(this.saveForm.value);
     })
   }
 }
-
-
-// Swal.fire({
-//   position: 'top-end',
-//   icon: 'success',
-//   title: 'Enviado correctamente',
-//   showConfirmButton: false,
-//   timer: 1500,
-//  
-// })
 
 

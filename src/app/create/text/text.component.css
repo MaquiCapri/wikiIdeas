@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     width: 1440px;
-    
+
 }
 
 .categories {
@@ -97,6 +97,8 @@ form {
     width: 828px;
     height: 70px;
     border-radius: 20px;
+    font-size: 24px;
+
 }
 
 #form {
@@ -109,6 +111,7 @@ textarea {
     width: 828px;
     height: 70px;
     border-radius: 20px;
+    font-size: 24px;
 }
 
 .error {
@@ -132,4 +135,32 @@ textarea {
     gap: 10px;
     font-weight: 400;
     font-size: 24px;
+}
+
+/* css del alert */
+.alert {
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 200px;
+}
+
+.texto {
+    width: 574px;
+    height: 236px;
+    background: #7EC6C3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.alert input {
+    height: 142px;
+    background: #17252A;
+    width: 574px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #FFFFFF;
+    font-size: 32px;
 }

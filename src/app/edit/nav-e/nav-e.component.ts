@@ -12,6 +12,9 @@ import Swal from 'sweetalert2';
 export class NavEComponent implements OnInit {
   themes: any[] = [];
    public searchTerm=""; 
+   showAlert3= false;
+
+
   constructor(private router: Router, private datosWiki: SWikiService,private sHome :HomeService) { 
 
       this.sHome.loadScript();
@@ -30,19 +33,16 @@ export class NavEComponent implements OnInit {
     this.router.navigate(['edit']);
   }
 
+  aceptar(){
+    this.router.navigate(['']);
+  }
+
   getTheme(searchTerm: string){
     this.datosWiki.getTheme(searchTerm).subscribe(data => {     
      this.themes =data;
      if(this.themes.length == 0){             
-       Swal.fire({
-          title: 'No se encuentra el tema',
-           showClass: {
-             popup: 'animate__animated animate__fadeInDown'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
-          }
-        })
+      this.showAlert3=true;
+      
      }
      console.log(data);
   });

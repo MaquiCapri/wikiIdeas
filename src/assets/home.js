@@ -23,16 +23,11 @@ $(document).ready(function () {
     $('#cul').click(function () {
       // if (estaOculto) {
         $('#categoria input').attr("list","categoria1");
-
-        //  $('#categoria').show();
-        //  estaOculto = false;
-        // } else {
-        //   $('#categoria').hide();
-        //   estaOculto = true;
-      // }
+        //  $('#cul').replaceWith("<u>Cultura</u>");
     });
    
   });
+
 
   $(function listaCrear1() {
     // var estaOculto = false;
@@ -67,20 +62,31 @@ $(document).ready(function () {
     $('#reg').click(function () {
       // if (estaOculto) {
         $('#categoria input').attr("list","categoria4");
-      //   $('#categoria').show();
-      //   estaOculto = false;
-      //  } else {
-      //    $('#categoria').hide();
-      //    estaOculto = true;
-      // }
+      
     });
   });
 
   //lista de editar
-   $("#lista4").hover(function () {
-    $("#lista4").show();
-   }, function () {
-     $("#lista4").hide();
-   });
+    $("#lista4").hover(function () {
+     $("#lista4").show();
+    }, function () {
+      $("#lista4").hide();
+    });
+
+  //  $(function alertas2() {
+  //   var estaOculto = false;
+  //   $('#cul').click(function () {
+  //     // if (estaOculto) {
+  //       $('#categoria input').attr("list","categoria1");
+
+        //  $('#categoria').show();
+        //  estaOculto = false;
+        // } else {
+        //   $('#categoria').hide();
+        //   estaOculto = true;
+      // }
+    // });
+   
+  // });
 
 });

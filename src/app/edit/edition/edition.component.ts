@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HomeService } from 'src/app/home.service';
 import { SWikiService } from 'src/app/s-wiki.service';
  import { Wiki } from 'src/app/wiki';
 import Swal from 'sweetalert2';
@@ -14,8 +15,11 @@ import Swal from 'sweetalert2';
 export class EditionComponent implements OnInit {
   wiki: any = {};
   themes: any[] = [];
-
-  constructor(private datosWiki: SWikiService, public activatedRouter: ActivatedRoute, public router: Router) {
+  showAlert= false;
+  showAlert1= false;
+  showAlert2= false;
+ 
+  constructor(private datosWiki: SWikiService, public activatedRouter: ActivatedRoute, public router: Router,private sHome :HomeService) {
     this.activatedRouter.params.subscribe(params => {
       this.datosWiki.getTemas(params['id']).subscribe(data => { this.wiki = data });
 
@@ -34,20 +38,14 @@ export class EditionComponent implements OnInit {
   });
   
   ngOnInit(): void {
+    this.sHome.loadScript();
   }
   //al apretar boton:
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.datosWiki.update(id, this.wiki).subscribe(
       data => {
-        Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'Actualizado correctamente',
-          showConfirmButton: false,
-          timer: 1500
-        })
-
+        this.showAlert2=true;
       }
     )
   }
@@ -57,12 +55,18 @@ export class EditionComponent implements OnInit {
       this.datosWiki.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
-          alert("Se borró corrrectamente");
+          this.showAlert1=true;
         }
       )
     }
   }
 
+  aceptar(){
+    this.router.navigate(['']);
+  }
+  aceptar1(){
+    this.router.navigate(['']);
+  }
   cargarExperiencia(): void {
     this.datosWiki.lista().subscribe(
       data => { this.wiki = data; })
@@ -71,18 +75,22 @@ export class EditionComponent implements OnInit {
   getTheme(searchTerm: string){
     this.datosWiki.getTheme(searchTerm).subscribe(data => {     
      this.themes =data;
-     if(this.themes.length == 0){             
-       Swal.fire({
-          title: 'No se encuentra el tema',
-           showClass: {
-             popup: 'animate__animated animate__fadeInDown'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
-          }
-        })
+     if(this.themes.length == 0){    
+       this.showAlert=true;
      }
      console.log(data);
   });
 }
 }
+
+
+// Swal.fire({
+//   title: 'No se encuentra el tema',
+//    showClass: {
+//      popup: 'animate__animated animate__fadeInDown'
+//   },
+//   hideClass: {
+//     popup: 'animate__animated animate__fadeOutUp'
+//   }
+// })
+// }

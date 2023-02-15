@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
 
    <div class="categories">
@@ -131,5 +132,21 @@
 
     
   </div>
+ 
+</div>
 
+
+<div class="alert" *ngIf="showAlert1">
+  <div class="texto">¡El tema <br>se ha eliminado <br>con éxito!</div>
+  <div><input type="button" value="ACEPTAR" (click)="aceptar()"></div>
+</div>
+
+<div class="alert" *ngIf="showAlert2">
+  <div class="texto">¡El tema <br>se ha publicado <br>con éxito!</div>
+  <div><input type="button" value="ACEPTAR" (click)="aceptar()"></div>
+</div>
+
+<div class="alert" *ngIf="showAlert">
+  <div class="texto">¡El tema <br>no se encuentra  <br>disponible!</div>
+  <div><input type="button" value="ACEPTAR" (click)="aceptar1()"></div>
 </div>

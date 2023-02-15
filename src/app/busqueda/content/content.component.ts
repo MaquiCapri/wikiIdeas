@@ -10,6 +10,8 @@ import { SWikiService } from 'src/app/s-wiki.service';
 })
 export class ContentComponent implements OnInit {
   themes: any = [];
+  theme: any = [];
+
   pageSize = 7;
   desde: number = 0;
   hasta: number = 7;
@@ -17,23 +19,24 @@ export class ContentComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private datosWiki: SWikiService) {
     this.activatedRoute.params.subscribe(params => {
       this.datosWiki.getTheme(params['searchTerm'])
-      .subscribe(themes => { this.themes = themes});
-      if(this.themes.length==0){
-        this.themes= [];
-        
-      }else {
-        alert("no hay temas");
-      }
+      .subscribe(data => { this.themes = data});
+        //  if(this.(searchTerm)){
+        //  this.themes= [];
+        // console.log(searchTerm.lenght);
+      // }else {
+      //  alert("esta vacio ");
+        // }
 
-        console.log(this.themes);
-        // console.log(params['searchTerm']);
+        // console.log(this.theme);
+        //  console.log(params['searchTerm']);
     
-      // console.log(this.themes);
+        // console.log(searchTerm.lenght);
     });
   }
 
   ngOnInit(): void {
   }
+
   cambiarpagina(e:PageEvent) {
     console.log(e);
     this.desde = e.pageIndex * e.pageSize;

@@ -11,8 +11,8 @@
     </div>
     <div class="texto">
         <div>
-            <app-list2-theme *ngFor="let theme of themes | slice:desde:hasta" [theme]="theme"></app-list2-theme>
-
+            <app-list2-theme *ngFor="let theme of themes | slice:desde:hasta"  [theme]="theme" ></app-list2-theme>
+            <!-- [theme]="theme" -->
         </div>
     <div>
         <mat-paginator [length]="themes.length" [pageSize]="pageSize" (page)="cambiarpagina($event)">

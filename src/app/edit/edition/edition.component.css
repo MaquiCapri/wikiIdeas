@@ -7,31 +7,30 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     width: 1440px;
-  
 }
 
-form {
-    background: rgba(150, 209, 206, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    margin: auto;
-    width: 868px;
-    height: 651px;
+.categories {
+    background: linear-gradient(49.74deg, #7EC6C3 0%, #D8EDED 75.39%);
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
+        0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+        0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #17252A;
+    padding-left: 10px;
+    padding-top: 80px;
+    /* height: 750px; */
 }
-
+li:hover{
+text-decoration: underline;
+}
 .error {
     color: rgb(155, 30, 30);
 }
 
-.form-control {
-    background: #D8EDED;
-    box-shadow: 0px 10px 20px rgba(124, 150, 149, 0.2);
-    margin: auto;
-    cursor: pointer;
-    width: 828px;
-    height: 70px;
-    border-radius: 20px;
-}
 
 .button {
     display: flex;
@@ -64,22 +63,6 @@ form {
     box-shadow: 0px 10px 20px rgba(124, 150, 149, 0.2);
     border-radius: 50px;
     margin-left: 310px;
-}
-
-.categories {
-    background: linear-gradient(49.74deg, #7EC6C3 0%, #D8EDED 75.39%);
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
-        0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
-        0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
-    font-style: normal;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    color: #17252A;
-    padding-left: 10px;
-    padding-top: 80px;
-    /* height: 750px; */
 }
 
 img {
@@ -116,6 +99,8 @@ textarea {
     width: 828px;
     height: 70px;
     border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
 }
 .form-control {
     background: #D8EDED;
@@ -125,7 +110,10 @@ textarea {
     width: 828px;
     height: 70px;
     border-radius: 20px;
+    font-size: 24px;
+
 }
+
 form {
     background: rgba(150, 209, 206, 0.7);
     backdrop-filter: blur(10px);
@@ -134,8 +122,39 @@ form {
     width: 868px;
     height: 651px;
 }
+
 #lista5{
     position: absolute;
     margin-top: -50px;
     margin-left: 170px;
 }
+
+
+/* css del alert */
+.alert {
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 200px;
+}
+
+.texto {
+    width: 574px;
+    height: 236px;
+    background: #7EC6C3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.alert input {
+    height: 142px;
+    background: #17252A;
+    width: 574px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #FFFFFF;
+    font-size: 32px;
+} 
+

@@ -26,6 +26,7 @@
 mat-paginator {
     font-size: 20px;
     cursor: pointer;
+    margin-left: -80px;
 }
 
 app-list2-theme {
@@ -33,8 +34,7 @@ app-list2-theme {
 }
 
 .bg {
-    /* display: grid;
-    grid-template-columns: 29% 71%; */
+  
     width: 90rem;
 }
 
@@ -60,6 +60,18 @@ app-list2-theme {
     transform: rotate(-180deg);
     margin-top: 3rem;
 }
+
+::ng-deep .mat-paginator-range-label{
+visibility: hidden;
+}
+
+::ng-deep .mat-paginator-page-size{
+    visibility: hidden;
+    }
+    ::ng-deep .mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-next.mat-icon-button.mat-button-base{
+      margin: 40px;
+        }
+
 
 /* @media (min-width: 1100px) {
     img {

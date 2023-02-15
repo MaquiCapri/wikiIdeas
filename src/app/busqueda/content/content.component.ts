@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 import { ActivatedRoute } from '@angular/router';
 import { SWikiService } from 'src/app/s-wiki.service';
@@ -9,8 +9,8 @@ import { SWikiService } from 'src/app/s-wiki.service';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  themes: any = [];
-  theme: any = [];
+   themes: any = [];
+  //  theme: any = [];
 
   pageSize = 7;
   desde: number = 0;
@@ -35,6 +35,8 @@ export class ContentComponent implements OnInit {
   }
 
   ngOnInit(): void {
+         console.log(this.themes);
+
   }
 
   cambiarpagina(e:PageEvent) {

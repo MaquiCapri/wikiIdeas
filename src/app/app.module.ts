@@ -21,7 +21,7 @@ import { ListComponent } from './components/list/list.component';
 import { List3Component } from './edit/list3/list3.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ContentComponent } from './busqueda/content/content.component';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { NavBarComponent } from './busqueda/nav-bar/nav-bar.component';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { TemaComponent } from './buscador/tema/tema.component';

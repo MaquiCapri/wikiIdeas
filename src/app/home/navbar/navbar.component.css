@@ -52,6 +52,34 @@ svg {
     margin-top: -40px;
 }
 
+/* css del alert */
+.alert {
+    position: absolute; 
+    margin-top: -160px;
+    margin-left: 290px;
+}
+
+.texto {
+    width: 274px;
+    height: 98px;
+    background: #7EC6C3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+} 
+
+.alert input {
+    height: 42px;
+    background: #17252A;
+    width: 274px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+} 
+
 
 /* 
  @media (max-width: 1200px) {

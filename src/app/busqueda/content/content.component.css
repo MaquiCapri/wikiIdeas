@@ -26,7 +26,6 @@
 mat-paginator {
     font-size: 20px;
     cursor: pointer;
-    margin-left: -80px;
 }
 
 app-list2-theme {

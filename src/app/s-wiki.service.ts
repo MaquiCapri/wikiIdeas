@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { EventEmitter } from '@angular/core';
+// import { EventEmitter } from '@angular/core';
 import { Wiki } from './wiki';
 
 @Injectable({
@@ -30,6 +30,7 @@ URL ='https://wikideas.onrender.com/temas/';
     getTheme2(temas: string): Observable<any>{
       return this.http.get(this.url + temas);
      };
+
     public update(id: number, wiki: Wiki): Observable<any>{
       return this.http.put<any>(this.URL + id, wiki);
     }
